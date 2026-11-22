@@ -1,0 +1,21 @@
+{
+  "python_executable": "/mnt/home/soft/python/programs/x86_64/python_3.11.4/bin/python3",
+  "python_version": "3.11.4 | packaged by conda-forge | (main, Jun 10 2023, 18:08:17) [GCC 12.2.0]",
+  "python_version_tuple": [
+    3,
+    11,
+    4
+  ],
+  "numpy_version": "1.24.3",
+  "numpy_file": "/mnt/home/soft/python/programs/x86_64/python_3.11.4/lib/python3.11/site-packages/numpy/__init__.py",
+  "module": "python/3.11.4",
+  "platform": "Linux-6.12.0-160000.37-default-x86_64-with-glibc2.40",
+  "machine": "x86_64",
+  "hostname": "sd004",
+  "slurm_job_id": "3671532",
+  "threads": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  }
+}

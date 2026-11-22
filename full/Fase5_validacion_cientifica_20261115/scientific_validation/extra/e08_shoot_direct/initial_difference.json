@@ -1,0 +1,6 @@
+{
+  "scope": "Independent shooting and direct dense evaluation versus tabulated BVP plus Hermite interpolation; numerical discrepancy, not rigorous bound.",
+  "max_metric_difference": 1.865174681370263e-14,
+  "max_phi_velocity_difference": 1.354472090042691e-14,
+  "lambda0": 0.011321023947567005
+}

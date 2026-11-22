@@ -1,0 +1,84 @@
+FASE 5: VALIDACION LOCAL Y CAMPANA PICASSO — 14 NOVIEMBRE 2026
+
+ESTADO
+24 configuraciones locales ejecutadas. No se ha enviado ningun trabajo a Picasso
+desde esta sesion. El paquete prepara una replica remota, no contiene JOBID reales
+de Picasso. results/local_validation conserva los datos y diagnosticos locales.
+
+RESULTADO LOCAL
+1886 trazados elegibles resueltos, 0 parejas incorrectas; 46 casos criticos
+excluidos expresamente (2 por configuracion no plana). El control plano no tiene
+mapa de lineas. Los exponentes empiricos del resto de tiempo propio para c=.12 son
+4.00675 y 4.01913. Son datos de validacion numerica, no cotas de error certificadas.
+
+WSL: SUBIR ZIP (no ejecuta calculos en el login)
+cd /mnt/c/Users/FRVillatoro/Downloads
+scp Reconexiones_Fase5_Picasso_20261114.zip frv@picasso.scbi.uma.es:/mnt/fscratch/users/tic_118_uma/frv/
+
+PICASSO: DESCOMPRIMIR, VERIFICAR Y ENVIAR
+cd /mnt/fscratch/users/tic_118_uma/frv
+unzip -q Reconexiones_Fase5_Picasso_20261114.zip
+cd /mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114
+sha256sum --quiet -c MANIFEST.sha256
+bash hpc/submit.sh --run-id fase5_20261114_01
+
+La primera ejecucion debe usar una carpeta nueva. No sobrescriba entradas de una
+campana anterior; use un identificador distinto si desea otro envio. El script
+rechaza identificadores de ejecucion ya existentes. Cada envio congela codigo,
+datos y configuraciones en results/<RUN_ID>/input.
+
+RECURSOS Y DEPENDENCIAS
+- Smoke: cpu_parti, 1 CPU, 2 GB, 10 minutos. Comprueba Python >=3.10 y NumPy.
+- Array: 24 tareas, cpu_parti, 1 CPU y 4 GB por tarea, 30 minutos maximo por tarea.
+  Sin throttle: todas las tareas se habilitan tras el smoke, segun recursos Slurm.
+- Resumen: cpu_parti, 1 CPU, 2 GB, 10 minutos. Se ejecuta tras acabar/fallar array.
+- No se instala nada; no hay pip, conda, git, wget ni curl en el cluster.
+- Produccion requiere solo NumPy. SciPy/SymPy/Matplotlib/LaTeX pertenecen a las
+  auditorias adicionales y a la generacion local de este informe, no al array.
+- Runtime registrado en runtime.json. Se prueban modulos python/3.11.4 y
+  python/3.14.3 y los interpretes locales disponibles. Si falla NumPy se conserva
+  el diagnostico; no se simula un resultado ni se instala software.
+
+MONITORIZAR EN PICASSO
+cd /mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114
+squeue -l -j "$(cat SMOKE_JOBID.txt),$(cat ARRAY_JOBID.txt),$(cat SUMMARY_JOBID.txt)"
+sacct -j "$(cat SMOKE_JOBID.txt),$(cat ARRAY_JOBID.txt),$(cat SUMMARY_JOBID.txt)" --format=JobID,JobName,State,ExitCode,Elapsed,MaxRSS
+
+Se guardan RUN_ID.txt, SMOKE_JOBID.txt, ARRAY_JOBID.txt y SUMMARY_JOBID.txt.
+Un proceso COMPLETED no equivale a validacion cientifica: revise los diagnosticos.
+
+WSL: DESCARGAR TRAS TERMINAR EL RESUMEN
+cd /mnt/c/Users/FRVillatoro/Downloads
+scp frv@picasso.scbi.uma.es:/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/Reconexiones_Fase5_resultados_20261114_fase5_20261114_01.zip .
+
+Tambien existe el enlace fijo Reconexiones_Fase5_resultados_20261114.zip al ultimo
+ZIP archivado. El comando anterior elige la ejecucion concreta y evita confundir
+resultados de varios envios. Suba ese ZIP para la auditoria final de la fase.
+
+CONTENIDO DEL RESULTADO
+- campaign_status.json / archive_status.json: procesos completos o parciales.
+- numerical_audit.json: restricciones, trazados, comparaciones, paridad y escalado.
+- analysis.json / event_errors.csv: coeficientes de fase4 fijos, eventos y residuos.
+- task_NNN/evolution.npz: metricas y escalar finales, reloj central, secciones
+  gaussianas, frontera material y campos T_s. No contiene toda la historia 2D.
+- task_NNN/slice_audit.json: primera salida por etiqueta, drift y casos criticos.
+- input/, runtime.json, logs/, slurm_accounting.txt: reproducibilidad y fallos.
+El resumen usa un RUN_ID exacto y retiene salidas parciales si falla una tarea.
+
+REPETICION LOCAL (en su equipo, nunca para calculo pesado en login Picasso)
+Desde la raiz extraida, con Python y NumPy:
+python solver.py --self-test --output prueba_local
+python solver.py --config configs/004_spatial_e08_N97.json --output caso_local
+python code/campaign_audit.py --run-dir results/local_validation
+
+LIMITES
+La frontera exterior auxiliar no tiene una prueba general de buena formulacion
+para este esquema. La independencia se contrasta variando dominio y resolucion.
+Las diferencias de malla no son cotas rigurosas. El trazado selecciona etiquetas:
+no certifica toda la topologia. El resultado pertenece al sector de Killing y a
+la frontera material elegidos. No permite excluir TEGR, equivalente metricamente
+a relatividad general. Una teoria teleparalela modificada requiere otra dinamica.
+
+Si el administrador indica otro runtime ya instalado, se puede usar:
+bash hpc/submit.sh --run-id NUEVO_ID --module MODULO --python RUTA_ABSOLUTA_PYTHON
+No cambie el runtime dentro de una ejecucion ya iniciada.

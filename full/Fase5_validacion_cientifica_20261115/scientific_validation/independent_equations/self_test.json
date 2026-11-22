@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "independent_pointwise_checks": 48,
+  "production_Q_independent_error": 6.245004513516506e-17,
+  "curved_Kasner_RK4_errors": [
+    2.0843238792700447e-06,
+    1.3580271174262748e-07,
+    8.666189099670873e-09
+  ],
+  "curved_Kasner_RK4_orders": [
+    3.93999527969601,
+    3.9699707606124544
+  ],
+  "flat_constraint_max": 0.0,
+  "nonlinear_smoke_status": "SUCCESS"
+}

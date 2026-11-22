@@ -1,0 +1,5 @@
+START job=3673734 index=6 host=sd057
+Loading python/3.11.4
+  Loading requirement: miniconda/3
+Running: /mnt/home/soft/python/programs/x86_64/python_3.11.4/bin/python3 /mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/solver.py --config /mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/configs/006_spatial_e12_N65.json --output /mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/task_006
+{"status": "SUCCESS", "nsteps": 28, "runtime_seconds": 6.453286105999723, "max_material_label_error": 2.7627991561196552e-09}

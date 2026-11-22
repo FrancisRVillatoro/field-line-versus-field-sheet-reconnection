@@ -1,0 +1,25 @@
+{
+  "title": "Reproducibility data and software for “Field-line versus field-sheet reconnection in vacuum gravity”",
+  "upload_type": "software",
+  "description": "<p>Version 1.0 of the vacuum reproducibility archive of the article F. R. Villatoro, <em>Field-line versus field-sheet reconnection in vacuum gravity</em> (2026). The record contains the files of the two supplementary ZIP files of the article, Reconnection_vacuum_reproducibility.zip and Reconnection_vacuum_validation.zip, extracted into one directory, with their SHA-256 manifests.</p><p>It includes the 24 cluster evolutions and the 21 additional evolutions of the vacuum family studied in the article, with the solver, configurations, raw arrays and runtime provenance, the exact-arithmetic and symbolic checks of the perturbative coefficients, of the boundary lemma and of the twisting Killing vector, the analysis scripts, and the data and scripts that produce the figures and tables. README.txt describes the contents and gives the commands.</p>",
+  "creators": [
+    {
+      "name": "Villatoro, Francisco R.",
+      "affiliation": "Universidad de Málaga",
+      "orcid": "0000-0003-4314-6213"
+    }
+  ],
+  "license": "mit",
+  "access_right": "open",
+  "version": "1.0",
+  "language": "eng",
+  "keywords": [
+    "vacuum general relativity",
+    "gravitational reconnection",
+    "field sheets",
+    "Killing symmetry",
+    "Killing twist",
+    "causal structure",
+    "numerical relativity"
+  ]
+}

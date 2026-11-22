@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "exact_identity_count": 11,
+  "checks": {
+    "upper_Rayleigh_gap": true,
+    "lower_Rayleigh_gap": true,
+    "upper_comparison_ODE": true,
+    "lower_comparison_ODE": true,
+    "upper_radius_formula": true,
+    "lower_radius_formula": true,
+    "upper_radius_at_S": true,
+    "lower_radius_at_S": true,
+    "maximum_m_at_S": true,
+    "uniform_timelike_margin": true,
+    "crossing_label_at_S": true
+  },
+  "independent_ODE_sanity_check": {
+    "trajectories": 256,
+    "time_samples": 101,
+    "minimum_radial_lower_slack": -6.090683513093609e-13,
+    "minimum_radial_upper_slack": -3.0964120156795616e-12,
+    "max_label_drift": 4.8922532691619836e-12,
+    "maximum_flat_V_norm": -0.89333333333331,
+    "proven_uniform_norm_bound": -0.8873239436619719
+  },
+  "scope": "Bounds for the normalized leading field only. Small-amplitude nonlinear persistence is a qualitative theorem; no explicit epsilon_0 is computed."
+}

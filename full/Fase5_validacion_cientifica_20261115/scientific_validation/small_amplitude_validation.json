@@ -1,0 +1,547 @@
+{
+  "observables": [
+    {
+      "epsilon": 0.01,
+      "c": 0.04,
+      "observable": "s_event",
+      "observed": 0.0400570514786301,
+      "residual": 1.410567121440387e-09,
+      "space_difference": 2.42861286636753e-16,
+      "time_difference": 1.915134717478395e-15,
+      "interpolation_difference": 1.5959455978986625e-16,
+      "sensitivity_indicator": 3.7386760354252146e-14,
+      "residual_to_indicator": 37729.05456570156,
+      "note": "Small-amplitude extension uses shooting initial data; indicator includes space/time/interpolation only. Initial-method comparison was performed for the three original amplitudes."
+    },
+    {
+      "epsilon": 0.01,
+      "c": 0.04,
+      "observable": "paired_tau_event",
+      "observed": 0.08011410509546613,
+      "residual": 2.8218951619862764e-09,
+      "space_difference": 4.996003610813204e-16,
+      "time_difference": 3.816391647148976e-15,
+      "interpolation_difference": 3.0531133177191805e-16,
+      "sensitivity_indicator": 6.042388811522414e-14,
+      "residual_to_indicator": 46701.64813964171,
+      "note": "Small-amplitude extension uses shooting initial data; indicator includes space/time/interpolation only. Initial-method comparison was performed for the three original amplitudes."
+    },
+    {
+      "epsilon": 0.01,
+      "c": 0.04,
+      "observable": "fixed_s_a_over_eps",
+      "observed": 0.03998580303852679,
+      "residual": 3.635460523919253e-09,
+      "space_difference": 1.0179357357031904e-14,
+      "time_difference": 8.965050923848139e-15,
+      "interpolation_difference": 1.136590821460004e-14,
+      "sensitivity_indicator": 3.1931401967000284e-13,
+      "residual_to_indicator": 11385.220503867458,
+      "note": "Small-amplitude extension uses shooting initial data; indicator includes space/time/interpolation only. Initial-method comparison was performed for the three original amplitudes."
+    },
+    {
+      "epsilon": 0.01,
+      "c": 0.12,
+      "observable": "s_event",
+      "observed": 0.12122985841663318,
+      "residual": 4.369328981956855e-09,
+      "space_difference": 2.636779683484747e-16,
+      "time_difference": 4.676814491233472e-15,
+      "interpolation_difference": 2.7755575615628914e-17,
+      "sensitivity_indicator": 6.389333506717776e-14,
+      "residual_to_indicator": 68384.7380538662,
+      "note": "Small-amplitude extension uses shooting initial data; indicator includes space/time/interpolation only. Initial-method comparison was performed for the three original amplitudes."
+    },
+    {
+      "epsilon": 0.01,
+      "c": 0.12,
+      "observable": "paired_tau_event",
+      "observed": 0.24245977548529254,
+      "residual": 8.759734215768589e-09,
+      "space_difference": 6.661338147750939e-16,
+      "time_difference": 9.492406860545088e-15,
+      "interpolation_difference": 2.7755575615628914e-17,
+      "sensitivity_indicator": 1.1607381722456012e-13,
+      "residual_to_indicator": 75466.92635102822,
+      "note": "Small-amplitude extension uses shooting initial data; indicator includes space/time/interpolation only. Initial-method comparison was performed for the three original amplitudes."
+    },
+    {
+      "epsilon": 0.01,
+      "c": 0.12,
+      "observable": "fixed_s_a_over_eps",
+      "observed": 0.11995794007724003,
+      "residual": 1.0533402550361333e-08,
+      "space_difference": 4.163336342344337e-17,
+      "time_difference": 3.733124920302089e-15,
+      "interpolation_difference": 1.0547118733938987e-15,
+      "sensitivity_indicator": 6.250555628639631e-14,
+      "residual_to_indicator": 168519.45932771132,
+      "note": "Small-amplitude extension uses shooting initial data; indicator includes space/time/interpolation only. Initial-method comparison was performed for the three original amplitudes."
+    },
+    {
+      "epsilon": 0.01,
+      "c": 0.18,
+      "observable": "s_event",
+      "observed": 0.18423056295889634,
+      "residual": 6.900690296962608e-09,
+      "space_difference": 2.7755575615628914e-15,
+      "time_difference": 7.799316747991725e-15,
+      "interpolation_difference": 2.7755575615628914e-17,
+      "sensitivity_indicator": 1.2023715356690445e-13,
+      "residual_to_indicator": 57392.32917820868,
+      "note": "Small-amplitude extension uses shooting initial data; indicator includes space/time/interpolation only. Initial-method comparison was performed for the three original amplitudes."
+    },
+    {
+      "epsilon": 0.01,
+      "c": 0.18,
+      "observable": "paired_tau_event",
+      "observed": 0.36846132859439945,
+      "residual": 1.3875364301974003e-08,
+      "space_difference": 5.662137425588298e-15,
+      "time_difference": 1.554312234475219e-14,
+      "interpolation_difference": 1.1102230246251565e-16,
+      "sensitivity_indicator": 2.2737367544323206e-13,
+      "residual_to_indicator": 61024.49755859375,
+      "note": "Small-amplitude extension uses shooting initial data; indicator includes space/time/interpolation only. Initial-method comparison was performed for the three original amplitudes."
+    },
+    {
+      "epsilon": 0.01,
+      "c": 0.18,
+      "observable": "fixed_s_a_over_eps",
+      "observed": 0.17993809094593188,
+      "residual": 1.4981661085688536e-08,
+      "space_difference": 1.532107773982716e-14,
+      "time_difference": 1.2656542480726785e-14,
+      "interpolation_difference": 1.865174681370263e-14,
+      "sensitivity_indicator": 4.805045250577678e-13,
+      "residual_to_indicator": 31179.021849768,
+      "note": "Small-amplitude extension uses shooting initial data; indicator includes space/time/interpolation only. Initial-method comparison was performed for the three original amplitudes."
+    },
+    {
+      "epsilon": 0.02,
+      "c": 0.04,
+      "observable": "s_event",
+      "observed": 0.040099811491617454,
+      "residual": 2.2575581640205122e-08,
+      "space_difference": 7.840950111415168e-16,
+      "time_difference": 7.688294445529209e-15,
+      "interpolation_difference": 6.938893903907228e-17,
+      "sensitivity_indicator": 9.962863867229999e-14,
+      "residual_to_indicator": 226597.31118540186,
+      "note": "Small-amplitude extension uses shooting initial data; indicator includes space/time/interpolation only. Initial-method comparison was performed for the three original amplitudes."
+    },
+    {
+      "epsilon": 0.02,
+      "c": 0.04,
+      "observable": "paired_tau_event",
+      "observed": 0.08019963154519334,
+      "residual": 4.516334167758984e-08,
+      "space_difference": 1.6653345369377348e-15,
+      "time_difference": 1.5362711103250604e-14,
+      "interpolation_difference": 1.1102230246251565e-16,
+      "sensitivity_indicator": 1.8560153414171054e-13,
+      "residual_to_indicator": 243334.95887542993,
+      "note": "Small-amplitude extension uses shooting initial data; indicator includes space/time/interpolation only. Initial-method comparison was performed for the three original amplitudes."
+    },
+    {
+      "epsilon": 0.02,
+      "c": 0.04,
+      "observable": "fixed_s_a_over_eps",
+      "observed": 0.03994325573505153,
+      "residual": 5.812278645592119e-08,
+      "space_difference": 8.049116928532385e-16,
+      "time_difference": 1.1234069230425803e-14,
+      "interpolation_difference": 9.83935155574045e-15,
+      "sensitivity_indicator": 2.329941795053969e-13,
+      "residual_to_indicator": 249460.25080671543,
+      "note": "Small-amplitude extension uses shooting initial data; indicator includes space/time/interpolation only. Initial-method comparison was performed for the three original amplitudes."
+    },
+    {
+      "epsilon": 0.02,
+      "c": 0.12,
+      "observable": "s_event",
+      "observed": 0.12135995465080687,
+      "residual": 6.992977140407586e-08,
+      "space_difference": 1.304512053934559e-15,
+      "time_difference": 1.8721135752741702e-14,
+      "interpolation_difference": 6.938893903907228e-17,
+      "sensitivity_indicator": 2.1516122217235534e-13,
+      "residual_to_indicator": 325011.0345072239,
+      "note": "Small-amplitude extension uses shooting initial data; indicator includes space/time/interpolation only. Initial-method comparison was performed for the three original amplitudes."
+    },
+    {
+      "epsilon": 0.02,
+      "c": 0.12,
+      "observable": "paired_tau_event",
+      "observed": 0.24272014416273938,
+      "residual": 1.4019686880861748e-07,
+      "space_difference": 2.55351295663786e-15,
+      "time_difference": 3.838596107641479e-14,
+      "interpolation_difference": 1.3877787807814457e-16,
+      "sensitivity_indicator": 4.249933738265099e-13,
+      "residual_to_indicator": 329880.128591954,
+      "note": "Small-amplitude extension uses shooting initial data; indicator includes space/time/interpolation only. Initial-method comparison was performed for the three original amplitudes."
+    },
+    {
+      "epsilon": 0.02,
+      "c": 0.12,
+      "observable": "fixed_s_a_over_eps",
+      "observed": 0.11983188658480108,
+      "residual": 1.6840945117957483e-07,
+      "space_difference": 1.9456658506555868e-14,
+      "time_difference": 4.73232564246473e-15,
+      "interpolation_difference": 1.6181500583911657e-14,
+      "sensitivity_indicator": 4.1791570204452455e-13,
+      "residual_to_indicator": 402974.6916798847,
+      "note": "Small-amplitude extension uses shooting initial data; indicator includes space/time/interpolation only. Initial-method comparison was performed for the three original amplitudes."
+    },
+    {
+      "epsilon": 0.02,
+      "c": 0.18,
+      "observable": "s_event",
+      "observed": 0.18442995705630627,
+      "residual": 1.104445864763548e-07,
+      "space_difference": 1.0547118733938987e-14,
+      "time_difference": 3.0031532816110484e-14,
+      "interpolation_difference": 8.326672684688674e-17,
+      "sensitivity_indicator": 4.208300374841656e-13,
+      "residual_to_indicator": 262444.6371191136,
+      "note": "Small-amplitude extension uses shooting initial data; indicator includes space/time/interpolation only. Initial-method comparison was performed for the three original amplitudes."
+    },
+    {
+      "epsilon": 0.02,
+      "c": 0.18,
+      "observable": "paired_tau_event",
+      "observed": 0.3688607257072315,
+      "residual": 2.2207329963830347e-07,
+      "space_difference": 2.1038726316646716e-14,
+      "time_difference": 6.056266599330229e-14,
+      "interpolation_difference": 1.6653345369377348e-16,
+      "sensitivity_indicator": 8.318901123516298e-13,
+      "residual_to_indicator": 266950.28146269853,
+      "note": "Small-amplitude extension uses shooting initial data; indicator includes space/time/interpolation only. Initial-method comparison was performed for the three original amplitudes."
+    },
+    {
+      "epsilon": 0.02,
+      "c": 0.18,
+      "observable": "fixed_s_a_over_eps",
+      "observed": 0.17975254339421973,
+      "residual": 2.3953713659965277e-07,
+      "space_difference": 6.689093723366568e-15,
+      "time_difference": 2.4369395390522186e-14,
+      "interpolation_difference": 9.603429163007604e-15,
+      "sensitivity_indicator": 4.208300374841656e-13,
+      "residual_to_indicator": 569201.6141045202,
+      "note": "Small-amplitude extension uses shooting initial data; indicator includes space/time/interpolation only. Initial-method comparison was performed for the three original amplitudes."
+    }
+  ],
+  "five_amplitude_scalings": [
+    {
+      "c": 0.04,
+      "observable": "s_event",
+      "slopes": [
+        {
+          "epsilon_pair": [
+            0.01,
+            0.02
+          ],
+          "power": 4.000415935058649
+        },
+        {
+          "epsilon_pair": [
+            0.02,
+            0.04
+          ],
+          "power": 4.001661937609478
+        },
+        {
+          "epsilon_pair": [
+            0.04,
+            0.08
+          ],
+          "power": 4.0066288348131485
+        },
+        {
+          "epsilon_pair": [
+            0.08,
+            0.12
+          ],
+          "power": 4.01877746217578
+        }
+      ]
+    },
+    {
+      "c": 0.04,
+      "observable": "paired_tau_event",
+      "slopes": [
+        {
+          "epsilon_pair": [
+            0.01,
+            0.02
+          ],
+          "power": 4.000415940839434
+        },
+        {
+          "epsilon_pair": [
+            0.02,
+            0.04
+          ],
+          "power": 4.0016619526428565
+        },
+        {
+          "epsilon_pair": [
+            0.04,
+            0.08
+          ],
+          "power": 4.0066289061919464
+        },
+        {
+          "epsilon_pair": [
+            0.08,
+            0.12
+          ],
+          "power": 4.01877772530988
+        }
+      ]
+    },
+    {
+      "c": 0.04,
+      "observable": "fixed_s_a_over_eps",
+      "slopes": [
+        {
+          "epsilon_pair": [
+            0.01,
+            0.02
+          ],
+          "power": 3.998893833653779
+        },
+        {
+          "epsilon_pair": [
+            0.02,
+            0.04
+          ],
+          "power": 3.9956015567850636
+        },
+        {
+          "epsilon_pair": [
+            0.04,
+            0.08
+          ],
+          "power": 3.982554253743694
+        },
+        {
+          "epsilon_pair": [
+            0.08,
+            0.12
+          ],
+          "power": 3.9511631809935333
+        }
+      ]
+    },
+    {
+      "c": 0.12,
+      "observable": "s_event",
+      "slopes": [
+        {
+          "epsilon_pair": [
+            0.01,
+            0.02
+          ],
+          "power": 4.000423148612854
+        },
+        {
+          "epsilon_pair": [
+            0.02,
+            0.04
+          ],
+          "power": 4.0016914835636985
+        },
+        {
+          "epsilon_pair": [
+            0.04,
+            0.08
+          ],
+          "power": 4.00674838020343
+        },
+        {
+          "epsilon_pair": [
+            0.08,
+            0.12
+          ],
+          "power": 4.019126049930496
+        }
+      ]
+    },
+    {
+      "c": 0.12,
+      "observable": "paired_tau_event",
+      "slopes": [
+        {
+          "epsilon_pair": [
+            0.01,
+            0.02
+          ],
+          "power": 4.00042322114239
+        },
+        {
+          "epsilon_pair": [
+            0.02,
+            0.04
+          ],
+          "power": 4.0016916867369545
+        },
+        {
+          "epsilon_pair": [
+            0.04,
+            0.08
+          ],
+          "power": 4.0067492825871955
+        },
+        {
+          "epsilon_pair": [
+            0.08,
+            0.12
+          ],
+          "power": 4.019129157658827
+        }
+      ]
+    },
+    {
+      "c": 0.12,
+      "observable": "fixed_s_a_over_eps",
+      "slopes": [
+        {
+          "epsilon_pair": [
+            0.01,
+            0.02
+          ],
+          "power": 3.99892966202118
+        },
+        {
+          "epsilon_pair": [
+            0.02,
+            0.04
+          ],
+          "power": 3.995727283398526
+        },
+        {
+          "epsilon_pair": [
+            0.04,
+            0.08
+          ],
+          "power": 3.9830479949525452
+        },
+        {
+          "epsilon_pair": [
+            0.08,
+            0.12
+          ],
+          "power": 3.952518941291832
+        }
+      ]
+    },
+    {
+      "c": 0.18,
+      "observable": "s_event",
+      "slopes": [
+        {
+          "epsilon_pair": [
+            0.01,
+            0.02
+          ],
+          "power": 4.000438209162752
+        },
+        {
+          "epsilon_pair": [
+            0.02,
+            0.04
+          ],
+          "power": 4.0017520262701405
+        },
+        {
+          "epsilon_pair": [
+            0.04,
+            0.08
+          ],
+          "power": 4.006993403756138
+        },
+        {
+          "epsilon_pair": [
+            0.08,
+            0.12
+          ],
+          "power": 4.019840980457951
+        }
+      ]
+    },
+    {
+      "c": 0.18,
+      "observable": "paired_tau_event",
+      "slopes": [
+        {
+          "epsilon_pair": [
+            0.01,
+            0.02
+          ],
+          "power": 4.000438389434529
+        },
+        {
+          "epsilon_pair": [
+            0.02,
+            0.04
+          ],
+          "power": 4.001752680325209
+        },
+        {
+          "epsilon_pair": [
+            0.04,
+            0.08
+          ],
+          "power": 4.006996223388036
+        },
+        {
+          "epsilon_pair": [
+            0.08,
+            0.12
+          ],
+          "power": 4.019850206962947
+        }
+      ]
+    },
+    {
+      "c": 0.18,
+      "observable": "fixed_s_a_over_eps",
+      "slopes": [
+        {
+          "epsilon_pair": [
+            0.01,
+            0.02
+          ],
+          "power": 3.9989798452702434
+        },
+        {
+          "epsilon_pair": [
+            0.02,
+            0.04
+          ],
+          "power": 3.995919737243334
+        },
+        {
+          "epsilon_pair": [
+            0.04,
+            0.08
+          ],
+          "power": 3.983804326619457
+        },
+        {
+          "epsilon_pair": [
+            0.08,
+            0.12
+          ],
+          "power": 3.9545970027206434
+        }
+      ]
+    }
+  ],
+  "minimum_residual_to_indicator": 11385.220503867458
+}

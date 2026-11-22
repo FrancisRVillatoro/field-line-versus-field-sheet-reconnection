@@ -1,0 +1,4 @@
+RUN_ID=fase5_20261115_01
+STATE=COMPLETE_PROCESS_CAMPAIGN
+ARCHIVE=Reconexiones_Fase5_resultados_20261114_fase5_20261115_01.zip
+Scientific acceptance requires the separate diagnostic checks.

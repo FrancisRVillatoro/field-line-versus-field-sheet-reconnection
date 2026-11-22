@@ -1,0 +1,99 @@
+FASE 5 — SOPORTE PRIMARIO Y LÍMITES DE LAS AFIRMACIONES
+Consulta: 14 de noviembre de 2026.
+
+[1] Frans Pretorius, Numerical Relativity Using a Generalized Harmonic
+Decomposition, Classical and Quantum Gravity 22 (2005), 425–452.
+DOI: 10.1088/0264-9381/22/2/014. arXiv:gr-qc/0407110v2.
+https://arxiv.org/abs/gr-qc/0407110
+https://arxiv.org/pdf/gr-qc/0407110
+Sección II: reducción armónica generalizada a ecuaciones de onda de segundo
+orden y propagación de la restricción de coordenadas. Sección IV.D, ecuaciones
+(44)–(45): campo escalar sin masa. Sección V: convergencia y residuos de Einstein
+independientes de las ecuaciones de evolución reducidas. Es un antecedente de
+la formulación, no una prueba de nuestro esquema RK4. Sus convenciones de
+acoplamiento en 3+1 no deben trasladarse literalmente a Ric[h]=2 dφ⊗dφ en 2+1.
+La identidad y la normalización implementadas requieren comprobación propia.
+
+[2] H.-O. Kreiss, O. Reula, O. Sarbach y J. Winicour, Boundary Conditions for
+Coupled Quasilinear Wave Equations with Application to Isolated Systems,
+Communications in Mathematical Physics 289 (2009), 1099–1129.
+DOI: 10.1007/s00220-009-0788-2.
+https://link.springer.com/article/10.1007/s00220-009-0788-2
+Establece buena formulación de una clase especificada de condiciones de
+frontera mediante reducción simétrica hiperbólica y condiciones máximamente
+disipativas; incluye aplicación a Einstein en coordenadas armónicas. No
+justifica automáticamente una frontera genérica de copia, Dirichlet o
+Sommerfeld, ni demuestra estabilidad de cualquier discretización que la use.
+
+[3] Eitan Tadmor, On the stability of Runge–Kutta methods for arbitrarily large
+systems of ODEs, Communications on Pure and Applied Mathematics 78 (2025),
+821–855. DOI: 10.1002/cpa.22238.
+https://doi.org/10.1002/cpa.22238
+https://math.umd.edu/~tadmor/pub/linear-stability/Tadmor%20RK%20are%20stable%20CPAM2025.pdf
+Sección 5, proposición 5.3 y ejemplo 5.2, pp. 845–846: estabilidad de diferencias
+con coeficientes constantes y RK bajo hipótesis sobre el símbolo y CFL;
+incluye diferencias centradas periódicas. El artículo también explica por
+qué el análisis espectral aislado no resuelve el problema general. No permite
+atribuir sin más una prueba al sistema no lineal con frontera de esta campaña.
+
+Comprobación algebraica propia del modelo plano, no atribuida como resultado
+específico de [3]: para u_tt=Δ_h u en 2D, con h igual en ambas direcciones y
+Laplaciano centrado de orden cuatro, el símbolo de una dirección es
+−4 sin²(θ/2)[1+sin²(θ/2)/3]/h². Por tanto ω_max²=32/(3h²).
+El polinomio clásico RK4 satisface |R(iy)|≤1 para |y|≤2√2. Esto da
+Δt/h≤√3/2 para el problema plano periódico de velocidad uno, en la norma de
+energía adecuada para los modos no constantes. El modo espacial constante
+sigue exactamente la solución afín en tiempo. Este cálculo no cubre por sí
+solo coeficientes variables, términos no lineales, datos externos, fronteras,
+ni cualquier modificación del stencil.
+
+[4] Wojciech Kamiński, Well-Posedness of the Ambient Metric Equations and
+Stability of Even Dimensional Asymptotically de Sitter Spacetimes,
+Communications in Mathematical Physics 401 (2023), 2959–2998.
+DOI: 10.1007/s00220-023-04703-y. arXiv:2108.08085.
+https://link.springer.com/article/10.1007/s00220-023-04703-y
+Sección 3, tras (13), puntos 1–3, y proposición 3: existencia local,
+dependencia suave y propagación finita para la clase de sistemas de onda
+cuasilineales indicada; el caso N=0 incluye la reducción ordinaria. El uso
+local requiere extender los datos del sistema reducido a una superficie
+auxiliar compacta y limitarse al dominio de dependencia del parche donde
+se satisfacen las restricciones. No se afirma que la extensión satisfaga
+globalmente las restricciones de Einstein.
+
+DISTINCIÓN CONTINUO / DISCRETO
+La propagación finita del PDE permite comparar desarrollos continuos en su
+dominio de dependencia. No convierte el cono físico en el dominio de
+dependencia algebraico exacto de RK4 más un stencil espacial. Las etapas RK4
+amplían la dependencia de puntos en cada paso; hay que comprobar explícitamente
+el buffer y la sensibilidad a la extensión o a la frontera. Una campaña de
+convergencia aporta evidencia numérica para el intervalo y observables
+estudiados; no equivale a una prueba general de estabilidad o convergencia.
+Controles mínimos pertinentes: refinamiento espacial, reducción independiente
+del paso temporal, variación de buffer/extensión manteniendo la región de
+observación y resolución, restricciones armónicas y de Einstein, y pruebas
+con soluciones conocidas. Los residuos de Einstein deben calcularse de
+forma suficientemente independiente de las ecuaciones reducidas.
+
+OPERACIÓN EN PICASSO
+[5] Catálogo oficial SCBI:
+https://www.scbi.uma.es/web/resources/software/
+Enumera Python 3.11.4 como versión predeterminada y 3.14.3 entre las versiones
+disponibles. No acredita que NumPy funcione en un módulo concreto. El smoke
+lo verifica en el nodo de cálculo y registra el entorno realmente usado.
+
+[6] Documentación oficial de Picasso:
+https://scbi-picasso.github.io/Picasso-Documentation/
+Sustenta el uso de Slurm y recursos explícitos. El paquete usa cpu_parti,
+siguiendo el flujo establecido del usuario, sin imponer una arquitectura.
+FSCRATCH es temporal. Los límites de memoria y tiempo son límites reales de asignación.
+No se ha conectado a Picasso ni comprobado desde este entorno la cuenta del
+usuario, la cola o las instalaciones concretas.
+
+[7] Documentación oficial de Slurm, sbatch:
+https://slurm.schedmd.com/sbatch.html
+--dependency=afterok inicia el array tras una prueba exitosa; afterany espera
+la terminación, incluso por fallo. --kill-on-invalid-dep=yes cancela el array
+si su dependencia queda imposible, evitando un pendiente indefinido que
+bloquearía el resumen. Sin sufijo % en --array no se impone una limitación
+adicional de simultaneidad desde este script. La programación real sigue
+sujeta a los recursos y políticas del clúster.

@@ -1,0 +1,1645 @@
+{
+  "scope": "Local numerical evidence for selected events and traces; no global topology theorem or certified discretization bound. Cluster execution must be identified by Slurm records.",
+  "expected_tasks": 24,
+  "successful_numerical_tasks": 24,
+  "traced_exits": 1886,
+  "mismatched_pairs": 0,
+  "unresolved_eligible": 0,
+  "unresolved_critical": 46,
+  "tasks": [
+    {
+      "task": "task_000",
+      "config": {
+        "L": 2.0,
+        "cfl": 0.15,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": true,
+        "epsilon": 0.04,
+        "N": 65,
+        "tag": "spatial_e04_N65"
+      },
+      "H_max": 1.3057744299022067e-08,
+      "M_max": 2.7417014512214413e-08,
+      "C_max": 1.231798900879774e-10,
+      "min_lapse": 0.9999023454123303,
+      "final_min_s_T_in_disk": 0.9999023454123303,
+      "max_midpoint_eikonal_residual": 4.546938492389074e-08,
+      "max_material_label_error": 2.0945483888978877e-10,
+      "max_V_norm": -0.8635826794833632,
+      "runtime_seconds": 6.342254852876067,
+      "slice_inverse_residual": 5.551115123125783e-17,
+      "traced_exits": 82,
+      "mismatched_pairs": 0,
+      "unresolved_eligible": 0,
+      "unresolved_critical": 2,
+      "max_label_angle_error": 6.754423156385414e-05,
+      "max_level_drift": 1.1866563474037528e-09
+    },
+    {
+      "task": "task_001",
+      "config": {
+        "L": 2.0,
+        "cfl": 0.15,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": true,
+        "epsilon": 0.04,
+        "N": 97,
+        "tag": "spatial_e04_N97"
+      },
+      "H_max": 1.78733139399867e-11,
+      "M_max": 2.2462445748924753e-11,
+      "C_max": 8.826216568789445e-13,
+      "min_lapse": 0.9999023454113958,
+      "final_min_s_T_in_disk": 0.9999023454113958,
+      "max_midpoint_eikonal_residual": 2.021246481298533e-08,
+      "max_material_label_error": 4.544261841821218e-11,
+      "max_V_norm": -0.8635825568091847,
+      "runtime_seconds": 19.5439765159972,
+      "slice_inverse_residual": 5.551115123125783e-17,
+      "traced_exits": 82,
+      "mismatched_pairs": 0,
+      "unresolved_eligible": 0,
+      "unresolved_critical": 2,
+      "max_label_angle_error": 6.754415883092335e-05,
+      "max_level_drift": 4.5945375607391037e-10
+    },
+    {
+      "task": "task_002",
+      "config": {
+        "L": 2.0,
+        "cfl": 0.15,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": true,
+        "epsilon": 0.04,
+        "N": 129,
+        "tag": "spatial_e04_N129"
+      },
+      "H_max": 4.4110231960103885e-12,
+      "M_max": 2.0588646347692585e-12,
+      "C_max": 3.29820681463403e-13,
+      "min_lapse": 0.9999023454112368,
+      "final_min_s_T_in_disk": 0.9999023454112368,
+      "max_midpoint_eikonal_residual": 1.1370269170640768e-08,
+      "max_material_label_error": 2.5680620824308775e-11,
+      "max_V_norm": -0.8635825403047637,
+      "runtime_seconds": 44.372313506901264,
+      "slice_inverse_residual": 5.551115123125783e-17,
+      "traced_exits": 82,
+      "mismatched_pairs": 0,
+      "unresolved_eligible": 0,
+      "unresolved_critical": 2,
+      "max_label_angle_error": 6.754316727564103e-05,
+      "max_level_drift": 2.693260024722033e-10
+    },
+    {
+      "task": "task_003",
+      "config": {
+        "L": 2.0,
+        "cfl": 0.15,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": true,
+        "epsilon": 0.08,
+        "N": 65,
+        "tag": "spatial_e08_N65"
+      },
+      "H_max": 4.315799453230573e-08,
+      "M_max": 9.279235082745863e-08,
+      "C_max": 5.55672755469291e-10,
+      "min_lapse": 0.9996213201447954,
+      "final_min_s_T_in_disk": 0.9996213201447954,
+      "max_midpoint_eikonal_residual": 1.7602359636548215e-07,
+      "max_material_label_error": 9.012713006462114e-10,
+      "max_V_norm": -0.8740249380063865,
+      "runtime_seconds": 6.351190460147336,
+      "slice_inverse_residual": 5.551115123125783e-17,
+      "traced_exits": 82,
+      "mismatched_pairs": 0,
+      "unresolved_eligible": 0,
+      "unresolved_critical": 2,
+      "max_label_angle_error": 6.69824080374859e-05,
+      "max_level_drift": 5.05214235514863e-09
+    },
+    {
+      "task": "task_004",
+      "config": {
+        "L": 2.0,
+        "cfl": 0.15,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": true,
+        "epsilon": 0.08,
+        "N": 97,
+        "tag": "spatial_e08_N97"
+      },
+      "H_max": 9.93136128890626e-11,
+      "M_max": 5.940504858858997e-11,
+      "C_max": 8.193791900387774e-12,
+      "min_lapse": 0.9996213201413043,
+      "final_min_s_T_in_disk": 0.9996213201413043,
+      "max_midpoint_eikonal_residual": 7.824733749828283e-08,
+      "max_material_label_error": 2.1043867343140121e-10,
+      "max_V_norm": -0.874024484675364,
+      "runtime_seconds": 19.69392237905413,
+      "slice_inverse_residual": 8.326672684688674e-17,
+      "traced_exits": 82,
+      "mismatched_pairs": 0,
+      "unresolved_eligible": 0,
+      "unresolved_critical": 2,
+      "max_label_angle_error": 6.69728935109859e-05,
+      "max_level_drift": 9.845265262764524e-10
+    },
+    {
+      "task": "task_005",
+      "config": {
+        "L": 2.0,
+        "cfl": 0.15,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": true,
+        "epsilon": 0.08,
+        "N": 129,
+        "tag": "spatial_e08_N129"
+      },
+      "H_max": 1.0363376823363524e-11,
+      "M_max": 6.4723925004284144e-12,
+      "C_max": 1.4732354301571142e-12,
+      "min_lapse": 0.9996213201407135,
+      "final_min_s_T_in_disk": 0.9996213201407135,
+      "max_midpoint_eikonal_residual": 4.401700715028767e-08,
+      "max_material_label_error": 1.315561895531836e-10,
+      "max_V_norm": -0.874024424515031,
+      "runtime_seconds": 44.44338166899979,
+      "slice_inverse_residual": 5.551115123125783e-17,
+      "traced_exits": 82,
+      "mismatched_pairs": 0,
+      "unresolved_eligible": 0,
+      "unresolved_critical": 2,
+      "max_label_angle_error": 6.69694381456587e-05,
+      "max_level_drift": 5.973909006362632e-10
+    },
+    {
+      "task": "task_006",
+      "config": {
+        "L": 2.0,
+        "cfl": 0.15,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": true,
+        "epsilon": 0.12,
+        "N": 65,
+        "tag": "spatial_e12_N65"
+      },
+      "H_max": 6.75837304869864e-08,
+      "M_max": 1.5163585369293298e-07,
+      "C_max": 1.4722571660277294e-09,
+      "min_lapse": 0.9991905640635921,
+      "final_min_s_T_in_disk": 0.9991905640635921,
+      "max_midpoint_eikonal_residual": 3.7524083551510046e-07,
+      "max_material_label_error": 2.7627991561196552e-09,
+      "max_V_norm": -0.8892991615910233,
+      "runtime_seconds": 6.453286105999723,
+      "slice_inverse_residual": 5.551115123125783e-17,
+      "traced_exits": 82,
+      "mismatched_pairs": 0,
+      "unresolved_eligible": 0,
+      "unresolved_critical": 2,
+      "max_label_angle_error": 6.608490496606834e-05,
+      "max_level_drift": 1.1391666221438612e-08
+    },
+    {
+      "task": "task_007",
+      "config": {
+        "L": 2.0,
+        "cfl": 0.15,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": true,
+        "epsilon": 0.12,
+        "N": 97,
+        "tag": "spatial_e12_N97"
+      },
+      "H_max": 3.3704833368730647e-10,
+      "M_max": 1.800201168689064e-10,
+      "C_max": 4.171286893098116e-11,
+      "min_lapse": 0.9991905640565776,
+      "final_min_s_T_in_disk": 0.9991905640565776,
+      "max_midpoint_eikonal_residual": 1.6680394843149315e-07,
+      "max_material_label_error": 7.598901299865624e-10,
+      "max_V_norm": -0.8892982575756496,
+      "runtime_seconds": 19.58389736711979,
+      "slice_inverse_residual": 5.551115123125783e-17,
+      "traced_exits": 82,
+      "mismatched_pairs": 0,
+      "unresolved_eligible": 0,
+      "unresolved_critical": 2,
+      "max_label_angle_error": 6.604964016743153e-05,
+      "max_level_drift": 3.569625454599712e-09
+    },
+    {
+      "task": "task_008",
+      "config": {
+        "L": 2.0,
+        "cfl": 0.15,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": true,
+        "epsilon": 0.12,
+        "N": 129,
+        "tag": "spatial_e12_N129"
+      },
+      "H_max": 4.546824722284626e-11,
+      "M_max": 3.049253904929827e-11,
+      "C_max": 7.506247786906139e-12,
+      "min_lapse": 0.9991905640553966,
+      "final_min_s_T_in_disk": 0.9991905640553966,
+      "max_midpoint_eikonal_residual": 9.383317545186287e-08,
+      "max_material_label_error": 3.7161675819907813e-10,
+      "max_V_norm": -0.8892981401247295,
+      "runtime_seconds": 44.305817879969254,
+      "slice_inverse_residual": 5.551115123125783e-17,
+      "traced_exits": 82,
+      "mismatched_pairs": 0,
+      "unresolved_eligible": 0,
+      "unresolved_critical": 2,
+      "max_label_angle_error": 6.603364748913876e-05,
+      "max_level_drift": 1.330222758333388e-09
+    },
+    {
+      "task": "task_009",
+      "config": {
+        "L": 2.0,
+        "cfl": 0.3,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": true,
+        "epsilon": 0.04,
+        "N": 97,
+        "tag": "time_e04_cfl0.3"
+      },
+      "H_max": 1.862275004343994e-11,
+      "M_max": 2.4144128970421397e-11,
+      "C_max": 1.332494596083244e-11,
+      "min_lapse": 0.9999023454148057,
+      "final_min_s_T_in_disk": 0.9999023454148057,
+      "max_midpoint_eikonal_residual": 8.08129065887897e-08,
+      "max_material_label_error": 8.606089799134686e-10,
+      "max_V_norm": -0.8635825603631367,
+      "runtime_seconds": 10.368100265040994,
+      "slice_inverse_residual": 8.326672684688674e-17,
+      "traced_exits": 82,
+      "mismatched_pairs": 0,
+      "unresolved_eligible": 0,
+      "unresolved_critical": 2,
+      "max_label_angle_error": 6.754415917109569e-05,
+      "max_level_drift": 4.594537575917934e-10
+    },
+    {
+      "task": "task_010",
+      "config": {
+        "L": 2.0,
+        "cfl": 0.075,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": true,
+        "epsilon": 0.04,
+        "N": 97,
+        "tag": "time_e04_cfl0.075"
+      },
+      "H_max": 1.781128976946489e-11,
+      "M_max": 2.2008349569863084e-11,
+      "C_max": 5.464651756801685e-13,
+      "min_lapse": 0.9999023454111778,
+      "final_min_s_T_in_disk": 0.9999023454111778,
+      "max_midpoint_eikonal_residual": 5.053693463707987e-09,
+      "max_material_label_error": 3.088811498241917e-11,
+      "max_V_norm": -0.8635825565775322,
+      "runtime_seconds": 43.43266998510808,
+      "slice_inverse_residual": 5.551115123125783e-17,
+      "traced_exits": 82,
+      "mismatched_pairs": 0,
+      "unresolved_eligible": 0,
+      "unresolved_critical": 2,
+      "max_label_angle_error": 6.754415883625242e-05,
+      "max_level_drift": 4.5945375715811254e-10
+    },
+    {
+      "task": "task_011",
+      "config": {
+        "L": 2.0,
+        "cfl": 0.3,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": true,
+        "epsilon": 0.08,
+        "N": 97,
+        "tag": "time_e08_cfl0.3"
+      },
+      "H_max": 1.0704311742548711e-10,
+      "M_max": 6.226633098016521e-11,
+      "C_max": 5.6335731305920943e-11,
+      "min_lapse": 0.9996213201539611,
+      "final_min_s_T_in_disk": 0.9996213201539611,
+      "max_midpoint_eikonal_residual": 3.128489227677278e-07,
+      "max_material_label_error": 1.6713655251465731e-09,
+      "max_V_norm": -0.874024487606407,
+      "runtime_seconds": 11.581041030120105,
+      "slice_inverse_residual": 8.326672684688674e-17,
+      "traced_exits": 82,
+      "mismatched_pairs": 0,
+      "unresolved_eligible": 0,
+      "unresolved_critical": 2,
+      "max_label_angle_error": 6.69728935687175e-05,
+      "max_level_drift": 9.845264620916838e-10
+    },
+    {
+      "task": "task_012",
+      "config": {
+        "L": 2.0,
+        "cfl": 0.075,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": true,
+        "epsilon": 0.08,
+        "N": 97,
+        "tag": "time_e08_cfl0.075"
+      },
+      "H_max": 9.892166252800649e-11,
+      "M_max": 5.978829670932884e-11,
+      "C_max": 8.2971023473363e-12,
+      "min_lapse": 0.9996213201404963,
+      "final_min_s_T_in_disk": 0.9996213201404963,
+      "max_midpoint_eikonal_residual": 1.9564028619356577e-08,
+      "max_material_label_error": 2.578869340297274e-10,
+      "max_V_norm": -0.8740244844850614,
+      "runtime_seconds": 43.62945829797536,
+      "slice_inverse_residual": 5.551115123125783e-17,
+      "traced_exits": 82,
+      "mismatched_pairs": 0,
+      "unresolved_eligible": 0,
+      "unresolved_critical": 2,
+      "max_label_angle_error": 6.697289362644909e-05,
+      "max_level_drift": 9.84526550562581e-10
+    },
+    {
+      "task": "task_013",
+      "config": {
+        "L": 2.0,
+        "cfl": 0.3,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": true,
+        "epsilon": 0.12,
+        "N": 97,
+        "tag": "time_e12_cfl0.3"
+      },
+      "H_max": 3.5812247611843873e-10,
+      "M_max": 1.829523702673308e-10,
+      "C_max": 1.3536113002962269e-10,
+      "min_lapse": 0.9991905640817563,
+      "final_min_s_T_in_disk": 0.9991905640817563,
+      "max_midpoint_eikonal_residual": 6.669254577484907e-07,
+      "max_material_label_error": 2.37392476509779e-09,
+      "max_V_norm": -0.8892982597102116,
+      "runtime_seconds": 11.47984038409777,
+      "slice_inverse_residual": 5.551115123125783e-17,
+      "traced_exits": 82,
+      "mismatched_pairs": 0,
+      "unresolved_eligible": 0,
+      "unresolved_critical": 2,
+      "max_label_angle_error": 6.60496407531852e-05,
+      "max_level_drift": 3.5696245005018e-09
+    },
+    {
+      "task": "task_014",
+      "config": {
+        "L": 2.0,
+        "cfl": 0.075,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": true,
+        "epsilon": 0.12,
+        "N": 97,
+        "tag": "time_e12_cfl0.075"
+      },
+      "H_max": 3.3880998701052434e-10,
+      "M_max": 1.7988138843044732e-10,
+      "C_max": 4.223385676757214e-11,
+      "min_lapse": 0.9991905640549696,
+      "final_min_s_T_in_disk": 0.9991905640549696,
+      "max_midpoint_eikonal_residual": 4.170552392324112e-08,
+      "max_material_label_error": 8.218306243867879e-10,
+      "max_V_norm": -0.8892982574348406,
+      "runtime_seconds": 42.48213200713508,
+      "slice_inverse_residual": 5.551115123125783e-17,
+      "traced_exits": 82,
+      "mismatched_pairs": 0,
+      "unresolved_eligible": 0,
+      "unresolved_critical": 2,
+      "max_label_angle_error": 6.604964032996818e-05,
+      "max_level_drift": 3.5696256176637187e-09
+    },
+    {
+      "task": "task_015",
+      "config": {
+        "L": 2.25,
+        "cfl": 0.15,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": true,
+        "epsilon": 0.04,
+        "N": 109,
+        "tag": "domain_e04"
+      },
+      "H_max": 4.44074377964343e-12,
+      "M_max": 2.5069932024432418e-12,
+      "C_max": 8.826131990432079e-13,
+      "min_lapse": 0.9999023454113958,
+      "final_min_s_T_in_disk": 0.9999023454113958,
+      "max_midpoint_eikonal_residual": 2.021246481298533e-08,
+      "max_material_label_error": 4.544261841821218e-11,
+      "max_V_norm": -0.8635825568091451,
+      "runtime_seconds": 27.79236960806884,
+      "slice_inverse_residual": 5.551115123125783e-17,
+      "traced_exits": 82,
+      "mismatched_pairs": 0,
+      "unresolved_eligible": 0,
+      "unresolved_critical": 2,
+      "max_label_angle_error": 6.754415883758469e-05,
+      "max_level_drift": 4.594537549897082e-10
+    },
+    {
+      "task": "task_016",
+      "config": {
+        "L": 2.25,
+        "cfl": 0.15,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": true,
+        "epsilon": 0.08,
+        "N": 109,
+        "tag": "domain_e08"
+      },
+      "H_max": 4.963787714196144e-11,
+      "M_max": 3.146717261759413e-11,
+      "C_max": 8.128355062404433e-12,
+      "min_lapse": 0.9996213201413043,
+      "final_min_s_T_in_disk": 0.9996213201413043,
+      "max_midpoint_eikonal_residual": 7.824733749828283e-08,
+      "max_material_label_error": 2.1043960324318434e-10,
+      "max_V_norm": -0.8740244846753068,
+      "runtime_seconds": 27.569171713199466,
+      "slice_inverse_residual": 8.326672684688674e-17,
+      "traced_exits": 82,
+      "mismatched_pairs": 0,
+      "unresolved_eligible": 0,
+      "unresolved_critical": 2,
+      "max_label_angle_error": 6.697289351720315e-05,
+      "max_level_drift": 9.84526521072282e-10
+    },
+    {
+      "task": "task_017",
+      "config": {
+        "L": 2.25,
+        "cfl": 0.15,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": true,
+        "epsilon": 0.12,
+        "N": 109,
+        "tag": "domain_e12"
+      },
+      "H_max": 2.493680262283249e-10,
+      "M_max": 1.6465894186329377e-10,
+      "C_max": 4.1647839750989736e-11,
+      "min_lapse": 0.9991905640565776,
+      "final_min_s_T_in_disk": 0.9991905640565776,
+      "max_midpoint_eikonal_residual": 1.6680394843149315e-07,
+      "max_material_label_error": 7.598914483764041e-10,
+      "max_V_norm": -0.8892982575755842,
+      "runtime_seconds": 23.41651900811121,
+      "slice_inverse_residual": 8.326672684688674e-17,
+      "traced_exits": 82,
+      "mismatched_pairs": 0,
+      "unresolved_eligible": 0,
+      "unresolved_critical": 2,
+      "max_label_angle_error": 6.60496401732047e-05,
+      "max_level_drift": 3.5696254598038824e-09
+    },
+    {
+      "task": "task_018",
+      "config": {
+        "L": 2.0,
+        "cfl": 0.15,
+        "Tmax": 0.26,
+        "order": 4,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": true,
+        "epsilon": 0.08,
+        "N": 65,
+        "tag": "order4_N65"
+      },
+      "H_max": 5.203808683719446e-07,
+      "M_max": 2.9076822949392067e-08,
+      "C_max": 2.414545044274563e-08,
+      "min_lapse": 0.999621320148588,
+      "final_min_s_T_in_disk": 0.999621320148588,
+      "max_midpoint_eikonal_residual": 1.7602359636548215e-07,
+      "max_material_label_error": 1.0298715907852696e-09,
+      "max_V_norm": -0.8740251102523701,
+      "runtime_seconds": 5.90265346178785,
+      "slice_inverse_residual": 5.551115123125783e-17,
+      "traced_exits": 82,
+      "mismatched_pairs": 0,
+      "unresolved_eligible": 0,
+      "unresolved_critical": 2,
+      "max_label_angle_error": 6.698240755520501e-05,
+      "max_level_drift": 5.052121398821678e-09
+    },
+    {
+      "task": "task_019",
+      "config": {
+        "L": 2.0,
+        "cfl": 0.15,
+        "Tmax": 0.26,
+        "order": 4,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": true,
+        "epsilon": 0.08,
+        "N": 97,
+        "tag": "order4_N97"
+      },
+      "H_max": 1.0334343732501527e-07,
+      "M_max": 4.360541524649902e-09,
+      "C_max": 4.772299215272508e-09,
+      "min_lapse": 0.9996213201420596,
+      "final_min_s_T_in_disk": 0.9996213201420596,
+      "max_midpoint_eikonal_residual": 7.824733749828283e-08,
+      "max_material_label_error": 1.9850213139882555e-10,
+      "max_V_norm": -0.874024518490923,
+      "runtime_seconds": 18.312276302138343,
+      "slice_inverse_residual": 5.551115123125783e-17,
+      "traced_exits": 82,
+      "mismatched_pairs": 0,
+      "unresolved_eligible": 0,
+      "unresolved_critical": 2,
+      "max_label_angle_error": 6.697289331203393e-05,
+      "max_level_drift": 9.84526444744449e-10
+    },
+    {
+      "task": "task_020",
+      "config": {
+        "L": 2.0,
+        "cfl": 0.15,
+        "Tmax": 0.26,
+        "order": 4,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": true,
+        "epsilon": 0.08,
+        "N": 129,
+        "tag": "order4_N129"
+      },
+      "H_max": 3.272566745024519e-08,
+      "M_max": 1.4127016223497435e-09,
+      "C_max": 1.5095932061325327e-09,
+      "min_lapse": 0.9996213201409532,
+      "final_min_s_T_in_disk": 0.9996213201409532,
+      "max_midpoint_eikonal_residual": 4.401700715028767e-08,
+      "max_material_label_error": 1.3968406292752533e-10,
+      "max_V_norm": -0.8740244351914076,
+      "runtime_seconds": 41.21215927111916,
+      "slice_inverse_residual": 5.551115123125783e-17,
+      "traced_exits": 82,
+      "mismatched_pairs": 0,
+      "unresolved_eligible": 0,
+      "unresolved_critical": 2,
+      "max_label_angle_error": 6.696943814477052e-05,
+      "max_level_drift": 5.973908936973693e-10
+    },
+    {
+      "task": "task_021",
+      "config": {
+        "L": 2.0,
+        "cfl": 0.15,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": true,
+        "epsilon": 0.08,
+        "N": 97,
+        "tag": "negative",
+        "direction": -1
+      },
+      "H_max": 9.866501712862963e-11,
+      "M_max": 5.94049852711831e-11,
+      "C_max": 8.185476342720882e-12,
+      "min_lapse": 0.9996213201413043,
+      "final_min_s_T_in_disk": 0.9996213201413043,
+      "max_midpoint_eikonal_residual": 7.824733749828283e-08,
+      "max_material_label_error": 2.1043831954781211e-10,
+      "max_V_norm": -0.8740244846753789,
+      "runtime_seconds": 18.50487134582363,
+      "slice_inverse_residual": 8.326672684688674e-17,
+      "traced_exits": 82,
+      "mismatched_pairs": 0,
+      "unresolved_eligible": 0,
+      "unresolved_critical": 2,
+      "max_label_angle_error": 6.697289351054181e-05,
+      "max_level_drift": 9.845265366847933e-10
+    },
+    {
+      "task": "task_022",
+      "config": {
+        "L": 2.0,
+        "cfl": 0.15,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": false,
+        "epsilon": 0.0,
+        "N": 65,
+        "tag": "flat"
+      },
+      "H_max": 0.0,
+      "M_max": 0.0,
+      "C_max": 0.0,
+      "min_lapse": 1.0,
+      "final_min_s_T_in_disk": 1.0,
+      "max_midpoint_eikonal_residual": 0.0,
+      "max_material_label_error": 0.0,
+      "max_V_norm": null,
+      "runtime_seconds": 5.765012427000329,
+      "slice_inverse_residual": 0.0
+    },
+    {
+      "task": "task_023",
+      "config": {
+        "L": 2.0,
+        "cfl": 0.15,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 512,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": true,
+        "epsilon": 0.08,
+        "N": 97,
+        "tag": "boundary512"
+      },
+      "H_max": 9.93136128890626e-11,
+      "M_max": 5.940504858858997e-11,
+      "C_max": 8.193791900387774e-12,
+      "min_lapse": 0.9996213201413043,
+      "final_min_s_T_in_disk": 0.9996213201413043,
+      "max_midpoint_eikonal_residual": 7.824733749828283e-08,
+      "max_material_label_error": 2.1043867343140121e-10,
+      "max_V_norm": -0.874024484675364,
+      "runtime_seconds": 18.766390095930547,
+      "slice_inverse_residual": 8.326672684688674e-17,
+      "traced_exits": 82,
+      "mismatched_pairs": 0,
+      "unresolved_eligible": 0,
+      "unresolved_critical": 2,
+      "max_label_angle_error": 8.108803885242821e-06,
+      "max_level_drift": 9.84526160249799e-10
+    }
+  ],
+  "controlled_comparisons": [
+    {
+      "reference": "task_001",
+      "other": "task_000",
+      "epsilon": 0.04,
+      "config": {
+        "L": 2.0,
+        "cfl": 0.15,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": true,
+        "epsilon": 0.04,
+        "N": 65,
+        "tag": "spatial_e04_N65"
+      },
+      "status": "AVAILABLE",
+      "missing": [],
+      "maximum_event_differences": {
+        "s_event": 7.765593723618736e-13,
+        "paired_tau_event": 1.6205647934697254e-12,
+        "fixed_s_a_over_eps": 6.881023528748642e-13
+      }
+    },
+    {
+      "reference": "task_001",
+      "other": "task_002",
+      "epsilon": 0.04,
+      "config": {
+        "L": 2.0,
+        "cfl": 0.15,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": true,
+        "epsilon": 0.04,
+        "N": 129,
+        "tag": "spatial_e04_N129"
+      },
+      "status": "AVAILABLE",
+      "missing": [],
+      "maximum_event_differences": {
+        "s_event": 1.8481050023666512e-13,
+        "paired_tau_event": 3.6970426720017713e-13,
+        "fixed_s_a_over_eps": 1.9954871088856407e-13
+      }
+    },
+    {
+      "reference": "task_001",
+      "other": "task_009",
+      "epsilon": 0.04,
+      "config": {
+        "L": 2.0,
+        "cfl": 0.3,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": true,
+        "epsilon": 0.04,
+        "N": 97,
+        "tag": "time_e04_cfl0.3"
+      },
+      "status": "AVAILABLE",
+      "missing": [],
+      "maximum_event_differences": {
+        "s_event": 5.146660875254838e-12,
+        "paired_tau_event": 1.0688672169578695e-11,
+        "fixed_s_a_over_eps": 4.972078304632532e-12
+      }
+    },
+    {
+      "reference": "task_001",
+      "other": "task_010",
+      "epsilon": 0.04,
+      "config": {
+        "L": 2.0,
+        "cfl": 0.075,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": true,
+        "epsilon": 0.04,
+        "N": 97,
+        "tag": "time_e04_cfl0.075"
+      },
+      "status": "AVAILABLE",
+      "missing": [],
+      "maximum_event_differences": {
+        "s_event": 3.219646771412954e-13,
+        "paired_tau_event": 6.668554597411003e-13,
+        "fixed_s_a_over_eps": 3.3784086639343514e-13
+      }
+    },
+    {
+      "reference": "task_001",
+      "other": "task_015",
+      "epsilon": 0.04,
+      "config": {
+        "L": 2.25,
+        "cfl": 0.15,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": true,
+        "epsilon": 0.04,
+        "N": 109,
+        "tag": "domain_e04"
+      },
+      "status": "AVAILABLE",
+      "missing": [],
+      "maximum_event_differences": {
+        "s_event": 2.7755575615628914e-17,
+        "paired_tau_event": 5.551115123125783e-17,
+        "fixed_s_a_over_eps": 2.7755575615628914e-17
+      }
+    },
+    {
+      "reference": "task_004",
+      "other": "task_003",
+      "epsilon": 0.08,
+      "config": {
+        "L": 2.0,
+        "cfl": 0.15,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": true,
+        "epsilon": 0.08,
+        "N": 65,
+        "tag": "spatial_e08_N65"
+      },
+      "status": "AVAILABLE",
+      "missing": [],
+      "maximum_event_differences": {
+        "s_event": 3.989961139261311e-12,
+        "paired_tau_event": 7.890299524859756e-12,
+        "fixed_s_a_over_eps": 2.5790480862042386e-12
+      }
+    },
+    {
+      "reference": "task_004",
+      "other": "task_005",
+      "epsilon": 0.08,
+      "config": {
+        "L": 2.0,
+        "cfl": 0.15,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": true,
+        "epsilon": 0.08,
+        "N": 129,
+        "tag": "spatial_e08_N129"
+      },
+      "status": "AVAILABLE",
+      "missing": [],
+      "maximum_event_differences": {
+        "s_event": 9.025280522934054e-13,
+        "paired_tau_event": 1.7877366254026583e-12,
+        "fixed_s_a_over_eps": 7.492201303804791e-13
+      }
+    },
+    {
+      "reference": "task_004",
+      "other": "task_011",
+      "epsilon": 0.08,
+      "config": {
+        "L": 2.0,
+        "cfl": 0.3,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": true,
+        "epsilon": 0.08,
+        "N": 97,
+        "tag": "time_e08_cfl0.3"
+      },
+      "status": "AVAILABLE",
+      "missing": [],
+      "maximum_event_differences": {
+        "s_event": 2.228014994720695e-11,
+        "paired_tau_event": 4.523059704553134e-11,
+        "fixed_s_a_over_eps": 1.8728629758157922e-11
+      }
+    },
+    {
+      "reference": "task_004",
+      "other": "task_012",
+      "epsilon": 0.08,
+      "config": {
+        "L": 2.0,
+        "cfl": 0.075,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": true,
+        "epsilon": 0.08,
+        "N": 97,
+        "tag": "time_e08_cfl0.075"
+      },
+      "status": "AVAILABLE",
+      "missing": [],
+      "maximum_event_differences": {
+        "s_event": 1.5956680421425062e-12,
+        "paired_tau_event": 3.1633029529132273e-12,
+        "fixed_s_a_over_eps": 1.2717327191325012e-12
+      }
+    },
+    {
+      "reference": "task_004",
+      "other": "task_016",
+      "epsilon": 0.08,
+      "config": {
+        "L": 2.25,
+        "cfl": 0.15,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": true,
+        "epsilon": 0.08,
+        "N": 109,
+        "tag": "domain_e08"
+      },
+      "status": "AVAILABLE",
+      "missing": [],
+      "maximum_event_differences": {
+        "s_event": 8.326672684688674e-17,
+        "paired_tau_event": 1.6653345369377348e-16,
+        "fixed_s_a_over_eps": 5.551115123125783e-17
+      }
+    },
+    {
+      "reference": "task_004",
+      "other": "task_023",
+      "epsilon": 0.08,
+      "config": {
+        "L": 2.0,
+        "cfl": 0.15,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 512,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": true,
+        "epsilon": 0.08,
+        "N": 97,
+        "tag": "boundary512"
+      },
+      "status": "AVAILABLE",
+      "missing": [],
+      "maximum_event_differences": {
+        "s_event": 0.0,
+        "paired_tau_event": 0.0,
+        "fixed_s_a_over_eps": 0.0
+      }
+    },
+    {
+      "reference": "task_007",
+      "other": "task_006",
+      "epsilon": 0.12,
+      "config": {
+        "L": 2.0,
+        "cfl": 0.15,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": true,
+        "epsilon": 0.12,
+        "N": 65,
+        "tag": "spatial_e12_N65"
+      },
+      "status": "AVAILABLE",
+      "missing": [],
+      "maximum_event_differences": {
+        "s_event": 7.355005493536737e-12,
+        "paired_tau_event": 1.4919121493761622e-11,
+        "fixed_s_a_over_eps": 5.209777054204778e-12
+      }
+    },
+    {
+      "reference": "task_007",
+      "other": "task_008",
+      "epsilon": 0.12,
+      "config": {
+        "L": 2.0,
+        "cfl": 0.15,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": true,
+        "epsilon": 0.12,
+        "N": 129,
+        "tag": "spatial_e12_N129"
+      },
+      "status": "AVAILABLE",
+      "missing": [],
+      "maximum_event_differences": {
+        "s_event": 1.8139933999350433e-12,
+        "paired_tau_event": 3.6102787426273153e-12,
+        "fixed_s_a_over_eps": 1.5187712198994063e-12
+      }
+    },
+    {
+      "reference": "task_007",
+      "other": "task_013",
+      "epsilon": 0.12,
+      "config": {
+        "L": 2.0,
+        "cfl": 0.3,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": true,
+        "epsilon": 0.12,
+        "N": 97,
+        "tag": "time_e12_cfl0.3"
+      },
+      "status": "AVAILABLE",
+      "missing": [],
+      "maximum_event_differences": {
+        "s_event": 5.2488791091320763e-11,
+        "paired_tau_event": 1.0498174551898387e-10,
+        "fixed_s_a_over_eps": 3.815989191302549e-11
+      }
+    },
+    {
+      "reference": "task_007",
+      "other": "task_014",
+      "epsilon": 0.12,
+      "config": {
+        "L": 2.0,
+        "cfl": 0.075,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": true,
+        "epsilon": 0.12,
+        "N": 97,
+        "tag": "time_e12_cfl0.075"
+      },
+      "status": "AVAILABLE",
+      "missing": [],
+      "maximum_event_differences": {
+        "s_event": 3.197136999588679e-12,
+        "paired_tau_event": 6.401545959988653e-12,
+        "fixed_s_a_over_eps": 2.588956826699018e-12
+      }
+    },
+    {
+      "reference": "task_007",
+      "other": "task_017",
+      "epsilon": 0.12,
+      "config": {
+        "L": 2.25,
+        "cfl": 0.15,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": true,
+        "epsilon": 0.12,
+        "N": 109,
+        "tag": "domain_e12"
+      },
+      "status": "AVAILABLE",
+      "missing": [],
+      "maximum_event_differences": {
+        "s_event": 2.7755575615628914e-17,
+        "paired_tau_event": 5.551115123125783e-17,
+        "fixed_s_a_over_eps": 2.7755575615628914e-17
+      }
+    }
+  ],
+  "empirical_residual_scaling": [
+    {
+      "c": 0.04,
+      "residual": "s_error",
+      "epsilon": [
+        0.04,
+        0.08,
+        0.12
+      ],
+      "values": [
+        3.61625617471828e-07,
+        5.812656741814581e-06,
+        2.965147247029759e-05
+      ],
+      "status": "EMPIRICAL_ONLY",
+      "adjacent_slopes": [
+        4.006628928123592,
+        4.018777489042204
+      ],
+      "scope": "Empirical ratios; initial-data and continuum errors are not certified bounds."
+    },
+    {
+      "c": 0.04,
+      "residual": "paired_tau_error",
+      "epsilon": [
+        0.04,
+        0.08,
+        0.12
+      ],
+      "values": [
+        7.23446321376775e-07,
+        1.1628449813186337e-05,
+        5.931895029569201e-05
+      ],
+      "status": "EMPIRICAL_ONLY",
+      "adjacent_slopes": [
+        4.006628999018027,
+        4.018777752593437
+      ],
+      "scope": "Empirical ratios; initial-data and continuum errors are not certified bounds."
+    },
+    {
+      "c": 0.04,
+      "residual": "fixed_s_corrected_residual",
+      "epsilon": [
+        0.04,
+        0.08,
+        0.12
+      ],
+      "values": [
+        9.271336825999424e-07,
+        1.4655837434592077e-05,
+        7.27404421016634e-05
+      ],
+      "status": "EMPIRICAL_ONLY",
+      "adjacent_slopes": [
+        3.9825542209625744,
+        3.9511631692585465
+      ],
+      "scope": "Empirical ratios; initial-data and continuum errors are not certified bounds."
+    },
+    {
+      "c": 0.12,
+      "residual": "s_error",
+      "epsilon": [
+        0.04,
+        0.08,
+        0.12
+      ],
+      "values": [
+        1.1201888524409176e-06,
+        1.800705611802733e-05,
+        9.187041727048983e-05
+      ],
+      "status": "EMPIRICAL_ONLY",
+      "adjacent_slopes": [
+        4.006748460048296,
+        4.01912607524885
+      ],
+      "scope": "Empirical ratios; initial-data and continuum errors are not certified bounds."
+    },
+    {
+      "c": 0.12,
+      "residual": "paired_tau_error",
+      "epsilon": [
+        0.04,
+        0.08,
+        0.12
+      ],
+      "values": [
+        2.2457815674337134e-06,
+        3.6101002021032835e-05,
+        0.00018418437068629112
+      ],
+      "status": "EMPIRICAL_ONLY",
+      "adjacent_slopes": [
+        4.006749363064914,
+        4.0191291831779585
+      ],
+      "scope": "Empirical ratios; initial-data and continuum errors are not certified bounds."
+    },
+    {
+      "c": 0.12,
+      "residual": "fixed_s_corrected_residual",
+      "epsilon": [
+        0.04,
+        0.08,
+        0.12
+      ],
+      "values": [
+        2.686582850311317e-06,
+        4.248319301608473e-05,
+        0.0002109702346504835
+      ],
+      "status": "EMPIRICAL_ONLY",
+      "adjacent_slopes": [
+        3.9830479680109434,
+        3.9525189324535814
+      ],
+      "scope": "Empirical ratios; initial-data and continuum errors are not certified bounds."
+    },
+    {
+      "c": 0.18,
+      "residual": "s_error",
+      "epsilon": [
+        0.04,
+        0.08,
+        0.12
+      ],
+      "values": [
+        1.7692605875641032e-06,
+        2.8445726366538304e-05,
+        0.00014516967085453913
+      ],
+      "status": "EMPIRICAL_ONLY",
+      "adjacent_slopes": [
+        4.00699346319432,
+        4.019841006945659
+      ],
+      "scope": "Empirical ratios; initial-data and continuum errors are not certified bounds."
+    },
+    {
+      "c": 0.18,
+      "residual": "paired_tau_error",
+      "epsilon": [
+        0.04,
+        0.08,
+        0.12
+      ],
+      "values": [
+        3.5574918304526193e-06,
+        5.719657004071843e-05,
+        0.0002918975666340584
+      ],
+      "status": "EMPIRICAL_ONLY",
+      "adjacent_slopes": [
+        4.006996285364855,
+        4.019850232898212
+      ],
+      "scope": "Empirical ratios; initial-data and continuum errors are not certified bounds."
+    },
+    {
+      "c": 0.18,
+      "residual": "fixed_s_corrected_residual",
+      "epsilon": [
+        0.04,
+        0.08,
+        0.12
+      ],
+      "values": [
+        3.8217701876289405e-06,
+        6.046571004905254e-05,
+        0.00030052397225429836
+      ],
+      "status": "EMPIRICAL_ONLY",
+      "adjacent_slopes": [
+        3.983804292321197,
+        3.9545969923819215
+      ],
+      "scope": "Empirical ratios; initial-data and continuum errors are not certified bounds."
+    }
+  ],
+  "time_reversal_control": {
+    "positive_task": "task_004",
+    "negative_task": "task_021",
+    "max_a_oddness_error": 3.469446951953614e-18,
+    "max_s_oddness_error": 0.0,
+    "paired_clock_direct_discrepancy": 2.220446049250313e-16
+  }
+}

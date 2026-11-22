@@ -1,0 +1,191 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-nodecimaldot]{babel}
+\usepackage{lmodern,amsmath,amssymb,graphicx,booktabs,array,microtype}
+\usepackage[margin=23mm]{geometry}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue]{hyperref}
+\usepackage{enumitem,float}
+\setlist{nosep}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\dd}{\mathrm d}
+\newcommand{\Ric}{\operatorname{Ric}}
+\title{Fase 5: validación numérica de la reconexión\newline y campaña acotada en Picasso}
+\author{Nota de investigación, resultados reproducibles y protocolo de ejecución}
+\date{14 de noviembre de 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+Se integra el sistema no lineal completo que representa el ejemplo de vacío con un Killing espacial de las fases anteriores. Las veinticuatro configuraciones ejecutadas localmente contrastan las predicciones reservadas, las restricciones de Einstein y la conectividad relativa a una frontera material. Se reconstruye el tiempo gaussiano desde coordenadas armónicas, se integra el reloj propio central y se trazan líneas sobre las secciones reconstruidas. Los residuos de las predicciones corregidas son compatibles con la potencia de amplitud esperada; las variaciones por refinamiento son mucho menores que la señal. Se proporciona una réplica en Picasso mediante prueba inicial, array y resumen, con tratamiento de fallos parciales. No se han enviado trabajos a Picasso desde esta sesión: la validación local está realizada y la ejecución remota queda preparada.
+\end{abstract}
+
+\section{Resultado cuantitativo}
+Se conservan los datos y coeficientes de la fase 4. La amplitud $\eps$ no es un parámetro de gravedad modificada. Se usan las amplitudes reservadas $0.04,0.08,0.12$ y etiquetas materiales $c=0.04,0.12,0.18$. El tiempo gaussiano del cociente se denota aquí por $s$, para distinguirlo del tiempo armónico $T$ del integrador.
+\begin{align}
+ a(s,\eps)/\eps&=q(s)+\eps^2b(s)+O(\eps^4),&q(s)&=s-\tfrac23s^3,\\
+ b(s)&=-\tfrac{32}{9}s+\tfrac{155}{27}s^3-\tfrac75s^5
+       +\tfrac{188}{315}s^7-\tfrac{64}{567}s^9.\label{b}
+\end{align}
+Para $q(s_0)=c$, $D=-b(s_0)/q'(s_0)$ y
+$Q_2(s)=s^3/3-4s^5/15+4s^7/63$, se comparan las predicciones fijadas
+\begin{equation}
+ s_*^{(2)}=s_0+\eps^2D,\qquad
+ \Delta\tau_*^{(2)}=2s_0+\eps^2[2D+Q_2(s_0)].\label{pred}
+\end{equation}
+Las magnitudes son adimensionales en la normalización de frontera inicial $r=1$. No se ajusta ningún coeficiente con los resultados de esta fase. Para $c=0.12$, la malla $97^2$ da:
+\begin{center}
+\small
+\begin{tabular}{@{}rrrrr@{}}
+\toprule
+$\eps$ & $s_*^{\rm num}$ & $\Delta\tau_*^{\rm num}$ & $s_*^{\rm num}-s_*^{(2)}$ & $\Delta\tau_*^{\rm num}-\Delta\tau_*^{(2)}$\\
+\midrule
+0.04 & 0.1218811276 & 0.2437631987 & $1.12019\,10^{-6}$ & $2.24578\,10^{-6}$\\
+0.08 & 0.1239785053 & 0.2479608498 & $1.80071\,10^{-5}$ & $3.61010\,10^{-5}$\\
+0.12 & 0.1275198532 & 0.2550485929 & $9.18704\,10^{-5}$ & $1.84184\,10^{-4}$\\
+\bottomrule
+\end{tabular}
+\end{center}
+Las dos últimas columnas contienen el resto físico de la aproximación perturbativa junto con el error numérico, no una estimación del error del integrador. En la malla $129^2$, los cocientes entre amplitudes dan exponentes empíricos $4.00675$ y $4.01913$ para el resto de $\Delta\tau_*$. La máxima variación entre los controles de orden espacial seis, para las tres etiquetas, es $5.25\,10^{-11}$ en $s_*$ y $1.05\,10^{-10}$ en $\Delta\tau_*$. Son indicadores de sensibilidad, no cotas certificadas ni intervalos estadísticos.
+
+\section{Sistema dinámico y cambio de reloj}
+La reconstrucción adaptada al Killing conserva el modelo de vacío
+\begin{equation}
+ g_4=e^{-2\phi}h+e^{2\phi}\dd z^2,\qquad
+ \Ric[h]=2\dd\phi\otimes\dd\phi,\qquad\Box_h\phi=0.
+\end{equation}
+El escalar representa la norma del Killing; no se añade materia en cuatro dimensiones. Se integran las seis componentes de $h_{ab}$, sus velocidades, $\phi$, $\partial_T\phi$ y un reloj gaussiano pasivo. Con $C^a=h^{bc}\Gamma^a_{bc}$ se usa la reducción armónica
+\begin{equation}
+ R_{ab}-\nabla_{(a}C_{b)}=2\phi_a\phi_b,
+ \qquad R_{ab}-\nabla_{(a}C_{b)}
+ =-\tfrac12h^{cd}\partial_c\partial_dh_{ab}+Q_{ab}(h,\partial h).
+\end{equation}
+Este enfoque de ecuaciones de onda tiene antecedentes en relatividad numérica \cite{Pretorius}. Se mantiene el término $C^a\phi_a$ de la ecuación escalar covariante; no se descarta suponiendo que la restricción discreta es exactamente cero. Los signos y contracciones se contrastan con una implementación independiente del tensor de Ricci. No se resuelve el sistema degenerado de seis ecuaciones de Ricci sin reducción de gauge.
+
+Inicialmente $h_{00}=-1$, $h_{0i}=0$, $h_{ij}=e^{2\lambda}\delta_{ij}$, $\partial_T h_{00}=\partial_T h_{0i}=0$, $\partial_T h_{xy}=-\eps^2(1-r^2)^2$, y las otras velocidades espaciales son cero. Los datos escalares son
+\begin{equation}
+ \phi_0=\eps xy,\qquad \partial_T\phi_0=\eps e^{-2\lambda}(1-r^2).
+\end{equation}
+La función radial satisface
+\begin{equation}
+ \lambda''+r^{-1}\lambda'=-\eps^2r^2-e^{-2\lambda}
+ \left[\eps^2(1-r^2)^2+\tfrac14\eps^4(1-r^2)^4\right],
+ \quad\lambda'(0)=0,\quad\lambda(2)=0.
+\end{equation}
+Se tabula hasta $r=3.2$ continuando esta misma ODE más allá de $r=2$, sin cambiar su normalización. Una resolución independiente por disparo y DOP853 concuerda con la colocación BVP en $\lambda$ hasta $2.80\,10^{-15}$ en $r\leq2$, y hasta $5.39\,10^{-14}$ en toda la extensión. Esta comparación numérica no es una certificación por intervalos. El solver de producción lee la tabla incluida y sólo necesita NumPy; SciPy y SymPy se reservan para las auditorías locales adicionales.
+
+En la línea central, fijada por simetría, se integran
+\begin{equation}
+ \frac{\dd s}{\dd T}=\sqrt{-h_{00}(T,0)},\qquad
+ \frac{\dd\tau}{\dd T}=e^{-a}\sqrt{-h_{00}(T,0)}.
+\end{equation}
+El intervalo emparejado se calcula mediante
+$\dd(\Delta\tau)/\dd T=2\cosh(a)\sqrt{-h_{00}}$ en la rama positiva. Una evolución independiente hacia $T<0$ verifica directamente esta construcción: el máximo desacuerdo de $\tau_+(T)-\tau_-(-T)$ con el intervalo integrado es $1.67\,10^{-16}$ para $\eps=0.08$.
+
+La conversión perturbativa proporciona otro control independiente:
+\begin{align}
+ s&=T-\eps^2\xi^0(T)+O(\eps^4),&
+ \xi^0(T)&=\tfrac13T^3-\tfrac4{15}T^5+\tfrac8{105}T^7,\\
+ a(T)/\eps&=q(T)+\eps^2b_H(T)+O(\eps^4),&
+ b_H&=b-q'\xi^0.
+\end{align}
+Comparar directamente $a(T)$ con $b(s)$ sin esta conversión introduciría un error de gauge del mismo orden que la retroacción buscada.
+
+\section{Discretización, restricciones y convergencia}
+Se utiliza RK4 clásico, diferencias centradas de orden seis y, como control, orden cuatro. El dominio de referencia es $[-2,2]^2$, con $N=65,97,129$ puntos por dirección. El paso nominal es $\Delta T=\nu h$, ajustado para terminar exactamente en $|T|=0.26$; $\nu=0.15$ en la serie principal y $\nu=0.30,0.075$ en los controles temporales a $N=97$. Se reconstruyen secciones $s=0,0.05,0.10,0.15,0.20,0.24$; el control negativo usa sus opuestas.
+
+Las cuatro capas exteriores siguen la tangente inicial de los datos. Es una frontera auxiliar de la campaña local, no una condición de frontera de Einstein con buena formulación demostrada. La literatura sobre problemas de onda con frontera exige hipótesis específicas \cite{Kreiss}; no autoriza a atribuirlas a este cierre. Se amplía el cuadrado a $[-2.25,2.25]^2$ con $N=109$, manteniendo $h=1/24$. Los eventos centrales cambian menos de $4\,10^{-16}$ en los relojes comparados. El refinamiento disminuye la contaminación de la malla más gruesa en las restricciones. La propagación finita del PDE no se identifica con el dominio algebraico de dependencia del stencil RK4.
+
+Se calculan, de forma independiente de la ecuación de aceleración reducida,
+\begin{align}
+ \mathcal H&=R[\gamma]+(\operatorname{tr}K)^2-K_{ij}K^{ij}
+       -2(\Pi^2+D_i\phi D^i\phi),\\
+ \mathcal M_i&=D_jK^j{}_i-D_i\operatorname{tr}K+2\Pi D_i\phi,
+ \qquad C^a=h^{bc}\Gamma^a_{bc}.
+\end{align}
+Estas restricciones se evalúan en cortes armónicos $T=\mathrm{const.}$, con $\Pi=(\phi_T-\beta^i\phi_i)/\alpha$ y $K_{ij}=-(\gamma_{ij,T}-D_i\beta_j-D_j\beta_i)/(2\alpha)$. La tabla presenta máximos espaciales en $r\leq1.1$ y sobre los tiempos de diagnóstico guardados, para $\eps=0.08$:
+\begin{center}
+\begin{tabular}{@{}rrrr@{}}
+\toprule
+$N$ & $\|\mathcal H\|_\infty$ & $\|\mathcal M\|_\infty$ & $\|C\|_\infty$\\
+\midrule
+65 & $4.32\,10^{-8}$ & $9.28\,10^{-8}$ & $5.56\,10^{-10}$\\
+97 & $9.89\,10^{-11}$ & $5.92\,10^{-11}$ & $8.19\,10^{-12}$\\
+129 & $1.06\,10^{-11}$ & $6.23\,10^{-12}$ & $1.47\,10^{-12}$\\
+\bottomrule
+\end{tabular}
+\end{center}
+En las tres amplitudes con $N=129$, los máximos son $4.51\,10^{-11}$, $3.00\,10^{-11}$ y $7.52\,10^{-12}$, respectivamente. El control plano conserva cero en estas restricciones. El mínimo lapse muestreado permanece positivo; el solver aborta ante pérdida de signatura o valores no finitos.
+
+\begin{figure}[H]
+\centering\includegraphics[width=\linewidth]{figures/scaling_constraints.pdf}
+\caption{Izquierda: restos medidos a una etiqueta fija y coeficientes analíticos sin ajuste. Derecha: reducción de la restricción de Hamilton bajo refinamiento. El régimen próximo al redondeo y la contribución de la frontera impiden interpretar toda la curva de orden seis como una única ley asintótica.}
+\end{figure}
+
+Las comprobaciones adicionales incluyen 48 pruebas tensoriales de referencia, 25 comprobaciones de una segunda formulación puntual, 13 identidades de conversión armónica y pruebas independientes del analizador de eventos. La integración de un Kasner curvo exacto da órdenes temporales $3.940$ y $3.970$. En datos iniciales resueltos de forma independiente, las restricciones dan órdenes espaciales $4.001/4.007$ y $5.939/6.006$ para Hamilton/momento. Son controles distintos de la evolución de reconexión. En esta última, muchas diferencias centrales ya están alrededor de $10^{-12}$; no se impone un orden aparente cuando la diferencia queda sin resolver. La interpolación de eventos es Hermite cúbica y detecta cruces múltiples o no transversales.
+
+\section{Reconstrucción de secciones y trazado de conectividad}
+El reloj gaussiano fuera del centro se obtiene con la ecuación eikonal
+\begin{equation}
+ h^{ab}s_as_b=-1,\qquad
+ s_T=\beta^i s_i+\alpha\sqrt{1+\gamma^{ij}s_is_j},\qquad s(0,x,y)=0.
+\end{equation}
+Se invierte $s(T,x,y)=s_{\rm objetivo}$ en cada punto mediante Hermite cúbica. El escalar exportado es $\phi(T_s(x,y),x,y)$, no el valor en una sección de $T$ constante. Se guarda también $T_s$. La evaluación independiente del residuo eikonal usa diferencias temporales de punto medio: su error de diagnóstico es de segundo orden en $\Delta T$. Para $\eps=0.08$ disminuye de $1.76\,10^{-7}$ a $7.82\,10^{-8}$ y $4.40\,10^{-8}$ en la serie principal. No se presenta como una cota del error eikonal del esquema. En los estados finales, $\min_{r\leq1.1}s_T\geq0.99919$; las secciones requeridas están completas.
+
+Para la frontera inicial $r=1$, con etiqueta $\theta$, se integran conjuntamente las trayectorias materiales definidas por
+\begin{equation}
+ n^a=-h^{ab}s_b,\quad D\phi^a=(h^{ab}+n^an^b)\phi_b,\quad
+ V^a=n^a-\frac{n\phi}{|D\phi|^2}D\phi^a.
+\end{equation}
+En el continuo, $V(s)=1$ y $V(\phi)=0$. Las trayectorias se parametrizan por $T$ y se interpolan a su propio valor objetivo de $s$. Se comprueban $V^0>0$, $|D\phi|^2>0$ y carácter temporal. El máximo muestreado de $h(V,V)$ en toda la campaña es $-0.86358$, y el error máximo de conservación de $\phi=\eps\sin(2\theta)/2$ es $2.77\,10^{-9}$.
+
+El auditor reconstruye el valor, gradiente y Hessiano del mismo interpolante cúbico para seguir curvas de nivel y detectar su primera salida del polígono material. La silla central se evalúa con un parche polinómico simétrico fijo para evitar el salto de stencil del gradiente cúbico en el origen. Una tolerancia explícita excluye las etiquetas próximas al nivel crítico; no se asigna una salida artificial por agotar un tiempo de integración.
+
+\begin{figure}[H]
+\centering\includegraphics[width=\linewidth]{figures/connectivity.pdf}
+\caption{Datos no lineales para $\eps=0.08$. Colores: los siete niveles materiales $c=-0.18,-0.12,-0.04,0,0.04,0.12,0.18$. Negro discontinuo: nivel crítico instantáneo. La frontera se transporta con la solución. La rama negativa procede de una integración independiente. Las curvas ilustran el resultado; el contraste de parejas utiliza el trazador de primera salida.}
+\end{figure}
+
+Para una entrada norte o sur con etiqueta $c$, el signo de $\eps c-a(s)$ determina el destino previsto. En cada configuración no plana se trazan catorce entradas sobre seis secciones: 82 salidas elegibles y dos casos cardinales críticos sin resolver en $s=0$. En total, 1886 trazados resueltos coinciden con la pareja prevista, sin casos elegibles pendientes. Son muestreos repetidos bajo diferentes resoluciones y controles, no 1886 experimentos independientes ni un certificado de todas las líneas.
+
+Con 256 puntos de frontera, el máximo error de etiqueta de salida es $6.70\,10^{-5}$ rad en el caso de referencia. Al aumentar a 512 baja a $8.11\,10^{-6}$ rad. Reducir a la mitad el paso del trazador cambia las etiquetas como máximo $1.29\,10^{-8}$ rad. Domina la representación poligonal de la frontera, no la integración de la línea. La posición de la salida dentro de cada segmento cambia con el refinamiento; estos dos tamaños no justifican atribuir un orden universal al error angular.
+
+\section{Campaña reproducible en Picasso}
+El paquete contiene veinticuatro configuraciones explícitas, sin generación aleatoria ni adaptación de parámetros tras inspeccionar el resultado:
+\begin{center}
+\small\begin{tabular}{@{}p{.48\linewidth}p{.33\linewidth}r@{}}
+\toprule
+Control & Valores & Tareas\\
+\midrule
+Serie principal: tres amplitudes y tres mallas & $N=65,97,129$ & 9\\
+Paso temporal a $N=97$ & $\nu=0.30,0.075$ & 6\\
+Dominio ampliado, mismo paso espacial & $L=2.25$, $N=109$ & 3\\
+Orden espacial cuatro, $\eps=0.08$ & $N=65,97,129$ & 3\\
+Rama temporal negativa & $\eps=0.08$, $N=97$ & 1\\
+Control plano & $\eps=0$, $N=65$ & 1\\
+Frontera refinada & $\eps=0.08$, 512 puntos & 1\\
+\midrule
+Total & & 24\\
+\bottomrule
+\end{tabular}
+\end{center}
+La prueba inicial se ejecuta en un nodo asignado, comprueba Python/NumPy y ejecuta soluciones exactas y una evolución pequeña. Sólo tras su éxito se habilita el array completo, sin throttle. Cada tarea solicita un núcleo, 4 GB y un máximo de treinta minutos en \texttt{cpu\_parti}. La prueba inicial y el resumen tienen diez minutos cada uno. El techo solicitado para el array es doce horas-núcleo; no es una predicción del tiempo en cola. En el entorno local, las 24 evoluciones sumaron 339 segundos al sumar los tiempos de pared de las tareas, ejecutadas con concurrencia; el trazado añade unos cinco segundos por caso en este host. Estas cifras no son benchmarks de Picasso.
+
+No se instala software ni se accede a Internet en el clúster. Se prueba primero el módulo \texttt{python/3.11.4}, después alternativas disponibles. El intérprete y la versión de NumPy quedan registrados y se reutilizan en todo el array. La ausencia de NumPy produce un fallo explícito de la prueba; no se oculta mediante una instalación improvisada.
+
+Cada envío conserva una copia de código, datos y configuraciones en una carpeta con identificador único. Los JOBID se guardan en la raíz y en el registro del envío. El resumen depende de la terminación de prueba y array, incluso con fallos, y usa ese identificador exacto: no busca carpetas por glob ni adivina a qué campaña pertenecen. El ZIP de resultados incluye estado, configuraciones, entradas, salidas, análisis y logs. La finalización de procesos se distingue de la aceptación científica. El analizador de eventos positivos estudia 22 configuraciones; el control plano y la rama negativa tienen auditorías separadas. Sus 54 filas de escalado conservan el estado \texttt{NOT\_ESTABLISHED} porque no se reúnen todas las estimaciones de error que exige su protocolo conservador. Los exponentes aquí publicados son razones empíricas guardadas por la auditoría complementaria, no la aceptación automática de esas filas. El resumen automático conserva \texttt{DIAGNOSTIC\_ONLY} y no convierte controles numéricos en cotas rigurosas.
+
+\section{Alcance y cierre pendiente}
+La evidencia local respalda tres afirmaciones acotadas: la evolución satisface las restricciones con errores que disminuyen bajo los controles descritos; el cambio de conectividad de las etiquetas muestreadas ocurre en la solución no lineal con la frontera prescrita; y los restos de las leyes de fase 4 presentan el escalado esperado, con variaciones numéricas mucho menores que la corrección medida. Se proporcionan los datos brutos para revisar estas afirmaciones.
+
+Quedan separados de estos resultados: una prueba general de estabilidad del cierre de frontera; cotas certificadas del error de la solución de Cauchy y del transporte; un diagnóstico global de todas las líneas; y la ejecución efectiva en Picasso. Para cerrar la fase remota deben regresar los 24 estados finales, el runtime y la contabilidad Slurm. Se repetirá entonces el análisis sin cambiar los coeficientes de fase 4, comprobando también la coincidencia con los resultados locales y las razones de cualquier fallo parcial. No se exige un orden aparente cuando las diferencias están al nivel de redondeo.
+
+El sector estudiado es $F=\dd(e^\phi)\wedge\dd z$, adaptado a la simetría y a la elección material de frontera. La validación no convierte sus líneas en un observable independiente de toda elección geométrica u operacional. Tampoco constituye un límite de exclusión de TEGR: su dinámica métrica es equivalente a la de relatividad general. Para excluir una extensión teleparalela habría que especificar su acción, resolver sus restricciones y evolución, y obtener una corrección distinguible en un observable operacional. $\eps$ parametriza estos datos iniciales, no una desviación respecto a TEGR.
+
+\paragraph{Contenido del paquete.}
+\texttt{solver.py}, \texttt{code/} y \texttt{data/} contienen el integrador y las tablas iniciales; \texttt{configs/} fija las 24 tareas; \texttt{hpc/} incluye envío, runtime, resumen y archivado; \path{results/local_validation/} conserva todas las evoluciones locales, eventos y auditorías; \texttt{audit/} reúne las verificaciones independientes; \texttt{report/} contiene esta nota, sus figuras y fuentes. Las instrucciones de transferencia y lanzamiento están también en \texttt{LEEME.txt}. Los manifiestos permiten detectar cambios de entrada.
+
+\begin{thebibliography}{9}
+\bibitem{Pretorius} F. Pretorius, Numerical Relativity Using a Generalized Harmonic Decomposition, \emph{Class. Quantum Grav.} \textbf{22}, 425--452 (2005). \href{https://doi.org/10.1088/0264-9381/22/2/014}{doi:10.1088/0264-9381/22/2/014}; \href{https://arxiv.org/abs/gr-qc/0407110}{arXiv:gr-qc/0407110}.
+\bibitem{Kreiss} H.-O. Kreiss, O. Reula, O. Sarbach y J. Winicour, Boundary Conditions for Coupled Quasilinear Wave Equations with Application to Isolated Systems, \emph{Commun. Math. Phys.} \textbf{289}, 1099--1129 (2009). \href{https://doi.org/10.1007/s00220-009-0788-2}{doi:10.1007/s00220-009-0788-2}.
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,23 @@
+[
+  {
+    "epsilon": 0.04,
+    "classification_changes": [],
+    "max_endpoint_step_difference": 5.1659916344704016e-09,
+    "exits_coarse": 96,
+    "exits_fine": 96
+  },
+  {
+    "epsilon": 0.08,
+    "classification_changes": [],
+    "max_endpoint_step_difference": 2.1098713443024053e-08,
+    "exits_coarse": 96,
+    "exits_fine": 96
+  },
+  {
+    "epsilon": 0.12,
+    "classification_changes": [],
+    "max_endpoint_step_difference": 4.7436079952944965e-08,
+    "exits_coarse": 96,
+    "exits_fine": 96
+  }
+]

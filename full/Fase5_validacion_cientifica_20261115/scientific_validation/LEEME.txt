@@ -1,0 +1,33 @@
+VALIDACION CIENTIFICA DE FASE 5 — 15/11/2026
+
+Leer primero Validacion_cientifica_Fase5_20261115.pdf.
+El informe cierra la validacion numerica ACOTADA: predicciones reservadas y
+conectividad muestreada, con frontera material prescrita. No certifica cotas
+rigurosas, un teorema global de reconexion o independencia de tetrada.
+
+scientific_validation.json: 27 observables originales, presupuesto de
+sensibilidades, 18 cambios de salida y diagnosticos de 45 evoluciones.
+small_amplitude_validation.json: extension a epsilon=.01,.02 y exponentes.
+supplementary_runs.json: los 21 controles nuevos, configuraciones y hashes.
+tracing_refinement.json: repeticion del trazado, 288 salidas comparadas.
+independent_equations/: referencia tensorial, Kasner y control del Q de produccion.
+extra/ y near_events/: datos brutos de los controles locales.
+
+La carpeta ../audit_picasso/results/fase5_20261115_01 contiene los resultados
+recibidos de Picasso. No se modificaron las etiquetas de su analisis original.
+El codigo de esos datos usa aceptacion NOT_ESTABLISHED como constante y mezcla
+requisitos de coincidencia de extremos finos no satisfechos por su diseno.
+Los criterios y las limitaciones del dictamen suplementario estan explicitados
+en el PDF y scientific_validation.json; no se sustituye ese archivo original.
+
+Reproducir el analisis LOCAL (sin conectar a Picasso):
+  python3 scientific_validation/reproduce.py
+Requiere Python>=3.10, NumPy y SciPy. Omite controles ya completados; para volver
+ a evolucionarlos, mover previamente scientific_validation/extra y near_events.
+Para regenerar PDF/figura: python3 scientific_validation/make_report.py
+Requiere tambien Matplotlib, ReportLab y DejaVu Sans.
+
+Los 21 controles nuevos se ejecutaron localmente, no en Picasso. Los scripts
+de reproduccion escriben solo en esta copia. No se necesitan envios adicionales
+al cluster para obtener los resultados entregados. El informe original y el
+protocolo previo se conservan en provenance/ para comprobar el alcance inicial.

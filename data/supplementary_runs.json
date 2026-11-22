@@ -1,0 +1,538 @@
+{
+  "date": "2026-11-15",
+  "execution": "Local assistant runtime; NOT Picasso",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "unique_scientific_controls": 21,
+  "cases": [
+    {
+      "directory": "extra/e01_small_N129_cfl0.075",
+      "config": {
+        "L": 2.0,
+        "cfl": 0.075,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": false,
+        "epsilon": 0.01,
+        "N": 129,
+        "tag": "e01_small_N129_cfl0.075"
+      },
+      "runtime_seconds": 31.7174242279998,
+      "evolution_sha256": "1ee5bcb5969dc3925a1cfd72961d68c102d0688a244d1409f38be7a518d73fb3"
+    },
+    {
+      "directory": "extra/e01_small_N129_cfl0.15",
+      "config": {
+        "L": 2.0,
+        "cfl": 0.15,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": false,
+        "epsilon": 0.01,
+        "N": 129,
+        "tag": "e01_small_N129_cfl0.15"
+      },
+      "runtime_seconds": 16.463053554999988,
+      "evolution_sha256": "804431dfa928811e391fa909d2a954a67417eaf9f4146f41ef529411142286f0"
+    },
+    {
+      "directory": "extra/e01_small_N97_cfl0.075",
+      "config": {
+        "L": 2.0,
+        "cfl": 0.075,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": false,
+        "epsilon": 0.01,
+        "N": 97,
+        "tag": "e01_small_N97_cfl0.075"
+      },
+      "runtime_seconds": 14.248647018000156,
+      "evolution_sha256": "0f46aef6ab820e04cd6dbaf26fa2dae9e239459ea9f7e5fd8641d7ddf8a37f9f"
+    },
+    {
+      "directory": "extra/e02_small_N129_cfl0.075",
+      "config": {
+        "L": 2.0,
+        "cfl": 0.075,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": false,
+        "epsilon": 0.02,
+        "N": 129,
+        "tag": "e02_small_N129_cfl0.075"
+      },
+      "runtime_seconds": 31.74875505199998,
+      "evolution_sha256": "2646984f0b1ab105f8df770417c10535405ec28aa4793fae31f5c930db72102a"
+    },
+    {
+      "directory": "extra/e02_small_N129_cfl0.15",
+      "config": {
+        "L": 2.0,
+        "cfl": 0.15,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": false,
+        "epsilon": 0.02,
+        "N": 129,
+        "tag": "e02_small_N129_cfl0.15"
+      },
+      "runtime_seconds": 16.319399846000124,
+      "evolution_sha256": "c3284f8ac58775dad3ebe628f87b92f15fcdfea66443b97378adedf5a251acb9"
+    },
+    {
+      "directory": "extra/e02_small_N97_cfl0.075",
+      "config": {
+        "L": 2.0,
+        "cfl": 0.075,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": false,
+        "epsilon": 0.02,
+        "N": 97,
+        "tag": "e02_small_N97_cfl0.075"
+      },
+      "runtime_seconds": 13.6481844179998,
+      "evolution_sha256": "81b45537ac32737e02037f77191da22b96273ae55146f693ebaf86921de9f4a6"
+    },
+    {
+      "directory": "extra/e04_N129_dt2",
+      "config": {
+        "L": 2.0,
+        "cfl": 0.075,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": false,
+        "epsilon": 0.04,
+        "N": 129,
+        "tag": "e04_N129_dt2"
+      },
+      "runtime_seconds": 32.14394330499999,
+      "evolution_sha256": "8df544764432fdfc8c38f40f2d5f5e0d96febe52519433c729f8d7e074049bbb"
+    },
+    {
+      "directory": "extra/e04_N129_dt_coarse",
+      "config": {
+        "L": 2.0,
+        "cfl": 0.3,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": false,
+        "epsilon": 0.04,
+        "N": 129,
+        "tag": "e04_N129_dt_coarse"
+      },
+      "runtime_seconds": 8.62619430399991,
+      "evolution_sha256": "87c5942048f4d1f50f30d41c3c47a2cac8f33558399335e01f72ef15c423ab5d"
+    },
+    {
+      "directory": "extra/e04_N65_dt2",
+      "config": {
+        "L": 2.0,
+        "cfl": 0.075,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": false,
+        "epsilon": 0.04,
+        "N": 65,
+        "tag": "e04_N65_dt2"
+      },
+      "runtime_seconds": 4.724710953000113,
+      "evolution_sha256": "702eed8a694ee4109dd71fb381c10ade717d6d7cf6ee6b412da54ed4c53b683a"
+    },
+    {
+      "directory": "extra/e04_shoot_direct",
+      "config": {
+        "L": 2.0,
+        "cfl": 0.075,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": false,
+        "epsilon": 0.04,
+        "N": 129,
+        "tag": "e04_shoot_direct"
+      },
+      "runtime_seconds": 32.43398931600018,
+      "evolution_sha256": "2ffa4b5a0b2560168746f5ec2ed6fb3d9c12c41962065c5999244738eb7902f6"
+    },
+    {
+      "directory": "extra/e08_N129_dt2",
+      "config": {
+        "L": 2.0,
+        "cfl": 0.075,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": false,
+        "epsilon": 0.08,
+        "N": 129,
+        "tag": "e08_N129_dt2"
+      },
+      "runtime_seconds": 32.35171086199989,
+      "evolution_sha256": "ae9c6988a3223b6abea936a0be4d7988ff7da950eebffada988cdd6f067dd215"
+    },
+    {
+      "directory": "extra/e08_N129_dt_coarse",
+      "config": {
+        "L": 2.0,
+        "cfl": 0.3,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": false,
+        "epsilon": 0.08,
+        "N": 129,
+        "tag": "e08_N129_dt_coarse"
+      },
+      "runtime_seconds": 8.287052355000014,
+      "evolution_sha256": "445619727d8d16fd4473de1c04ae7f760ff1c4a854ee268d8a9905e9cf122635"
+    },
+    {
+      "directory": "extra/e08_N65_dt2",
+      "config": {
+        "L": 2.0,
+        "cfl": 0.075,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": false,
+        "epsilon": 0.08,
+        "N": 65,
+        "tag": "e08_N65_dt2"
+      },
+      "runtime_seconds": 4.587513459999855,
+      "evolution_sha256": "3a95b294474bdd4c220f38e0647069aa0e068e0e5c35a35a49724f1b89d1cd66"
+    },
+    {
+      "directory": "extra/e08_shoot_direct",
+      "config": {
+        "L": 2.0,
+        "cfl": 0.075,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": false,
+        "epsilon": 0.08,
+        "N": 129,
+        "tag": "e08_shoot_direct"
+      },
+      "runtime_seconds": 31.608776390999992,
+      "evolution_sha256": "688a8db2b2f2d5604d624eb53e5b9bc7773b213192827b2dd46805cbb3515a4c"
+    },
+    {
+      "directory": "extra/e12_N129_dt2",
+      "config": {
+        "L": 2.0,
+        "cfl": 0.075,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": false,
+        "epsilon": 0.12,
+        "N": 129,
+        "tag": "e12_N129_dt2"
+      },
+      "runtime_seconds": 32.42458475599983,
+      "evolution_sha256": "9aa6198da9e41f0626093951ef95863217d7228b18011b660a878c413adb5f33"
+    },
+    {
+      "directory": "extra/e12_N129_dt_coarse",
+      "config": {
+        "L": 2.0,
+        "cfl": 0.3,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": false,
+        "epsilon": 0.12,
+        "N": 129,
+        "tag": "e12_N129_dt_coarse"
+      },
+      "runtime_seconds": 8.821928607000018,
+      "evolution_sha256": "4c403b7b736d0ddd333b030afe8d0400e9256891708e527dbc2941236dc5bb54"
+    },
+    {
+      "directory": "extra/e12_N65_dt2",
+      "config": {
+        "L": 2.0,
+        "cfl": 0.075,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": false,
+        "epsilon": 0.12,
+        "N": 65,
+        "tag": "e12_N65_dt2"
+      },
+      "runtime_seconds": 4.55860339700007,
+      "evolution_sha256": "1353acfa5ec5c204166c00a39bf087cf3802bf69f4b67a016814ef6812b1acd1"
+    },
+    {
+      "directory": "extra/e12_shoot_direct",
+      "config": {
+        "L": 2.0,
+        "cfl": 0.075,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.24
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": false,
+        "epsilon": 0.12,
+        "N": 129,
+        "tag": "e12_shoot_direct"
+      },
+      "runtime_seconds": 31.633234524000045,
+      "evolution_sha256": "cf07516a10635172b5738c4935c21d442cba44d39b7bb9f47c5f371f16a2aaf8"
+    },
+    {
+      "directory": "near_events/e04",
+      "config": {
+        "L": 2.0,
+        "cfl": 0.15,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.03827110593347207,
+          0.042271105933472074,
+          0.11988112760462813,
+          0.12388112760462813,
+          0.18322877808619034,
+          0.18722877808619035
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": false,
+        "epsilon": 0.04,
+        "N": 97,
+        "tag": "spatial_e04_N97"
+      },
+      "runtime_seconds": 6.85894413799997,
+      "evolution_sha256": "a6a3ab2321e298a04a24d033ffd1c3e9d43461156e7f746b8b1e357d3ca4eb29"
+    },
+    {
+      "directory": "near_events/e08",
+      "config": {
+        "L": 2.0,
+        "cfl": 0.15,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.03896037853194897,
+          0.04296037853194897,
+          0.12197850525126402,
+          0.12597850525126403,
+          0.18644410340745876,
+          0.19044410340745876
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": false,
+        "epsilon": 0.08,
+        "N": 97,
+        "tag": "spatial_e08_N97"
+      },
+      "runtime_seconds": 7.41984264000007,
+      "evolution_sha256": "2dccc6019744b9050509e82e453e1a0aa07e30ee4042149bd5573cbee0e1d7b2"
+    },
+    {
+      "directory": "near_events/e12",
+      "config": {
+        "L": 2.0,
+        "cfl": 0.15,
+        "Tmax": 0.26,
+        "order": 6,
+        "nb": 256,
+        "slice_targets": [
+          0,
+          0.04012391996002788,
+          0.04412391996002788,
+          0.12551985324422554,
+          0.12951985324422555,
+          0.1918752421114019,
+          0.1958752421114019
+        ],
+        "diagnostic_radius": 1.1,
+        "trace_slices": false,
+        "epsilon": 0.12,
+        "N": 97,
+        "tag": "spatial_e12_N97"
+      },
+      "runtime_seconds": 7.119642648000081,
+      "evolution_sha256": "f6a90f3d29db19489a1bba9dc9ce630adf25997df47f77c24d495f74810b9c54"
+    }
+  ]
+}

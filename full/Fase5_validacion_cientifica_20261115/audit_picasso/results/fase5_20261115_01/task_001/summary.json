@@ -1,0 +1,140 @@
+{
+  "status": "SUCCESS",
+  "config": {
+    "L": 2.0,
+    "cfl": 0.15,
+    "Tmax": 0.26,
+    "order": 6,
+    "nb": 256,
+    "slice_targets": [
+      0,
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.24
+    ],
+    "diagnostic_radius": 1.1,
+    "trace_slices": true,
+    "epsilon": 0.04,
+    "N": 97,
+    "tag": "spatial_e04_N97"
+  },
+  "nsteps": 42,
+  "dt": 0.006190476190476191,
+  "h": 0.04166666666666674,
+  "runtime_seconds": 19.5439765159972,
+  "diagnostics": [
+    {
+      "T": 0.0,
+      "hamiltonian_linf": 3.790162628192206e-12,
+      "momentum_linf": 1.5641888825856931e-12,
+      "gauge_linf": 0.0,
+      "min_lapse": 1.0,
+      "min_spatial_metric_eigenvalue": 1.0048697928578127
+    },
+    {
+      "T": 0.030952380952380953,
+      "hamiltonian_linf": 3.0329272079909764e-12,
+      "momentum_linf": 2.060647008930716e-12,
+      "gauge_linf": 1.895330960778392e-13,
+      "min_lapse": 0.9999984857584382,
+      "min_spatial_metric_eigenvalue": 1.0048665108834112
+    },
+    {
+      "T": 0.06190476190476191,
+      "hamiltonian_linf": 2.8156149287084098e-12,
+      "momentum_linf": 2.0035673424165235e-12,
+      "gauge_linf": 3.083433309934819e-13,
+      "min_lapse": 0.9999939660897686,
+      "min_spatial_metric_eigenvalue": 1.0048594230812191
+    },
+    {
+      "T": 0.09285714285714286,
+      "hamiltonian_linf": 4.097020899623827e-12,
+      "momentum_linf": 1.9203445257576224e-12,
+      "gauge_linf": 3.4399520227681605e-13,
+      "min_lapse": 0.9999865098975991,
+      "min_spatial_metric_eigenvalue": 1.0048477786524252
+    },
+    {
+      "T": 0.12380952380952381,
+      "hamiltonian_linf": 4.2848480839852154e-12,
+      "momentum_linf": 2.0503758196496746e-12,
+      "gauge_linf": 4.725448327326692e-13,
+      "min_lapse": 0.9999762311398811,
+      "min_spatial_metric_eigenvalue": 1.0048296680693414
+    },
+    {
+      "T": 0.15476190476190477,
+      "hamiltonian_linf": 3.11888145518302e-12,
+      "momentum_linf": 2.0772100402591254e-12,
+      "gauge_linf": 6.466712208969184e-13,
+      "min_lapse": 0.9999632875070225,
+      "min_spatial_metric_eigenvalue": 1.0048048527886437
+    },
+    {
+      "T": 0.18571428571428572,
+      "hamiltonian_linf": 4.44061020593578e-12,
+      "momentum_linf": 2.120526410714918e-12,
+      "gauge_linf": 6.360631878415172e-13,
+      "min_lapse": 0.999947878571637,
+      "min_spatial_metric_eigenvalue": 1.0047731322816351
+    },
+    {
+      "T": 0.21666666666666665,
+      "hamiltonian_linf": 3.7733193306022095e-12,
+      "momentum_linf": 4.009962500939324e-12,
+      "gauge_linf": 7.618671254764013e-13,
+      "min_lapse": 0.9999302434103009,
+      "min_spatial_metric_eigenvalue": 1.0047337349037033
+    },
+    {
+      "T": 0.24761904761904763,
+      "hamiltonian_linf": 6.7802473704969835e-12,
+      "momentum_linf": 4.070165428651795e-12,
+      "gauge_linf": 8.514922985300622e-13,
+      "min_lapse": 0.9999106576977256,
+      "min_spatial_metric_eigenvalue": 1.0046858288004885
+    },
+    {
+      "T": 0.26,
+      "hamiltonian_linf": 1.78733139399867e-11,
+      "momentum_linf": 2.2462445748924753e-11,
+      "gauge_linf": 8.826216568789445e-13,
+      "min_lapse": 0.9999023454113958,
+      "min_spatial_metric_eigenvalue": 1.0046640853184914
+    }
+  ],
+  "max_midpoint_eikonal_residual": 2.021246481298533e-08,
+  "slice_inverse_residual": 5.551115123125783e-17,
+  "boundary_slice_inverse_residual": 5.551115123125783e-17,
+  "boundary": {
+    "max_V_norm": -0.8635825568091847,
+    "min_spatial_gradient2": 0.0003884524986711121,
+    "max_eikonal_material_defect": 1.5477841230904232e-11
+  },
+  "center_gaussian_eikonal_discrepancy": 5.551115123125783e-17,
+  "slices_complete_in_diagnostic_disk": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "boundary_slices_complete": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "max_material_label_error": 4.544261841821218e-11,
+  "connectivity_audit": {
+    "exits": 82,
+    "mismatched_pairs": 0,
+    "unresolved_eligible_cases": 0
+  }
+}

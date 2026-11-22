@@ -1,0 +1,7 @@
+RUN_ID=fase5_20261115_01
+Expected tasks: 24
+Successful solver processes: 24
+Readable scientific summaries: 24
+Smoke succeeded: True
+Process completion is not a scientific convergence or acceptance verdict.
+Partial outputs are retained. Inspect campaign_status.json and slurm_accounting.txt.

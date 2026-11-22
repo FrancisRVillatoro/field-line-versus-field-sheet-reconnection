@@ -1,0 +1,24 @@
+[
+  {
+    "epsilon": 0,
+    "lambda0": 0
+  },
+  {
+    "epsilon": 0.04,
+    "lambda0": 0.002840861975902048,
+    "max_rms_residual": 1.9968091978760342e-12,
+    "outer_extension": "Radial ODE continuation of the same constrained initial data beyond r=2; not a new lambda Dirichlet normalization."
+  },
+  {
+    "epsilon": 0.08,
+    "lambda0": 0.011321023947567335,
+    "max_rms_residual": 1.999314683887308e-12,
+    "outer_extension": "Radial ODE continuation of the same constrained initial data beyond r=2; not a new lambda Dirichlet normalization."
+  },
+  {
+    "epsilon": 0.12,
+    "lambda0": 0.025317318734993977,
+    "max_rms_residual": 1.99947717599475e-12,
+    "outer_extension": "Radial ODE continuation of the same constrained initial data beyond r=2; not a new lambda Dirichlet normalization."
+  }
+]

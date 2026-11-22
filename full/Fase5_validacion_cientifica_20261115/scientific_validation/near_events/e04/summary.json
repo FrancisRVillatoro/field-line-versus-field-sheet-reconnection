@@ -1,0 +1,138 @@
+{
+  "status": "SUCCESS",
+  "config": {
+    "L": 2.0,
+    "cfl": 0.15,
+    "Tmax": 0.26,
+    "order": 6,
+    "nb": 256,
+    "slice_targets": [
+      0,
+      0.03827110593347207,
+      0.042271105933472074,
+      0.11988112760462813,
+      0.12388112760462813,
+      0.18322877808619034,
+      0.18722877808619035
+    ],
+    "diagnostic_radius": 1.1,
+    "trace_slices": false,
+    "epsilon": 0.04,
+    "N": 97,
+    "tag": "spatial_e04_N97"
+  },
+  "nsteps": 42,
+  "dt": 0.006190476190476191,
+  "h": 0.04166666666666674,
+  "runtime_seconds": 6.85894413799997,
+  "diagnostics": [
+    {
+      "T": 0.0,
+      "hamiltonian_linf": 3.790163929234813e-12,
+      "momentum_linf": 1.5641893162665621e-12,
+      "gauge_linf": 0.0,
+      "min_lapse": 1.0,
+      "min_spatial_metric_eigenvalue": 1.0048697928578125
+    },
+    {
+      "T": 0.030952380952380953,
+      "hamiltonian_linf": 3.0329263406292384e-12,
+      "momentum_linf": 2.015162884651256e-12,
+      "gauge_linf": 1.8953306897278488e-13,
+      "min_lapse": 0.9999984857584382,
+      "min_spatial_metric_eigenvalue": 1.0048665108834112
+    },
+    {
+      "T": 0.06190476190476191,
+      "hamiltonian_linf": 2.5325228025785407e-12,
+      "momentum_linf": 1.9827798257432416e-12,
+      "gauge_linf": 3.083433038884276e-13,
+      "min_lapse": 0.9999939660897686,
+      "min_spatial_metric_eigenvalue": 1.0048594230812193
+    },
+    {
+      "T": 0.09285714285714286,
+      "hamiltonian_linf": 4.09701526177253e-12,
+      "momentum_linf": 1.8883711868505904e-12,
+      "gauge_linf": 3.4399520227681605e-13,
+      "min_lapse": 0.9999865098975991,
+      "min_spatial_metric_eigenvalue": 1.0048477786524248
+    },
+    {
+      "T": 0.12380952380952381,
+      "hamiltonian_linf": 4.2848407114104425e-12,
+      "momentum_linf": 2.1524711266845964e-12,
+      "gauge_linf": 4.725447513645667e-13,
+      "min_lapse": 0.9999762311398811,
+      "min_spatial_metric_eigenvalue": 1.0048296680693416
+    },
+    {
+      "T": 0.15476190476190477,
+      "hamiltonian_linf": 3.118882322544758e-12,
+      "momentum_linf": 2.1287874891681713e-12,
+      "gauge_linf": 6.46671247843154e-13,
+      "min_lapse": 0.9999632875070225,
+      "min_spatial_metric_eigenvalue": 1.0048048527886437
+    },
+    {
+      "T": 0.18571428571428572,
+      "hamiltonian_linf": 4.4405611999975836e-12,
+      "momentum_linf": 2.0549191146433665e-12,
+      "gauge_linf": 6.36062952472237e-13,
+      "min_lapse": 0.999947878571637,
+      "min_spatial_metric_eigenvalue": 1.0047731322816353
+    },
+    {
+      "T": 0.21666666666666665,
+      "hamiltonian_linf": 3.8469132393470495e-12,
+      "momentum_linf": 3.904684843687722e-12,
+      "gauge_linf": 7.611251522490565e-13,
+      "min_lapse": 0.9999302434103009,
+      "min_spatial_metric_eigenvalue": 1.004733734903703
+    },
+    {
+      "T": 0.24761904761904763,
+      "hamiltonian_linf": 6.7754560642563355e-12,
+      "momentum_linf": 3.990700565142946e-12,
+      "gauge_linf": 8.52540475438389e-13,
+      "min_lapse": 0.9999106576977256,
+      "min_spatial_metric_eigenvalue": 1.0046858288004887
+    },
+    {
+      "T": 0.26,
+      "hamiltonian_linf": 1.7629162019083822e-11,
+      "momentum_linf": 2.2593848666985217e-11,
+      "gauge_linf": 8.844969469548258e-13,
+      "min_lapse": 0.9999023454113958,
+      "min_spatial_metric_eigenvalue": 1.0046640853184916
+    }
+  ],
+  "max_midpoint_eikonal_residual": 2.021246481298533e-08,
+  "slice_inverse_residual": 5.551115123125783e-17,
+  "boundary_slice_inverse_residual": 5.551115123125783e-17,
+  "boundary": {
+    "max_V_norm": -0.8635825568091897,
+    "min_spatial_gradient2": 0.0003884524986711129,
+    "max_eikonal_material_defect": 1.5477896742055464e-11
+  },
+  "center_gaussian_eikonal_discrepancy": 5.551115123125783e-17,
+  "slices_complete_in_diagnostic_disk": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "boundary_slices_complete": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "max_material_label_error": 2.851958599836557e-11
+}

@@ -1,0 +1,21 @@
+{
+  "task": "task_020",
+  "started_utc": "2026-11-15T08:04:46.766952+00:00",
+  "status": "SUCCESS",
+  "slurm_job_id": "3673748",
+  "slurm_array_job_id": null,
+  "slurm_array_task_id": null,
+  "config": "configs/020_order4_N129.json",
+  "config_sha256": "cafd628b2e16abfc0c0c72cca2a46231249f990c82089c4ce5ba075518581e4c",
+  "command": [
+    "/mnt/home/soft/python/programs/x86_64/python_3.11.4/bin/python3",
+    "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/solver.py",
+    "--config",
+    "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/configs/020_order4_N129.json",
+    "--output",
+    "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/task_020"
+  ],
+  "exit_code": 0,
+  "finished_utc": "2026-11-15T08:05:33.652321+00:00",
+  "wall_seconds": 46.88465622020885
+}

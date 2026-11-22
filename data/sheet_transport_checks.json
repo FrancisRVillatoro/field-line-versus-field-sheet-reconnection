@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "checks": {
+    "ideal_contraction": true,
+    "nowhere_zero_auxiliary_norm": true,
+    "central_value": true,
+    "coordinate_length_flux_rate": true,
+    "proper_length_line_density": true,
+    "sheet_hessian_determinant": true
+  },
+  "scope": "Exact algebra under the explicitly stated nonvanishing and unit-covector constraints; smooth development and boundary exchange are established by the manuscript proofs."
+}

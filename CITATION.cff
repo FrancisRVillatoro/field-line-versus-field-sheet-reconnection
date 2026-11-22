@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use these data or this software, please cite the article and this repository."
+type: software
+title: "Reproducibility data and software for “Field-line versus field-sheet reconnection in vacuum gravity”"
+authors:
+  - family-names: Villatoro
+    given-names: Francisco R.
+    orcid: "https://orcid.org/0000-0003-4314-6213"
+    affiliation: "Universidad de Málaga"
+version: "1.0"
+license: MIT
+repository-code: "https://github.com/FrancisRVillatoro/field-line-versus-field-sheet-reconnection"
+keywords:
+  - vacuum general relativity
+  - gravitational reconnection
+  - field sheets
+  - Killing symmetry
+  - Killing twist
+  - causal structure
+  - numerical relativity

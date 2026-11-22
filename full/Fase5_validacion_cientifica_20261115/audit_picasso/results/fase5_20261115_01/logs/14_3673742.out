@@ -1,0 +1,5 @@
+START job=3673742 index=14 host=sd054
+Loading python/3.11.4
+  Loading requirement: miniconda/3
+Running: /mnt/home/soft/python/programs/x86_64/python_3.11.4/bin/python3 /mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/solver.py --config /mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/configs/014_time_e12_cfl0.075.json --output /mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/task_014
+{"status": "SUCCESS", "nsteps": 84, "runtime_seconds": 42.48213200713508, "max_material_label_error": 8.218306243867879e-10}

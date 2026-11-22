@@ -1,0 +1,16 @@
+Loading python/3.11.4
+  Loading requirement: miniconda/3
+RUN_ID=fase5_20261115_01
+Expected tasks: 24
+Successful solver processes: 24
+Readable scientific summaries: 24
+Smoke succeeded: True
+Process completion is not a scientific convergence or acceptance verdict.
+Partial outputs are retained. Inspect campaign_status.json and slurm_accounting.txt.
+{"expected_tasks": 24, "successful_numerical_tasks": 24, "traced_exits": 1886, "mismatched_pairs": 0, "unresolved_eligible": 0, "unresolved_critical": 46}
+Archived run: fase5_20261115_01
+Archive state: COMPLETE_PROCESS_CAMPAIGN
+Archive: /mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/Reconexiones_Fase5_resultados_20261114_fase5_20261115_01.zip
+Predictable alias: /mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/Reconexiones_Fase5_resultados_20261114.zip
+Tareas ausentes o fallidas: []
+Analisis completo: True

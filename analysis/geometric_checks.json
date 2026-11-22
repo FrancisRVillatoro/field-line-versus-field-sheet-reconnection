@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "count": 7,
+  "checks": {
+    "two_form_invariant_conformal_factor": true,
+    "boundary_ideal_contraction": true,
+    "boundary_norm": true,
+    "critical_pullback": true,
+    "exact_momentum_0": true,
+    "exact_momentum_1": true,
+    "exact_Hamiltonian_reduction": true
+  },
+  "scope": "Exact local algebra; no numerical or global existence assertion."
+}

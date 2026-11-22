@@ -1,0 +1,10 @@
+{
+  "original_observables": 27,
+  "small_observables": 18,
+  "sampled_switches": 18,
+  "symbolic_checks": 24,
+  "max_original_sensitivity_indicator": 2.7931323920427076e-11,
+  "minimum_original_signal_ratio": 1045283.5689157207,
+  "minimum_small_signal_ratio": 11385.220503867458,
+  "max_boundary_V_norm": -0.8600981599802208
+}

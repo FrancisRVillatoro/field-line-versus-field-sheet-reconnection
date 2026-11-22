@@ -1,0 +1,4139 @@
+{
+  "run_id": "fase5_20261115_01",
+  "run_dir": "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01",
+  "generated_utc": "2026-11-15T08:12:32.568981+00:00",
+  "submission": {
+    "run_dir": "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01",
+    "previous_smoke_job": "3671532",
+    "runtime_reused_from": "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261114_01",
+    "individual_job_00": "3673728",
+    "individual_job_01": "3673729",
+    "individual_job_02": "3673730",
+    "individual_job_03": "3673731",
+    "individual_job_04": "3673732",
+    "individual_job_05": "3673733",
+    "individual_job_06": "3673734",
+    "individual_job_07": "3673735",
+    "individual_job_08": "3673736",
+    "individual_job_09": "3673737",
+    "individual_job_10": "3673738",
+    "individual_job_11": "3673739",
+    "individual_job_12": "3673740",
+    "individual_job_13": "3673741",
+    "individual_job_14": "3673742",
+    "individual_job_15": "3673743",
+    "individual_job_16": "3673744",
+    "individual_job_17": "3673745",
+    "individual_job_18": "3673746",
+    "individual_job_19": "3673747",
+    "individual_job_20": "3673748",
+    "individual_job_21": "3673749",
+    "individual_job_22": "3673750",
+    "individual_job_23": "3673751",
+    "summary_job": "3673769"
+  },
+  "smoke_ok": true,
+  "tasks": [
+    {
+      "index": 0,
+      "task": "task_000",
+      "config": "configs/000_spatial_e04_N65.json",
+      "wrapper": {
+        "task": "task_000",
+        "started_utc": "2026-11-15T08:04:42.575629+00:00",
+        "status": "SUCCESS",
+        "slurm_job_id": "3673728",
+        "slurm_array_job_id": null,
+        "slurm_array_task_id": null,
+        "config": "configs/000_spatial_e04_N65.json",
+        "config_sha256": "f45d725ffa86bf839984c198b0699dcbca945694fc397cbeb2e838703a0239d7",
+        "command": [
+          "/mnt/home/soft/python/programs/x86_64/python_3.11.4/bin/python3",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/solver.py",
+          "--config",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/configs/000_spatial_e04_N65.json",
+          "--output",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/task_000"
+        ],
+        "exit_code": 0,
+        "finished_utc": "2026-11-15T08:04:53.908146+00:00",
+        "wall_seconds": 11.331756844883785
+      },
+      "wrapper_read_error": null,
+      "summary": {
+        "status": "SUCCESS",
+        "config": {
+          "L": 2.0,
+          "cfl": 0.15,
+          "Tmax": 0.26,
+          "order": 6,
+          "nb": 256,
+          "slice_targets": [
+            0,
+            0.05,
+            0.1,
+            0.15,
+            0.2,
+            0.24
+          ],
+          "diagnostic_radius": 1.1,
+          "trace_slices": true,
+          "epsilon": 0.04,
+          "N": 65,
+          "tag": "spatial_e04_N65"
+        },
+        "nsteps": 28,
+        "dt": 0.009285714285714286,
+        "h": 0.0625,
+        "runtime_seconds": 6.342254852876067,
+        "diagnostics": [
+          {
+            "T": 0.0,
+            "hamiltonian_linf": 1.541119922648937e-11,
+            "momentum_linf": 1.6879546588591254e-11,
+            "gauge_linf": 0.0,
+            "min_lapse": 1.0,
+            "min_spatial_metric_eigenvalue": 1.004874081891618
+          },
+          {
+            "T": 0.027857142857142858,
+            "hamiltonian_linf": 1.5725440047353878e-11,
+            "momentum_linf": 1.6947233438639742e-11,
+            "gauge_linf": 5.20630819985825e-13,
+            "min_lapse": 0.9999987731682886,
+            "min_spatial_metric_eigenvalue": 1.0048708769351438
+          },
+          {
+            "T": 0.055714285714285716,
+            "hamiltonian_linf": 1.664999822043045e-11,
+            "momentum_linf": 1.6428704533930083e-11,
+            "gauge_linf": 1.0004737143731761e-12,
+            "min_lapse": 0.9999951078057073,
+            "min_spatial_metric_eigenvalue": 1.0048642823139446
+          },
+          {
+            "T": 0.08357142857142856,
+            "hamiltonian_linf": 1.939257565294894e-11,
+            "momentum_linf": 1.4640875968183198e-11,
+            "gauge_linf": 1.4878785532189001e-12,
+            "min_lapse": 0.9999890491693592,
+            "min_spatial_metric_eigenvalue": 1.004853854615735
+          },
+          {
+            "T": 0.11142857142857143,
+            "hamiltonian_linf": 2.3422883858176258e-11,
+            "momentum_linf": 7.806719734635564e-11,
+            "gauge_linf": 1.9385515323554307e-12,
+            "min_lapse": 0.9999806722193278,
+            "min_spatial_metric_eigenvalue": 1.004839162081832
+          },
+          {
+            "T": 0.1392857142857143,
+            "hamiltonian_linf": 1.7738195244240695e-10,
+            "momentum_linf": 3.799422263351532e-10,
+            "gauge_linf": 2.5825789380685496e-12,
+            "min_lapse": 0.9999700809161371,
+            "min_spatial_metric_eigenvalue": 1.0048197450082115
+          },
+          {
+            "T": 0.16714285714285712,
+            "hamiltonian_linf": 1.1210688800888935e-10,
+            "momentum_linf": 2.1739514040938074e-10,
+            "gauge_linf": 3.80519468870837e-12,
+            "min_lapse": 0.9999574072373639,
+            "min_spatial_metric_eigenvalue": 1.0047951088280933
+          },
+          {
+            "T": 0.195,
+            "hamiltonian_linf": 2.6505893621457666e-09,
+            "momentum_linf": 5.011668501855512e-09,
+            "gauge_linf": 9.8791649178476e-12,
+            "min_lapse": 0.9999428099135695,
+            "min_spatial_metric_eigenvalue": 1.0047647213654762
+          },
+          {
+            "T": 0.22285714285714286,
+            "hamiltonian_linf": 7.721256181300595e-09,
+            "momentum_linf": 1.3649397554273482e-08,
+            "gauge_linf": 6.386129595683735e-11,
+            "min_lapse": 0.9999264728837379,
+            "min_spatial_metric_eigenvalue": 1.0047280106865222
+          },
+          {
+            "T": 0.2507142857142857,
+            "hamiltonian_linf": 5.2103527113482595e-09,
+            "momentum_linf": 7.878806097989799e-09,
+            "gauge_linf": 1.231798900879774e-10,
+            "min_lapse": 0.999908603470431,
+            "min_spatial_metric_eigenvalue": 1.004684362904361
+          },
+          {
+            "T": 0.26,
+            "hamiltonian_linf": 1.3057744299022067e-08,
+            "momentum_linf": 2.7417014512214413e-08,
+            "gauge_linf": 9.552570318477673e-11,
+            "min_lapse": 0.9999023454123303,
+            "min_spatial_metric_eigenvalue": 1.0046681596264866
+          }
+        ],
+        "max_midpoint_eikonal_residual": 4.546938492389074e-08,
+        "slice_inverse_residual": 5.551115123125783e-17,
+        "boundary_slice_inverse_residual": 5.551115123125783e-17,
+        "boundary": {
+          "max_V_norm": -0.8635826794833632,
+          "min_spatial_gradient2": 0.0003884525271919137,
+          "max_eikonal_material_defect": 4.6632919747935375e-11
+        },
+        "center_gaussian_eikonal_discrepancy": 0.0,
+        "slices_complete_in_diagnostic_disk": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "boundary_slices_complete": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "max_material_label_error": 2.0945483888978877e-10,
+        "connectivity_audit": {
+          "exits": 82,
+          "mismatched_pairs": 0,
+          "unresolved_eligible_cases": 0
+        }
+      },
+      "summary_read_error": null,
+      "evolution_present": true
+    },
+    {
+      "index": 1,
+      "task": "task_001",
+      "config": "configs/001_spatial_e04_N97.json",
+      "wrapper": {
+        "task": "task_001",
+        "started_utc": "2026-11-15T08:04:42.576541+00:00",
+        "status": "SUCCESS",
+        "slurm_job_id": "3673729",
+        "slurm_array_job_id": null,
+        "slurm_array_task_id": null,
+        "config": "configs/001_spatial_e04_N97.json",
+        "config_sha256": "7af372b4dbe96b07125c9f1018c2c16a8162199ef15e54a2a264404514c0ac4c",
+        "command": [
+          "/mnt/home/soft/python/programs/x86_64/python_3.11.4/bin/python3",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/solver.py",
+          "--config",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/configs/001_spatial_e04_N97.json",
+          "--output",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/task_001"
+        ],
+        "exit_code": 0,
+        "finished_utc": "2026-11-15T08:05:07.940189+00:00",
+        "wall_seconds": 25.363114312989637
+      },
+      "wrapper_read_error": null,
+      "summary": {
+        "status": "SUCCESS",
+        "config": {
+          "L": 2.0,
+          "cfl": 0.15,
+          "Tmax": 0.26,
+          "order": 6,
+          "nb": 256,
+          "slice_targets": [
+            0,
+            0.05,
+            0.1,
+            0.15,
+            0.2,
+            0.24
+          ],
+          "diagnostic_radius": 1.1,
+          "trace_slices": true,
+          "epsilon": 0.04,
+          "N": 97,
+          "tag": "spatial_e04_N97"
+        },
+        "nsteps": 42,
+        "dt": 0.006190476190476191,
+        "h": 0.04166666666666674,
+        "runtime_seconds": 19.5439765159972,
+        "diagnostics": [
+          {
+            "T": 0.0,
+            "hamiltonian_linf": 3.790162628192206e-12,
+            "momentum_linf": 1.5641888825856931e-12,
+            "gauge_linf": 0.0,
+            "min_lapse": 1.0,
+            "min_spatial_metric_eigenvalue": 1.0048697928578127
+          },
+          {
+            "T": 0.030952380952380953,
+            "hamiltonian_linf": 3.0329272079909764e-12,
+            "momentum_linf": 2.060647008930716e-12,
+            "gauge_linf": 1.895330960778392e-13,
+            "min_lapse": 0.9999984857584382,
+            "min_spatial_metric_eigenvalue": 1.0048665108834112
+          },
+          {
+            "T": 0.06190476190476191,
+            "hamiltonian_linf": 2.8156149287084098e-12,
+            "momentum_linf": 2.0035673424165235e-12,
+            "gauge_linf": 3.083433309934819e-13,
+            "min_lapse": 0.9999939660897686,
+            "min_spatial_metric_eigenvalue": 1.0048594230812191
+          },
+          {
+            "T": 0.09285714285714286,
+            "hamiltonian_linf": 4.097020899623827e-12,
+            "momentum_linf": 1.9203445257576224e-12,
+            "gauge_linf": 3.4399520227681605e-13,
+            "min_lapse": 0.9999865098975991,
+            "min_spatial_metric_eigenvalue": 1.0048477786524252
+          },
+          {
+            "T": 0.12380952380952381,
+            "hamiltonian_linf": 4.2848480839852154e-12,
+            "momentum_linf": 2.0503758196496746e-12,
+            "gauge_linf": 4.725448327326692e-13,
+            "min_lapse": 0.9999762311398811,
+            "min_spatial_metric_eigenvalue": 1.0048296680693414
+          },
+          {
+            "T": 0.15476190476190477,
+            "hamiltonian_linf": 3.11888145518302e-12,
+            "momentum_linf": 2.0772100402591254e-12,
+            "gauge_linf": 6.466712208969184e-13,
+            "min_lapse": 0.9999632875070225,
+            "min_spatial_metric_eigenvalue": 1.0048048527886437
+          },
+          {
+            "T": 0.18571428571428572,
+            "hamiltonian_linf": 4.44061020593578e-12,
+            "momentum_linf": 2.120526410714918e-12,
+            "gauge_linf": 6.360631878415172e-13,
+            "min_lapse": 0.999947878571637,
+            "min_spatial_metric_eigenvalue": 1.0047731322816351
+          },
+          {
+            "T": 0.21666666666666665,
+            "hamiltonian_linf": 3.7733193306022095e-12,
+            "momentum_linf": 4.009962500939324e-12,
+            "gauge_linf": 7.618671254764013e-13,
+            "min_lapse": 0.9999302434103009,
+            "min_spatial_metric_eigenvalue": 1.0047337349037033
+          },
+          {
+            "T": 0.24761904761904763,
+            "hamiltonian_linf": 6.7802473704969835e-12,
+            "momentum_linf": 4.070165428651795e-12,
+            "gauge_linf": 8.514922985300622e-13,
+            "min_lapse": 0.9999106576977256,
+            "min_spatial_metric_eigenvalue": 1.0046858288004885
+          },
+          {
+            "T": 0.26,
+            "hamiltonian_linf": 1.78733139399867e-11,
+            "momentum_linf": 2.2462445748924753e-11,
+            "gauge_linf": 8.826216568789445e-13,
+            "min_lapse": 0.9999023454113958,
+            "min_spatial_metric_eigenvalue": 1.0046640853184914
+          }
+        ],
+        "max_midpoint_eikonal_residual": 2.021246481298533e-08,
+        "slice_inverse_residual": 5.551115123125783e-17,
+        "boundary_slice_inverse_residual": 5.551115123125783e-17,
+        "boundary": {
+          "max_V_norm": -0.8635825568091847,
+          "min_spatial_gradient2": 0.0003884524986711121,
+          "max_eikonal_material_defect": 1.5477841230904232e-11
+        },
+        "center_gaussian_eikonal_discrepancy": 5.551115123125783e-17,
+        "slices_complete_in_diagnostic_disk": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "boundary_slices_complete": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "max_material_label_error": 4.544261841821218e-11,
+        "connectivity_audit": {
+          "exits": 82,
+          "mismatched_pairs": 0,
+          "unresolved_eligible_cases": 0
+        }
+      },
+      "summary_read_error": null,
+      "evolution_present": true
+    },
+    {
+      "index": 2,
+      "task": "task_002",
+      "config": "configs/002_spatial_e04_N129.json",
+      "wrapper": {
+        "task": "task_002",
+        "started_utc": "2026-11-15T08:04:42.576228+00:00",
+        "status": "SUCCESS",
+        "slurm_job_id": "3673730",
+        "slurm_array_job_id": null,
+        "slurm_array_task_id": null,
+        "config": "configs/002_spatial_e04_N129.json",
+        "config_sha256": "36ab0c81387789e25c687e3877119fe1aa9f6616d8ceb16ed3b3d2e65164ffe9",
+        "command": [
+          "/mnt/home/soft/python/programs/x86_64/python_3.11.4/bin/python3",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/solver.py",
+          "--config",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/configs/002_spatial_e04_N129.json",
+          "--output",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/task_002"
+        ],
+        "exit_code": 0,
+        "finished_utc": "2026-11-15T08:05:33.595707+00:00",
+        "wall_seconds": 51.018893043044955
+      },
+      "wrapper_read_error": null,
+      "summary": {
+        "status": "SUCCESS",
+        "config": {
+          "L": 2.0,
+          "cfl": 0.15,
+          "Tmax": 0.26,
+          "order": 6,
+          "nb": 256,
+          "slice_targets": [
+            0,
+            0.05,
+            0.1,
+            0.15,
+            0.2,
+            0.24
+          ],
+          "diagnostic_radius": 1.1,
+          "trace_slices": true,
+          "epsilon": 0.04,
+          "N": 129,
+          "tag": "spatial_e04_N129"
+        },
+        "nsteps": 56,
+        "dt": 0.004642857142857143,
+        "h": 0.03125,
+        "runtime_seconds": 44.372313506901264,
+        "diagnostics": [
+          {
+            "T": 0.0,
+            "hamiltonian_linf": 4.4110231960103885e-12,
+            "momentum_linf": 2.8590172763964805e-13,
+            "gauge_linf": 0.0,
+            "min_lapse": 1.0,
+            "min_spatial_metric_eigenvalue": 1.0048651106917825
+          },
+          {
+            "T": 0.0325,
+            "hamiltonian_linf": 2.325323961160919e-12,
+            "momentum_linf": 1.6628855952806332e-12,
+            "gauge_linf": 8.581749521825215e-14,
+            "min_lapse": 0.9999983307660393,
+            "min_spatial_metric_eigenvalue": 1.0048612006051512
+          },
+          {
+            "T": 0.065,
+            "hamiltonian_linf": 2.6715821395406625e-12,
+            "momentum_linf": 1.5709900014985317e-12,
+            "gauge_linf": 2.0546114194432437e-13,
+            "min_lapse": 0.9999933510833969,
+            "min_spatial_metric_eigenvalue": 1.0048528456138603
+          },
+          {
+            "T": 0.0975,
+            "hamiltonian_linf": 2.9985337129945222e-12,
+            "momentum_linf": 1.6466636132981063e-12,
+            "gauge_linf": 2.1983710799784126e-13,
+            "min_lapse": 0.9999851446554209,
+            "min_spatial_metric_eigenvalue": 1.0048392333426939
+          },
+          {
+            "T": 0.13,
+            "hamiltonian_linf": 3.5772934094124853e-12,
+            "momentum_linf": 1.6756302698454559e-12,
+            "gauge_linf": 2.8262735046962297e-13,
+            "min_lapse": 0.9999738498065542,
+            "min_spatial_metric_eigenvalue": 1.0048197252365365
+          },
+          {
+            "T": 0.1625,
+            "hamiltonian_linf": 2.9546712299044486e-12,
+            "momentum_linf": 1.7630535906524268e-12,
+            "gauge_linf": 2.5226396390906364e-13,
+            "min_lapse": 0.9999596577109265,
+            "min_spatial_metric_eigenvalue": 1.0047936167946299
+          },
+          {
+            "T": 0.195,
+            "hamiltonian_linf": 3.581569936461637e-12,
+            "momentum_linf": 1.8954370408288956e-12,
+            "gauge_linf": 2.7799373000001826e-13,
+            "min_lapse": 0.9999428099129619,
+            "min_spatial_metric_eigenvalue": 1.0047601127989507
+          },
+          {
+            "T": 0.2275,
+            "hamiltonian_linf": 3.487183632133739e-12,
+            "momentum_linf": 2.0565724687462983e-12,
+            "gauge_linf": 3.044435452469066e-13,
+            "min_lapse": 0.9999235951405301,
+            "min_spatial_metric_eigenvalue": 1.0047182547591147
+          },
+          {
+            "T": 0.26,
+            "hamiltonian_linf": 3.694346911720103e-12,
+            "momentum_linf": 2.0588646347692585e-12,
+            "gauge_linf": 3.29820681463403e-13,
+            "min_lapse": 0.9999023454112368,
+            "min_spatial_metric_eigenvalue": 1.0046647596643685
+          }
+        ],
+        "max_midpoint_eikonal_residual": 1.1370269170640768e-08,
+        "slice_inverse_residual": 5.551115123125783e-17,
+        "boundary_slice_inverse_residual": 8.326672684688674e-17,
+        "boundary": {
+          "max_V_norm": -0.8635825403047637,
+          "min_spatial_gradient2": 0.0003884524907643807,
+          "max_eikonal_material_defect": 4.451827795293184e-12
+        },
+        "center_gaussian_eikonal_discrepancy": 0.0,
+        "slices_complete_in_diagnostic_disk": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "boundary_slices_complete": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "max_material_label_error": 2.5680620824308775e-11,
+        "connectivity_audit": {
+          "exits": 82,
+          "mismatched_pairs": 0,
+          "unresolved_eligible_cases": 0
+        }
+      },
+      "summary_read_error": null,
+      "evolution_present": true
+    },
+    {
+      "index": 3,
+      "task": "task_003",
+      "config": "configs/003_spatial_e08_N65.json",
+      "wrapper": {
+        "task": "task_003",
+        "started_utc": "2026-11-15T08:04:42.575909+00:00",
+        "status": "SUCCESS",
+        "slurm_job_id": "3673731",
+        "slurm_array_job_id": null,
+        "slurm_array_task_id": null,
+        "config": "configs/003_spatial_e08_N65.json",
+        "config_sha256": "a66b354a56f79573908bfc3c9866b1e604db4d5507990433c04ff6ae26c420fb",
+        "command": [
+          "/mnt/home/soft/python/programs/x86_64/python_3.11.4/bin/python3",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/solver.py",
+          "--config",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/configs/003_spatial_e08_N65.json",
+          "--output",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/task_003"
+        ],
+        "exit_code": 0,
+        "finished_utc": "2026-11-15T08:04:54.183148+00:00",
+        "wall_seconds": 11.606667095096782
+      },
+      "wrapper_read_error": null,
+      "summary": {
+        "status": "SUCCESS",
+        "config": {
+          "L": 2.0,
+          "cfl": 0.15,
+          "Tmax": 0.26,
+          "order": 6,
+          "nb": 256,
+          "slice_targets": [
+            0,
+            0.05,
+            0.1,
+            0.15,
+            0.2,
+            0.24
+          ],
+          "diagnostic_radius": 1.1,
+          "trace_slices": true,
+          "epsilon": 0.08,
+          "N": 65,
+          "tag": "spatial_e08_N65"
+        },
+        "nsteps": 28,
+        "dt": 0.009285714285714286,
+        "h": 0.0625,
+        "runtime_seconds": 6.351190460147336,
+        "diagnostics": [
+          {
+            "T": 0.0,
+            "hamiltonian_linf": 2.436309556874683e-10,
+            "momentum_linf": 2.66981198000088e-10,
+            "gauge_linf": 0.0,
+            "min_lapse": 1.0,
+            "min_spatial_metric_eigenvalue": 1.0195868036370292
+          },
+          {
+            "T": 0.027857142857142858,
+            "hamiltonian_linf": 2.471937793346868e-10,
+            "momentum_linf": 2.6903542978476414e-10,
+            "gauge_linf": 2.639798104601851e-12,
+            "min_lapse": 0.9999952505632586,
+            "min_spatial_metric_eigenvalue": 1.0195739903465277
+          },
+          {
+            "T": 0.055714285714285716,
+            "hamiltonian_linf": 2.5858794966415743e-10,
+            "momentum_linf": 2.6855758025398635e-10,
+            "gauge_linf": 5.233967725814191e-12,
+            "min_lapse": 0.9999810597817204,
+            "min_spatial_metric_eigenvalue": 1.0195476465046305
+          },
+          {
+            "T": 0.08357142857142856,
+            "hamiltonian_linf": 2.8081735894969206e-10,
+            "momentum_linf": 2.603169823797713e-10,
+            "gauge_linf": 8.620367112306393e-12,
+            "min_lapse": 0.999957599713958,
+            "min_spatial_metric_eigenvalue": 1.019506022544263
+          },
+          {
+            "T": 0.11142857142857143,
+            "hamiltonian_linf": 3.143999401100661e-10,
+            "momentum_linf": 5.009640809822136e-10,
+            "gauge_linf": 1.5287241662549036e-11,
+            "min_lapse": 0.9999251553666345,
+            "min_spatial_metric_eigenvalue": 1.019447418872038
+          },
+          {
+            "T": 0.1392857142857143,
+            "hamiltonian_linf": 4.254526713570739e-10,
+            "momentum_linf": 1.6751776307256938e-09,
+            "gauge_linf": 2.21831984484381e-11,
+            "min_lapse": 0.9998841220593442,
+            "min_spatial_metric_eigenvalue": 1.0193700278484308
+          },
+          {
+            "T": 0.16714285714285712,
+            "hamiltonian_linf": 4.263133440013389e-10,
+            "momentum_linf": 9.780387550187286e-10,
+            "gauge_linf": 2.9622271274146133e-11,
+            "min_lapse": 0.9998350017378695,
+            "min_spatial_metric_eigenvalue": 1.0192719062579683
+          },
+          {
+            "T": 0.195,
+            "hamiltonian_linf": 1.0031185465608772e-08,
+            "momentum_linf": 1.8603566138541278e-08,
+            "gauge_linf": 7.159491959880102e-11,
+            "min_lapse": 0.9997783982381709,
+            "min_spatial_metric_eigenvalue": 1.0191509645215115
+          },
+          {
+            "T": 0.22285714285714286,
+            "hamiltonian_linf": 3.003456969241647e-08,
+            "momentum_linf": 5.3698650442478985e-08,
+            "gauge_linf": 2.8117160830662326e-10,
+            "min_lapse": 0.9997150115038629,
+            "min_spatial_metric_eigenvalue": 1.019004958374097
+          },
+          {
+            "T": 0.2507142857142857,
+            "hamiltonian_linf": 1.954239830202764e-08,
+            "momentum_linf": 2.9387838000344974e-08,
+            "gauge_linf": 5.55672755469291e-10,
+            "min_lapse": 0.9996456307601924,
+            "min_spatial_metric_eigenvalue": 1.0188314804174226
+          },
+          {
+            "T": 0.26,
+            "hamiltonian_linf": 4.315799453230573e-08,
+            "momentum_linf": 9.279235082745863e-08,
+            "gauge_linf": 4.805348968016318e-10,
+            "min_lapse": 0.9996213201447954,
+            "min_spatial_metric_eigenvalue": 1.0187671088737504
+          }
+        ],
+        "max_midpoint_eikonal_residual": 1.7602359636548215e-07,
+        "slice_inverse_residual": 5.551115123125783e-17,
+        "boundary_slice_inverse_residual": 5.551115123125783e-17,
+        "boundary": {
+          "max_V_norm": -0.8740249380063865,
+          "min_spatial_gradient2": 0.0015749114233535825,
+          "max_eikonal_material_defect": 1.875549715535385e-10
+        },
+        "center_gaussian_eikonal_discrepancy": 0.0,
+        "slices_complete_in_diagnostic_disk": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "boundary_slices_complete": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "max_material_label_error": 9.012713006462114e-10,
+        "connectivity_audit": {
+          "exits": 82,
+          "mismatched_pairs": 0,
+          "unresolved_eligible_cases": 0
+        }
+      },
+      "summary_read_error": null,
+      "evolution_present": true
+    },
+    {
+      "index": 4,
+      "task": "task_004",
+      "config": "configs/004_spatial_e08_N97.json",
+      "wrapper": {
+        "task": "task_004",
+        "started_utc": "2026-11-15T08:04:45.485992+00:00",
+        "status": "SUCCESS",
+        "slurm_job_id": "3673732",
+        "slurm_array_job_id": null,
+        "slurm_array_task_id": null,
+        "config": "configs/004_spatial_e08_N97.json",
+        "config_sha256": "b260cbb8a07ec4a38500fbbfda771a020437cab4c82c640f5fa30daa74b8f7a3",
+        "command": [
+          "/mnt/home/soft/python/programs/x86_64/python_3.11.4/bin/python3",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/solver.py",
+          "--config",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/configs/004_spatial_e08_N97.json",
+          "--output",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/task_004"
+        ],
+        "exit_code": 0,
+        "finished_utc": "2026-11-15T08:05:11.100996+00:00",
+        "wall_seconds": 25.61417173803784
+      },
+      "wrapper_read_error": null,
+      "summary": {
+        "status": "SUCCESS",
+        "config": {
+          "L": 2.0,
+          "cfl": 0.15,
+          "Tmax": 0.26,
+          "order": 6,
+          "nb": 256,
+          "slice_targets": [
+            0,
+            0.05,
+            0.1,
+            0.15,
+            0.2,
+            0.24
+          ],
+          "diagnostic_radius": 1.1,
+          "trace_slices": true,
+          "epsilon": 0.08,
+          "N": 97,
+          "tag": "spatial_e08_N97"
+        },
+        "nsteps": 42,
+        "dt": 0.006190476190476191,
+        "h": 0.04166666666666674,
+        "runtime_seconds": 19.69392237905413,
+        "diagnostics": [
+          {
+            "T": 0.0,
+            "hamiltonian_linf": 2.208705093820207e-11,
+            "momentum_linf": 2.474781490846567e-11,
+            "gauge_linf": 0.0,
+            "min_lapse": 1.0,
+            "min_spatial_metric_eigenvalue": 1.0195694824982453
+          },
+          {
+            "T": 0.030952380952380953,
+            "hamiltonian_linf": 2.23012823485913e-11,
+            "momentum_linf": 2.489417135972949e-11,
+            "gauge_linf": 4.848097768673115e-13,
+            "min_lapse": 0.9999941378872989,
+            "min_spatial_metric_eigenvalue": 1.0195563644727619
+          },
+          {
+            "T": 0.06190476190476191,
+            "hamiltonian_linf": 2.3530500464774562e-11,
+            "momentum_linf": 2.50110249351565e-11,
+            "gauge_linf": 9.427664370222192e-13,
+            "min_lapse": 0.9999766392005289,
+            "min_spatial_metric_eigenvalue": 1.0195280598709122
+          },
+          {
+            "T": 0.09285714285714286,
+            "hamiltonian_linf": 2.4970837897431153e-11,
+            "momentum_linf": 2.539615956767549e-11,
+            "gauge_linf": 1.4022387209532276e-12,
+            "min_lapse": 0.999947765901327,
+            "min_spatial_metric_eigenvalue": 1.019481591298461
+          },
+          {
+            "T": 0.12380952380952381,
+            "hamiltonian_linf": 2.8230365961556814e-11,
+            "momentum_linf": 2.529901895614861e-11,
+            "gauge_linf": 1.7879998191361675e-12,
+            "min_lapse": 0.9999079512854364,
+            "min_spatial_metric_eigenvalue": 1.0194095326743349
+          },
+          {
+            "T": 0.15476190476190477,
+            "hamiltonian_linf": 3.131669923384095e-11,
+            "momentum_linf": 2.5554250989573424e-11,
+            "gauge_linf": 2.747960846235366e-12,
+            "min_lapse": 0.9998577950251749,
+            "min_spatial_metric_eigenvalue": 1.0193106630769768
+          },
+          {
+            "T": 0.18571428571428572,
+            "hamiltonian_linf": 3.545902634016773e-11,
+            "momentum_linf": 2.5933293706925653e-11,
+            "gauge_linf": 4.004775283240558e-12,
+            "min_lapse": 0.9997980562345656,
+            "min_spatial_metric_eigenvalue": 1.019184382442633
+          },
+          {
+            "T": 0.21666666666666665,
+            "hamiltonian_linf": 4.0548446544885763e-11,
+            "momentum_linf": 3.232564129568294e-11,
+            "gauge_linf": 5.5018022729700935e-12,
+            "min_lapse": 0.9997296445623465,
+            "min_spatial_metric_eigenvalue": 1.0190276622407175
+          },
+          {
+            "T": 0.24761904761904763,
+            "hamiltonian_linf": 5.515737866446102e-11,
+            "momentum_linf": 3.2306412753313474e-11,
+            "gauge_linf": 7.284472291759988e-12,
+            "min_lapse": 0.9996536093189079,
+            "min_spatial_metric_eigenvalue": 1.0188372405204413
+          },
+          {
+            "T": 0.26,
+            "hamiltonian_linf": 9.93136128890626e-11,
+            "momentum_linf": 5.940504858858997e-11,
+            "gauge_linf": 8.193791900387774e-12,
+            "min_lapse": 0.9996213201413043,
+            "min_spatial_metric_eigenvalue": 1.0187508572236488
+          }
+        ],
+        "max_midpoint_eikonal_residual": 7.824733749828283e-08,
+        "slice_inverse_residual": 8.326672684688674e-17,
+        "boundary_slice_inverse_residual": 2.7755575615628914e-17,
+        "boundary": {
+          "max_V_norm": -0.874024484675364,
+          "min_spatial_gradient2": 0.0015749109631491174,
+          "max_eikonal_material_defect": 6.130351781763466e-11
+        },
+        "center_gaussian_eikonal_discrepancy": 0.0,
+        "slices_complete_in_diagnostic_disk": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "boundary_slices_complete": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "max_material_label_error": 2.1043867343140121e-10,
+        "connectivity_audit": {
+          "exits": 82,
+          "mismatched_pairs": 0,
+          "unresolved_eligible_cases": 0
+        }
+      },
+      "summary_read_error": null,
+      "evolution_present": true
+    },
+    {
+      "index": 5,
+      "task": "task_005",
+      "config": "configs/005_spatial_e08_N129.json",
+      "wrapper": {
+        "task": "task_005",
+        "started_utc": "2026-11-15T08:04:45.575956+00:00",
+        "status": "SUCCESS",
+        "slurm_job_id": "3673733",
+        "slurm_array_job_id": null,
+        "slurm_array_task_id": null,
+        "config": "configs/005_spatial_e08_N129.json",
+        "config_sha256": "1421025cdbbf01103976922def502529aa66eb29e8ed720b72a64c24b69aa359",
+        "command": [
+          "/mnt/home/soft/python/programs/x86_64/python_3.11.4/bin/python3",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/solver.py",
+          "--config",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/configs/005_spatial_e08_N129.json",
+          "--output",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/task_005"
+        ],
+        "exit_code": 0,
+        "finished_utc": "2026-11-15T08:05:37.255877+00:00",
+        "wall_seconds": 51.678963055834174
+      },
+      "wrapper_read_error": null,
+      "summary": {
+        "status": "SUCCESS",
+        "config": {
+          "L": 2.0,
+          "cfl": 0.15,
+          "Tmax": 0.26,
+          "order": 6,
+          "nb": 256,
+          "slice_targets": [
+            0,
+            0.05,
+            0.1,
+            0.15,
+            0.2,
+            0.24
+          ],
+          "diagnostic_radius": 1.1,
+          "trace_slices": true,
+          "epsilon": 0.08,
+          "N": 129,
+          "tag": "spatial_e08_N129"
+        },
+        "nsteps": 56,
+        "dt": 0.004642857142857143,
+        "h": 0.03125,
+        "runtime_seconds": 44.44338166899979,
+        "diagnostics": [
+          {
+            "T": 0.0,
+            "hamiltonian_linf": 5.19186950376227e-12,
+            "momentum_linf": 4.524288062246473e-12,
+            "gauge_linf": 0.0,
+            "min_lapse": 1.0,
+            "min_spatial_metric_eigenvalue": 1.0195505733252679
+          },
+          {
+            "T": 0.0325,
+            "hamiltonian_linf": 5.725806981327075e-12,
+            "momentum_linf": 5.228525945533136e-12,
+            "gauge_linf": 1.764567543996424e-13,
+            "min_lapse": 0.9999935378470712,
+            "min_spatial_metric_eigenvalue": 1.0195349441485568
+          },
+          {
+            "T": 0.065,
+            "hamiltonian_linf": 5.721253332202636e-12,
+            "momentum_linf": 5.331147415882365e-12,
+            "gauge_linf": 3.186050761193777e-13,
+            "min_lapse": 0.9999742579084163,
+            "min_spatial_metric_eigenvalue": 1.0195015795808022
+          },
+          {
+            "T": 0.0975,
+            "hamiltonian_linf": 6.0329588547070045e-12,
+            "momentum_linf": 5.096575505375567e-12,
+            "gauge_linf": 4.763348872967372e-13,
+            "min_lapse": 0.9999424784146118,
+            "min_spatial_metric_eigenvalue": 1.0194472642844217
+          },
+          {
+            "T": 0.13,
+            "hamiltonian_linf": 7.357881665059907e-12,
+            "momentum_linf": 4.978632523605642e-12,
+            "gauge_linf": 5.922219679121628e-13,
+            "min_lapse": 0.9998987253184902,
+            "min_spatial_metric_eigenvalue": 1.0193694873886225
+          },
+          {
+            "T": 0.1625,
+            "hamiltonian_linf": 7.648184169317673e-12,
+            "momentum_linf": 5.431061416566463e-12,
+            "gauge_linf": 7.175001604023178e-13,
+            "min_lapse": 0.9998437256522773,
+            "min_spatial_metric_eigenvalue": 1.0192654833194854
+          },
+          {
+            "T": 0.195,
+            "hamiltonian_linf": 8.914827209771659e-12,
+            "momentum_linf": 5.540250116314871e-12,
+            "gauge_linf": 8.475421416531727e-13,
+            "min_lapse": 0.999778398235906,
+            "min_spatial_metric_eigenvalue": 1.0191321315100763
+          },
+          {
+            "T": 0.2275,
+            "hamiltonian_linf": 9.309971196747036e-12,
+            "momentum_linf": 5.57688357299968e-12,
+            "gauge_linf": 1.1077932213069212e-12,
+            "min_lapse": 0.9997038417440717,
+            "min_spatial_metric_eigenvalue": 1.0189658097046161
+          },
+          {
+            "T": 0.26,
+            "hamiltonian_linf": 1.0363376823363524e-11,
+            "momentum_linf": 6.4723925004284144e-12,
+            "gauge_linf": 1.4732354301571142e-12,
+            "min_lapse": 0.9996213201407135,
+            "min_spatial_metric_eigenvalue": 1.018753535945681
+          }
+        ],
+        "max_midpoint_eikonal_residual": 4.401700715028767e-08,
+        "slice_inverse_residual": 5.551115123125783e-17,
+        "boundary_slice_inverse_residual": 5.551115123125783e-17,
+        "boundary": {
+          "max_V_norm": -0.874024424515031,
+          "min_spatial_gradient2": 0.0015749108379926428,
+          "max_eikonal_material_defect": 1.6925405521561743e-11
+        },
+        "center_gaussian_eikonal_discrepancy": 0.0,
+        "slices_complete_in_diagnostic_disk": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "boundary_slices_complete": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "max_material_label_error": 1.315561895531836e-10,
+        "connectivity_audit": {
+          "exits": 82,
+          "mismatched_pairs": 0,
+          "unresolved_eligible_cases": 0
+        }
+      },
+      "summary_read_error": null,
+      "evolution_present": true
+    },
+    {
+      "index": 6,
+      "task": "task_006",
+      "config": "configs/006_spatial_e12_N65.json",
+      "wrapper": {
+        "task": "task_006",
+        "started_utc": "2026-11-15T08:04:45.602344+00:00",
+        "status": "SUCCESS",
+        "slurm_job_id": "3673734",
+        "slurm_array_job_id": null,
+        "slurm_array_task_id": null,
+        "config": "configs/006_spatial_e12_N65.json",
+        "config_sha256": "922ede7ea8a4e7561c6164a3d12c3f721ae05f8fba52430ae7e76fcabe6c0bfe",
+        "command": [
+          "/mnt/home/soft/python/programs/x86_64/python_3.11.4/bin/python3",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/solver.py",
+          "--config",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/configs/006_spatial_e12_N65.json",
+          "--output",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/task_006"
+        ],
+        "exit_code": 0,
+        "finished_utc": "2026-11-15T08:04:56.468557+00:00",
+        "wall_seconds": 10.865330541040748
+      },
+      "wrapper_read_error": null,
+      "summary": {
+        "status": "SUCCESS",
+        "config": {
+          "L": 2.0,
+          "cfl": 0.15,
+          "Tmax": 0.26,
+          "order": 6,
+          "nb": 256,
+          "slice_targets": [
+            0,
+            0.05,
+            0.1,
+            0.15,
+            0.2,
+            0.24
+          ],
+          "diagnostic_radius": 1.1,
+          "trace_slices": true,
+          "epsilon": 0.12,
+          "N": 65,
+          "tag": "spatial_e12_N65"
+        },
+        "nsteps": 28,
+        "dt": 0.009285714285714286,
+        "h": 0.0625,
+        "runtime_seconds": 6.453286105999723,
+        "diagnostics": [
+          {
+            "T": 0.0,
+            "hamiltonian_linf": 1.2057965459444375e-09,
+            "momentum_linf": 1.3259944193003137e-09,
+            "gauge_linf": 0.0,
+            "min_lapse": 1.0,
+            "min_spatial_metric_eigenvalue": 1.044413552647982
+          },
+          {
+            "T": 0.027857142857142858,
+            "hamiltonian_linf": 1.223008500028655e-09,
+            "momentum_linf": 1.3360266495551776e-09,
+            "gauge_linf": 8.089001035848308e-12,
+            "min_lapse": 0.9999898751203988,
+            "min_spatial_metric_eigenvalue": 1.044384746628785
+          },
+          {
+            "T": 0.055714285714285716,
+            "hamiltonian_linf": 1.2754688069605002e-09,
+            "momentum_linf": 1.3408426938199547e-09,
+            "gauge_linf": 1.8758973005431517e-11,
+            "min_lapse": 0.9999596195000647,
+            "min_spatial_metric_eigenvalue": 1.044325599549231
+          },
+          {
+            "T": 0.08357142857142856,
+            "hamiltonian_linf": 1.370039560966152e-09,
+            "momentum_linf": 1.326982852593861e-09,
+            "gauge_linf": 4.2551333440907104e-11,
+            "min_lapse": 0.9999095891266446,
+            "min_spatial_metric_eigenvalue": 1.044232262676643
+          },
+          {
+            "T": 0.11142857142857143,
+            "hamiltonian_linf": 1.4945025772483689e-09,
+            "momentum_linf": 1.8270191566235883e-09,
+            "gauge_linf": 7.61290697350826e-11,
+            "min_lapse": 0.9998403737558222,
+            "min_spatial_metric_eigenvalue": 1.0441010117931269
+          },
+          {
+            "T": 0.1392857142857143,
+            "hamiltonian_linf": 1.6302325010764118e-09,
+            "momentum_linf": 4.334561451956043e-09,
+            "gauge_linf": 1.1646216635939591e-10,
+            "min_lapse": 0.9997527915811398,
+            "min_spatial_metric_eigenvalue": 1.0439278930254836
+          },
+          {
+            "T": 0.16714285714285712,
+            "hamiltonian_linf": 1.925211615128042e-09,
+            "momentum_linf": 2.749791203765506e-09,
+            "gauge_linf": 1.61762081674737e-10,
+            "min_lapse": 0.9996478817822682,
+            "min_spatial_metric_eigenvalue": 1.0437086613930322
+          },
+          {
+            "T": 0.195,
+            "hamiltonian_linf": 2.070332159528898e-08,
+            "momentum_linf": 3.6694771932827e-08,
+            "gauge_linf": 2.8103795667120074e-10,
+            "min_lapse": 0.9995268949615873,
+            "min_spatial_metric_eigenvalue": 1.043438757218915
+          },
+          {
+            "T": 0.22285714285714286,
+            "hamiltonian_linf": 6.426961530331399e-08,
+            "momentum_linf": 1.1669442999320129e-07,
+            "gauge_linf": 7.582142286398099e-10,
+            "min_lapse": 0.9993912814807986,
+            "min_spatial_metric_eigenvalue": 1.04311328834469
+          },
+          {
+            "T": 0.2507142857142857,
+            "hamiltonian_linf": 3.957419159039688e-08,
+            "momentum_linf": 5.8435750570004497e-08,
+            "gauge_linf": 1.4722571660277294e-09,
+            "min_lapse": 0.999242677710492,
+            "min_spatial_metric_eigenvalue": 1.0427270122723893
+          },
+          {
+            "T": 0.26,
+            "hamiltonian_linf": 6.75837304869864e-08,
+            "momentum_linf": 1.5163585369293298e-07,
+            "gauge_linf": 1.4209973448991493e-09,
+            "min_lapse": 0.9991905640635921,
+            "min_spatial_metric_eigenvalue": 1.0425837819383397
+          }
+        ],
+        "max_midpoint_eikonal_residual": 3.7524083551510046e-07,
+        "slice_inverse_residual": 5.551115123125783e-17,
+        "boundary_slice_inverse_residual": 5.551115123125783e-17,
+        "boundary": {
+          "max_V_norm": -0.8892991615910233,
+          "min_spatial_gradient2": 0.003617694425592946,
+          "max_eikonal_material_defect": 3.95679933262727e-10
+        },
+        "center_gaussian_eikonal_discrepancy": 0.0,
+        "slices_complete_in_diagnostic_disk": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "boundary_slices_complete": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "max_material_label_error": 2.7627991561196552e-09,
+        "connectivity_audit": {
+          "exits": 82,
+          "mismatched_pairs": 0,
+          "unresolved_eligible_cases": 0
+        }
+      },
+      "summary_read_error": null,
+      "evolution_present": true
+    },
+    {
+      "index": 7,
+      "task": "task_007",
+      "config": "configs/007_spatial_e12_N97.json",
+      "wrapper": {
+        "task": "task_007",
+        "started_utc": "2026-11-15T08:04:45.554878+00:00",
+        "status": "SUCCESS",
+        "slurm_job_id": "3673735",
+        "slurm_array_job_id": null,
+        "slurm_array_task_id": null,
+        "config": "configs/007_spatial_e12_N97.json",
+        "config_sha256": "8e1d8f181b19bd9fa20b7c8f3878d39bd0b66fe108d4ae6dc673b1ec63215db2",
+        "command": [
+          "/mnt/home/soft/python/programs/x86_64/python_3.11.4/bin/python3",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/solver.py",
+          "--config",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/configs/007_spatial_e12_N97.json",
+          "--output",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/task_007"
+        ],
+        "exit_code": 0,
+        "finished_utc": "2026-11-15T08:05:11.031673+00:00",
+        "wall_seconds": 25.476023263996467
+      },
+      "wrapper_read_error": null,
+      "summary": {
+        "status": "SUCCESS",
+        "config": {
+          "L": 2.0,
+          "cfl": 0.15,
+          "Tmax": 0.26,
+          "order": 6,
+          "nb": 256,
+          "slice_targets": [
+            0,
+            0.05,
+            0.1,
+            0.15,
+            0.2,
+            0.24
+          ],
+          "diagnostic_radius": 1.1,
+          "trace_slices": true,
+          "epsilon": 0.12,
+          "N": 97,
+          "tag": "spatial_e12_N97"
+        },
+        "nsteps": 42,
+        "dt": 0.006190476190476191,
+        "h": 0.04166666666666674,
+        "runtime_seconds": 19.58389736711979,
+        "diagnostics": [
+          {
+            "T": 0.0,
+            "hamiltonian_linf": 1.0690567875393242e-10,
+            "momentum_linf": 1.2297118618526115e-10,
+            "gauge_linf": 0.0,
+            "min_lapse": 1.0,
+            "min_spatial_metric_eigenvalue": 1.044373952395076
+          },
+          {
+            "T": 0.030952380952380953,
+            "hamiltonian_linf": 1.0911993530982045e-10,
+            "momentum_linf": 1.236098836135402e-10,
+            "gauge_linf": 1.2995260226742443e-12,
+            "min_lapse": 0.999987503023158,
+            "min_spatial_metric_eigenvalue": 1.0443444729242863
+          },
+          {
+            "T": 0.06190476190476191,
+            "hamiltonian_linf": 1.1461939730672555e-10,
+            "momentum_linf": 1.2427965861289136e-10,
+            "gauge_linf": 2.5213186981899706e-12,
+            "min_lapse": 0.9999501934318713,
+            "min_spatial_metric_eigenvalue": 1.0442809577616794
+          },
+          {
+            "T": 0.09285714285714286,
+            "hamiltonian_linf": 1.2384403225151885e-10,
+            "momentum_linf": 1.2491096351707753e-10,
+            "gauge_linf": 4.8182124153563024e-12,
+            "min_lapse": 0.9998886132351502,
+            "min_spatial_metric_eigenvalue": 1.0441768013577994
+          },
+          {
+            "T": 0.12380952380952381,
+            "hamiltonian_linf": 1.368546456714803e-10,
+            "momentum_linf": 1.257639218460449e-10,
+            "gauge_linf": 8.670424058684865e-12,
+            "min_lapse": 0.9998036590893669,
+            "min_spatial_metric_eigenvalue": 1.0440160920915995
+          },
+          {
+            "T": 0.15476190476190477,
+            "hamiltonian_linf": 1.5399544833760714e-10,
+            "momentum_linf": 1.262240789320912e-10,
+            "gauge_linf": 1.3737712372034633e-11,
+            "min_lapse": 0.9996965722727554,
+            "min_spatial_metric_eigenvalue": 1.0437950629900234
+          },
+          {
+            "T": 0.18571428571428572,
+            "hamiltonian_linf": 1.757277379166311e-10,
+            "momentum_linf": 1.266851241965572e-10,
+            "gauge_linf": 2.012493758897098e-11,
+            "min_lapse": 0.9995689246738189,
+            "min_spatial_metric_eigenvalue": 1.0435131226577736
+          },
+          {
+            "T": 0.21666666666666665,
+            "hamiltonian_linf": 1.994214966771768e-10,
+            "momentum_linf": 1.4190979988337737e-10,
+            "gauge_linf": 2.7932215029580773e-11,
+            "min_lapse": 0.9994226008158307,
+            "min_spatial_metric_eigenvalue": 1.0431636670705302
+          },
+          {
+            "T": 0.24761904761904763,
+            "hamiltonian_linf": 2.4499653694665113e-10,
+            "momentum_linf": 1.5598259836546724e-10,
+            "gauge_linf": 3.728192331824575e-11,
+            "min_lapse": 0.9992597759432834,
+            "min_spatial_metric_eigenvalue": 1.0427395934525914
+          },
+          {
+            "T": 0.26,
+            "hamiltonian_linf": 3.3704833368730647e-10,
+            "momentum_linf": 1.800201168689064e-10,
+            "gauge_linf": 4.171286893098116e-11,
+            "min_lapse": 0.9991905640565776,
+            "min_spatial_metric_eigenvalue": 1.0425473785313555
+          }
+        ],
+        "max_midpoint_eikonal_residual": 1.6680394843149315e-07,
+        "slice_inverse_residual": 5.551115123125783e-17,
+        "boundary_slice_inverse_residual": 5.551115123125783e-17,
+        "boundary": {
+          "max_V_norm": -0.8892982575756496,
+          "min_spatial_gradient2": 0.003617692102747572,
+          "max_eikonal_material_defect": 1.3472550852711151e-10
+        },
+        "center_gaussian_eikonal_discrepancy": 0.0,
+        "slices_complete_in_diagnostic_disk": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "boundary_slices_complete": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "max_material_label_error": 7.598901299865624e-10,
+        "connectivity_audit": {
+          "exits": 82,
+          "mismatched_pairs": 0,
+          "unresolved_eligible_cases": 0
+        }
+      },
+      "summary_read_error": null,
+      "evolution_present": true
+    },
+    {
+      "index": 8,
+      "task": "task_008",
+      "config": "configs/008_spatial_e12_N129.json",
+      "wrapper": {
+        "task": "task_008",
+        "started_utc": "2026-11-15T08:04:45.526261+00:00",
+        "status": "SUCCESS",
+        "slurm_job_id": "3673736",
+        "slurm_array_job_id": null,
+        "slurm_array_task_id": null,
+        "config": "configs/008_spatial_e12_N129.json",
+        "config_sha256": "4ccae28ede74db0a362066fb02acf9754cf2fccec971c025fe6399ceed07b2a6",
+        "command": [
+          "/mnt/home/soft/python/programs/x86_64/python_3.11.4/bin/python3",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/solver.py",
+          "--config",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/configs/008_spatial_e12_N129.json",
+          "--output",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/task_008"
+        ],
+        "exit_code": 0,
+        "finished_utc": "2026-11-15T08:05:37.075986+00:00",
+        "wall_seconds": 51.54889345006086
+      },
+      "wrapper_read_error": null,
+      "summary": {
+        "status": "SUCCESS",
+        "config": {
+          "L": 2.0,
+          "cfl": 0.15,
+          "Tmax": 0.26,
+          "order": 6,
+          "nb": 256,
+          "slice_targets": [
+            0,
+            0.05,
+            0.1,
+            0.15,
+            0.2,
+            0.24
+          ],
+          "diagnostic_radius": 1.1,
+          "trace_slices": true,
+          "epsilon": 0.12,
+          "N": 129,
+          "tag": "spatial_e12_N129"
+        },
+        "nsteps": 56,
+        "dt": 0.004642857142857143,
+        "h": 0.03125,
+        "runtime_seconds": 44.305817879969254,
+        "diagnostics": [
+          {
+            "T": 0.0,
+            "hamiltonian_linf": 1.9103871262693417e-11,
+            "momentum_linf": 2.248766537565894e-11,
+            "gauge_linf": 0.0,
+            "min_lapse": 1.0,
+            "min_spatial_metric_eigenvalue": 1.0443307200946097
+          },
+          {
+            "T": 0.0325,
+            "hamiltonian_linf": 1.999170967659225e-11,
+            "momentum_linf": 2.2781825904927278e-11,
+            "gauge_linf": 3.7600898274544495e-13,
+            "min_lapse": 0.9999862237925495,
+            "min_spatial_metric_eigenvalue": 1.0442955952770192
+          },
+          {
+            "T": 0.065,
+            "hamiltonian_linf": 2.101267770893145e-11,
+            "momentum_linf": 2.277854380811073e-11,
+            "gauge_linf": 7.300892464864843e-13,
+            "min_lapse": 0.9999451155474517,
+            "min_spatial_metric_eigenvalue": 1.0442207273444524
+          },
+          {
+            "T": 0.0975,
+            "hamiltonian_linf": 2.3410690053182748e-11,
+            "momentum_linf": 2.2847846010976003e-11,
+            "gauge_linf": 1.0706154822208893e-12,
+            "min_lapse": 0.9998773337047588,
+            "min_spatial_metric_eigenvalue": 1.0440990059875608
+          },
+          {
+            "T": 0.13,
+            "hamiltonian_linf": 2.5737696696115364e-11,
+            "momentum_linf": 2.325923741802738e-11,
+            "gauge_linf": 1.732225629284309e-12,
+            "min_lapse": 0.999783966697574,
+            "min_spatial_metric_eigenvalue": 1.043924939140667
+          },
+          {
+            "T": 0.1625,
+            "hamiltonian_linf": 2.910412189027767e-11,
+            "momentum_linf": 2.3745372855488167e-11,
+            "gauge_linf": 2.7559719950708565e-12,
+            "min_lapse": 0.999666519519911,
+            "min_spatial_metric_eigenvalue": 1.0436924946638366
+          },
+          {
+            "T": 0.195,
+            "hamiltonian_linf": 3.350545535463212e-11,
+            "momentum_linf": 2.351293465485682e-11,
+            "gauge_linf": 4.0253291888622616e-12,
+            "min_lapse": 0.9995268949570514,
+            "min_spatial_metric_eigenvalue": 1.0433948703748135
+          },
+          {
+            "T": 0.2275,
+            "hamiltonian_linf": 3.899169875865027e-11,
+            "momentum_linf": 2.5204826073488285e-11,
+            "gauge_linf": 5.606014615772202e-12,
+            "min_lapse": 0.9993673695106057,
+            "min_spatial_metric_eigenvalue": 1.0430244712660588
+          },
+          {
+            "T": 0.26,
+            "hamiltonian_linf": 4.546824722284626e-11,
+            "momentum_linf": 3.049253904929827e-11,
+            "gauge_linf": 7.506247786906139e-12,
+            "min_lapse": 0.9991905640553966,
+            "min_spatial_metric_eigenvalue": 1.0425533371795932
+          }
+        ],
+        "max_midpoint_eikonal_residual": 9.383317545186287e-08,
+        "slice_inverse_residual": 5.551115123125783e-17,
+        "boundary_slice_inverse_residual": 5.551115123125783e-17,
+        "boundary": {
+          "max_V_norm": -0.8892981401247295,
+          "min_spatial_gradient2": 0.0036176914871458654,
+          "max_eikonal_material_defect": 4.136527231857201e-11
+        },
+        "center_gaussian_eikonal_discrepancy": 0.0,
+        "slices_complete_in_diagnostic_disk": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "boundary_slices_complete": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "max_material_label_error": 3.7161675819907813e-10,
+        "connectivity_audit": {
+          "exits": 82,
+          "mismatched_pairs": 0,
+          "unresolved_eligible_cases": 0
+        }
+      },
+      "summary_read_error": null,
+      "evolution_present": true
+    },
+    {
+      "index": 9,
+      "task": "task_009",
+      "config": "configs/009_time_e04_cfl0.3.json",
+      "wrapper": {
+        "task": "task_009",
+        "started_utc": "2026-11-15T08:04:45.480346+00:00",
+        "status": "SUCCESS",
+        "slurm_job_id": "3673737",
+        "slurm_array_job_id": null,
+        "slurm_array_task_id": null,
+        "config": "configs/009_time_e04_cfl0.3.json",
+        "config_sha256": "ac67d637b24a51b6fab6d3b6f991a5a18d446ed592debad40ccac107dcb4b8cf",
+        "command": [
+          "/mnt/home/soft/python/programs/x86_64/python_3.11.4/bin/python3",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/solver.py",
+          "--config",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/configs/009_time_e04_cfl0.3.json",
+          "--output",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/task_009"
+        ],
+        "exit_code": 0,
+        "finished_utc": "2026-11-15T08:05:01.322566+00:00",
+        "wall_seconds": 15.841361412080005
+      },
+      "wrapper_read_error": null,
+      "summary": {
+        "status": "SUCCESS",
+        "config": {
+          "L": 2.0,
+          "cfl": 0.3,
+          "Tmax": 0.26,
+          "order": 6,
+          "nb": 256,
+          "slice_targets": [
+            0,
+            0.05,
+            0.1,
+            0.15,
+            0.2,
+            0.24
+          ],
+          "diagnostic_radius": 1.1,
+          "trace_slices": true,
+          "epsilon": 0.04,
+          "N": 97,
+          "tag": "time_e04_cfl0.3"
+        },
+        "nsteps": 21,
+        "dt": 0.012380952380952381,
+        "h": 0.04166666666666674,
+        "runtime_seconds": 10.368100265040994,
+        "diagnostics": [
+          {
+            "T": 0.0,
+            "hamiltonian_linf": 3.790162628192206e-12,
+            "momentum_linf": 1.5641888825856931e-12,
+            "gauge_linf": 0.0,
+            "min_lapse": 1.0,
+            "min_spatial_metric_eigenvalue": 1.0048697928578127
+          },
+          {
+            "T": 0.024761904761904763,
+            "hamiltonian_linf": 1.9788068753023857e-12,
+            "momentum_linf": 2.0504783851751918e-12,
+            "gauge_linf": 1.3007248160034016e-12,
+            "min_lapse": 0.9999990304421741,
+            "min_spatial_metric_eigenvalue": 1.0048674312505876
+          },
+          {
+            "T": 0.049523809523809526,
+            "hamiltonian_linf": 4.731570170390942e-12,
+            "momentum_linf": 1.8220942333072032e-12,
+            "gauge_linf": 2.5120004532801807e-12,
+            "min_lapse": 0.9999961312189686,
+            "min_spatial_metric_eigenvalue": 1.0048627767378113
+          },
+          {
+            "T": 0.07428571428571429,
+            "hamiltonian_linf": 2.4275173884924506e-12,
+            "momentum_linf": 2.012159969894123e-12,
+            "gauge_linf": 3.782193517897088e-12,
+            "min_lapse": 0.9999913306117898,
+            "min_spatial_metric_eigenvalue": 1.0048553394460915
+          },
+          {
+            "T": 0.09904761904761905,
+            "hamiltonian_linf": 3.927490711125303e-12,
+            "momentum_linf": 1.9907096804328006e-12,
+            "gauge_linf": 5.035499560154183e-12,
+            "min_lapse": 0.9999846755252516,
+            "min_spatial_metric_eigenvalue": 1.004844860023483
+          },
+          {
+            "T": 0.12380952380952381,
+            "hamiltonian_linf": 3.736237014217991e-12,
+            "momentum_linf": 2.0089871606565612e-12,
+            "gauge_linf": 6.289423380866959e-12,
+            "min_lapse": 0.9999762311406168,
+            "min_spatial_metric_eigenvalue": 1.0048296680732145
+          },
+          {
+            "T": 0.14857142857142858,
+            "hamiltonian_linf": 5.828212912284414e-12,
+            "momentum_linf": 2.1233837171202863e-12,
+            "gauge_linf": 7.573593660169854e-12,
+            "min_lapse": 0.9999660804306826,
+            "min_spatial_metric_eigenvalue": 1.0048103445817942
+          },
+          {
+            "T": 0.17333333333333334,
+            "hamiltonian_linf": 3.75340730718321e-12,
+            "momentum_linf": 2.049251935677676e-12,
+            "gauge_linf": 8.820770992394114e-12,
+            "min_lapse": 0.9999543235361744,
+            "min_spatial_metric_eigenvalue": 1.0047866972045063
+          },
+          {
+            "T": 0.1980952380952381,
+            "hamiltonian_linf": 4.129437677219405e-12,
+            "momentum_linf": 2.474056875166608e-12,
+            "gauge_linf": 1.0104222107089972e-11,
+            "min_lapse": 0.9999410770037273,
+            "min_spatial_metric_eigenvalue": 1.0047583397459443
+          },
+          {
+            "T": 0.22285714285714284,
+            "hamiltonian_linf": 4.081668163180563e-12,
+            "momentum_linf": 4.570252813348996e-12,
+            "gauge_linf": 1.1407390906277505e-11,
+            "min_lapse": 0.9999264728855425,
+            "min_spatial_metric_eigenvalue": 1.0047248621211822
+          },
+          {
+            "T": 0.24761904761904763,
+            "hamiltonian_linf": 6.972552743511606e-12,
+            "momentum_linf": 4.3691072895007954e-12,
+            "gauge_linf": 1.2689880619793371e-11,
+            "min_lapse": 0.9999106577008118,
+            "min_spatial_metric_eigenvalue": 1.0046858288091818
+          },
+          {
+            "T": 0.26,
+            "hamiltonian_linf": 1.862275004343994e-11,
+            "momentum_linf": 2.4144128970421397e-11,
+            "gauge_linf": 1.332494596083244e-11,
+            "min_lapse": 0.9999023454148057,
+            "min_spatial_metric_eigenvalue": 1.004664085327719
+          }
+        ],
+        "max_midpoint_eikonal_residual": 8.08129065887897e-08,
+        "slice_inverse_residual": 8.326672684688674e-17,
+        "boundary_slice_inverse_residual": 5.551115123125783e-17,
+        "boundary": {
+          "max_V_norm": -0.8635825603631367,
+          "min_spatial_gradient2": 0.00038845249775102184,
+          "max_eikonal_material_defect": 1.691602413700366e-11
+        },
+        "center_gaussian_eikonal_discrepancy": 5.551115123125783e-17,
+        "slices_complete_in_diagnostic_disk": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "boundary_slices_complete": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "max_material_label_error": 8.606089799134686e-10,
+        "connectivity_audit": {
+          "exits": 82,
+          "mismatched_pairs": 0,
+          "unresolved_eligible_cases": 0
+        }
+      },
+      "summary_read_error": null,
+      "evolution_present": true
+    },
+    {
+      "index": 10,
+      "task": "task_010",
+      "config": "configs/010_time_e04_cfl0.075.json",
+      "wrapper": {
+        "task": "task_010",
+        "started_utc": "2026-11-15T08:04:47.604208+00:00",
+        "status": "SUCCESS",
+        "slurm_job_id": "3673738",
+        "slurm_array_job_id": null,
+        "slurm_array_task_id": null,
+        "config": "configs/010_time_e04_cfl0.075.json",
+        "config_sha256": "727c742f7c18658a5c24752b9c4e7e82314884f3ac73f1950278267d40046990",
+        "command": [
+          "/mnt/home/soft/python/programs/x86_64/python_3.11.4/bin/python3",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/solver.py",
+          "--config",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/configs/010_time_e04_cfl0.075.json",
+          "--output",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/task_010"
+        ],
+        "exit_code": 0,
+        "finished_utc": "2026-11-15T08:05:41.233467+00:00",
+        "wall_seconds": 53.62829523906112
+      },
+      "wrapper_read_error": null,
+      "summary": {
+        "status": "SUCCESS",
+        "config": {
+          "L": 2.0,
+          "cfl": 0.075,
+          "Tmax": 0.26,
+          "order": 6,
+          "nb": 256,
+          "slice_targets": [
+            0,
+            0.05,
+            0.1,
+            0.15,
+            0.2,
+            0.24
+          ],
+          "diagnostic_radius": 1.1,
+          "trace_slices": true,
+          "epsilon": 0.04,
+          "N": 97,
+          "tag": "time_e04_cfl0.075"
+        },
+        "nsteps": 84,
+        "dt": 0.0030952380952380953,
+        "h": 0.04166666666666674,
+        "runtime_seconds": 43.43266998510808,
+        "diagnostics": [
+          {
+            "T": 0.0,
+            "hamiltonian_linf": 3.790162628192206e-12,
+            "momentum_linf": 1.5641888825856931e-12,
+            "gauge_linf": 0.0,
+            "min_lapse": 1.0,
+            "min_spatial_metric_eigenvalue": 1.0048697928578127
+          },
+          {
+            "T": 0.030952380952380953,
+            "hamiltonian_linf": 2.994365606162619e-12,
+            "momentum_linf": 2.069164392777545e-12,
+            "gauge_linf": 8.953589603248322e-14,
+            "min_lapse": 0.9999984857584355,
+            "min_spatial_metric_eigenvalue": 1.0048665108833639
+          },
+          {
+            "T": 0.06190476190476191,
+            "hamiltonian_linf": 2.8555100992089244e-12,
+            "momentum_linf": 1.995598022767886e-12,
+            "gauge_linf": 1.3061715283269907e-13,
+            "min_lapse": 0.9999939660897571,
+            "min_spatial_metric_eigenvalue": 1.0048594230811327
+          },
+          {
+            "T": 0.09285714285714286,
+            "hamiltonian_linf": 4.340323239704347e-12,
+            "momentum_linf": 1.9245566511977286e-12,
+            "gauge_linf": 7.844707017526618e-14,
+            "min_lapse": 0.9999865098975724,
+            "min_spatial_metric_eigenvalue": 1.0048477786522951
+          },
+          {
+            "T": 0.12380952380952381,
+            "hamiltonian_linf": 3.69701751851137e-12,
+            "momentum_linf": 2.1732997346202154e-12,
+            "gauge_linf": 1.3428052334571512e-13,
+            "min_lapse": 0.9999762311398331,
+            "min_spatial_metric_eigenvalue": 1.0048296680690982
+          },
+          {
+            "T": 0.15476190476190477,
+            "hamiltonian_linf": 4.271287750573505e-12,
+            "momentum_linf": 2.0169655876034476e-12,
+            "gauge_linf": 1.8826044787971365e-13,
+            "min_lapse": 0.9999632875069461,
+            "min_spatial_metric_eigenvalue": 1.0048048527883309
+          },
+          {
+            "T": 0.18571428571428572,
+            "hamiltonian_linf": 3.6480323969967365e-12,
+            "momentum_linf": 2.1235197844929332e-12,
+            "gauge_linf": 2.7067460534535535e-13,
+            "min_lapse": 0.9999478785715267,
+            "min_spatial_metric_eigenvalue": 1.0047731322812479
+          },
+          {
+            "T": 0.21666666666666665,
+            "hamiltonian_linf": 4.01764342281008e-12,
+            "momentum_linf": 4.090383847604739e-12,
+            "gauge_linf": 3.578134569943182e-13,
+            "min_lapse": 0.9999302434101504,
+            "min_spatial_metric_eigenvalue": 1.0047337349032386
+          },
+          {
+            "T": 0.24761904761904763,
+            "hamiltonian_linf": 6.823945922218577e-12,
+            "momentum_linf": 3.986641745890029e-12,
+            "gauge_linf": 4.597659174490792e-13,
+            "min_lapse": 0.9999106576975281,
+            "min_spatial_metric_eigenvalue": 1.0046858287999425
+          },
+          {
+            "T": 0.26,
+            "hamiltonian_linf": 1.781128976946489e-11,
+            "momentum_linf": 2.2008349569863084e-11,
+            "gauge_linf": 5.464651756801685e-13,
+            "min_lapse": 0.9999023454111778,
+            "min_spatial_metric_eigenvalue": 1.0046640853179116
+          }
+        ],
+        "max_midpoint_eikonal_residual": 5.053693463707987e-09,
+        "slice_inverse_residual": 5.551115123125783e-17,
+        "boundary_slice_inverse_residual": 5.551115123125783e-17,
+        "boundary": {
+          "max_V_norm": -0.8635825565775322,
+          "min_spatial_gradient2": 0.00038845249873114066,
+          "max_eikonal_material_defect": 1.5385359652952957e-11
+        },
+        "center_gaussian_eikonal_discrepancy": 0.0,
+        "slices_complete_in_diagnostic_disk": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "boundary_slices_complete": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "max_material_label_error": 3.088811498241917e-11,
+        "connectivity_audit": {
+          "exits": 82,
+          "mismatched_pairs": 0,
+          "unresolved_eligible_cases": 0
+        }
+      },
+      "summary_read_error": null,
+      "evolution_present": true
+    },
+    {
+      "index": 11,
+      "task": "task_011",
+      "config": "configs/011_time_e08_cfl0.3.json",
+      "wrapper": {
+        "task": "task_011",
+        "started_utc": "2026-11-15T08:04:47.604563+00:00",
+        "status": "SUCCESS",
+        "slurm_job_id": "3673739",
+        "slurm_array_job_id": null,
+        "slurm_array_task_id": null,
+        "config": "configs/011_time_e08_cfl0.3.json",
+        "config_sha256": "c0215da045765df0b8fb0fff2a1b0fefffde23aa139f9db9464236a1177a5577",
+        "command": [
+          "/mnt/home/soft/python/programs/x86_64/python_3.11.4/bin/python3",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/solver.py",
+          "--config",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/configs/011_time_e08_cfl0.3.json",
+          "--output",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/task_011"
+        ],
+        "exit_code": 0,
+        "finished_utc": "2026-11-15T08:05:07.021285+00:00",
+        "wall_seconds": 19.415923071093857
+      },
+      "wrapper_read_error": null,
+      "summary": {
+        "status": "SUCCESS",
+        "config": {
+          "L": 2.0,
+          "cfl": 0.3,
+          "Tmax": 0.26,
+          "order": 6,
+          "nb": 256,
+          "slice_targets": [
+            0,
+            0.05,
+            0.1,
+            0.15,
+            0.2,
+            0.24
+          ],
+          "diagnostic_radius": 1.1,
+          "trace_slices": true,
+          "epsilon": 0.08,
+          "N": 97,
+          "tag": "time_e08_cfl0.3"
+        },
+        "nsteps": 21,
+        "dt": 0.012380952380952381,
+        "h": 0.04166666666666674,
+        "runtime_seconds": 11.581041030120105,
+        "diagnostics": [
+          {
+            "T": 0.0,
+            "hamiltonian_linf": 2.208705093820207e-11,
+            "momentum_linf": 2.474781490846567e-11,
+            "gauge_linf": 0.0,
+            "min_lapse": 1.0,
+            "min_spatial_metric_eigenvalue": 1.0195694824982453
+          },
+          {
+            "T": 0.024761904761904763,
+            "hamiltonian_linf": 2.267079579620912e-11,
+            "momentum_linf": 2.4812206542851323e-11,
+            "gauge_linf": 5.025636072467997e-12,
+            "min_lapse": 0.9999962465628979,
+            "min_spatial_metric_eigenvalue": 1.019560041750386
+          },
+          {
+            "T": 0.049523809523809526,
+            "hamiltonian_linf": 2.4568805323532672e-11,
+            "momentum_linf": 2.5167738986614507e-11,
+            "gauge_linf": 1.0110376592390089e-11,
+            "min_lapse": 0.9999850221780766,
+            "min_spatial_metric_eigenvalue": 1.0195414499768496
+          },
+          {
+            "T": 0.07428571428571429,
+            "hamiltonian_linf": 2.698713474913461e-11,
+            "momentum_linf": 2.5547915345758287e-11,
+            "gauge_linf": 1.5283110305981938e-11,
+            "min_lapse": 0.999966434364503,
+            "min_spatial_metric_eigenvalue": 1.0195117597383794
+          },
+          {
+            "T": 0.09904761904761905,
+            "hamiltonian_linf": 2.981363420029304e-11,
+            "momentum_linf": 2.603924497898702e-11,
+            "gauge_linf": 2.0508973494730686e-11,
+            "min_lapse": 0.9999406614534002,
+            "min_spatial_metric_eigenvalue": 1.019469949033762
+          },
+          {
+            "T": 0.12380952380952381,
+            "hamiltonian_linf": 3.303812778909787e-11,
+            "momentum_linf": 2.6370071057324473e-11,
+            "gauge_linf": 2.582783824207948e-11,
+            "min_lapse": 0.9999079512881696,
+            "min_spatial_metric_eigenvalue": 1.0194095326895176
+          },
+          {
+            "T": 0.14857142857142858,
+            "hamiltonian_linf": 3.697235920196995e-11,
+            "momentum_linf": 2.696146257641363e-11,
+            "gauge_linf": 3.121412712988214e-11,
+            "min_lapse": 0.9998686194052595,
+            "min_spatial_metric_eigenvalue": 1.019332536889999
+          },
+          {
+            "T": 0.17333333333333334,
+            "hamiltonian_linf": 4.172566112070619e-11,
+            "momentum_linf": 2.764178859762656e-11,
+            "gauge_linf": 3.665844318225505e-11,
+            "min_lapse": 0.99982304669691,
+            "min_spatial_metric_eigenvalue": 1.0192383728350594
+          },
+          {
+            "T": 0.1980952380952381,
+            "hamiltonian_linf": 4.674189854614319e-11,
+            "momentum_linf": 3.038019488754706e-11,
+            "gauge_linf": 4.219550548958324e-11,
+            "min_lapse": 0.9997716765568984,
+            "min_spatial_metric_eigenvalue": 1.0191255243815651
+          },
+          {
+            "T": 0.22285714285714284,
+            "hamiltonian_linf": 5.297937782922091e-11,
+            "momentum_linf": 3.939240947326006e-11,
+            "gauge_linf": 4.781177012625081e-11,
+            "min_lapse": 0.9997150115105503,
+            "min_spatial_metric_eigenvalue": 1.0189923827438514
+          },
+          {
+            "T": 0.24761904761904763,
+            "hamiltonian_linf": 5.98615532143576e-11,
+            "momentum_linf": 3.8457776026235013e-11,
+            "gauge_linf": 5.3473814395526144e-11,
+            "min_lapse": 0.9996536093303636,
+            "min_spatial_metric_eigenvalue": 1.018837240554606
+          },
+          {
+            "T": 0.26,
+            "hamiltonian_linf": 1.0704311742548711e-10,
+            "momentum_linf": 6.226633098016521e-11,
+            "gauge_linf": 5.6335731305920943e-11,
+            "min_lapse": 0.9996213201539611,
+            "min_spatial_metric_eigenvalue": 1.018750857259925
+          }
+        ],
+        "max_midpoint_eikonal_residual": 3.128489227677278e-07,
+        "slice_inverse_residual": 8.326672684688674e-17,
+        "boundary_slice_inverse_residual": 5.551115123125783e-17,
+        "boundary": {
+          "max_V_norm": -0.874024487606407,
+          "min_spatial_gradient2": 0.0015749109604120959,
+          "max_eikonal_material_defect": 6.644779171338655e-11
+        },
+        "center_gaussian_eikonal_discrepancy": 0.0,
+        "slices_complete_in_diagnostic_disk": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "boundary_slices_complete": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "max_material_label_error": 1.6713655251465731e-09,
+        "connectivity_audit": {
+          "exits": 82,
+          "mismatched_pairs": 0,
+          "unresolved_eligible_cases": 0
+        }
+      },
+      "summary_read_error": null,
+      "evolution_present": true
+    },
+    {
+      "index": 12,
+      "task": "task_012",
+      "config": "configs/012_time_e08_cfl0.075.json",
+      "wrapper": {
+        "task": "task_012",
+        "started_utc": "2026-11-15T08:04:47.604846+00:00",
+        "status": "SUCCESS",
+        "slurm_job_id": "3673740",
+        "slurm_array_job_id": null,
+        "slurm_array_task_id": null,
+        "config": "configs/012_time_e08_cfl0.075.json",
+        "config_sha256": "84fa6f404a28d4b3c13f98f690f4488a82af80d1960413e60daf4455f6cbc93d",
+        "command": [
+          "/mnt/home/soft/python/programs/x86_64/python_3.11.4/bin/python3",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/solver.py",
+          "--config",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/configs/012_time_e08_cfl0.075.json",
+          "--output",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/task_012"
+        ],
+        "exit_code": 0,
+        "finished_utc": "2026-11-15T08:05:41.498999+00:00",
+        "wall_seconds": 53.89342742692679
+      },
+      "wrapper_read_error": null,
+      "summary": {
+        "status": "SUCCESS",
+        "config": {
+          "L": 2.0,
+          "cfl": 0.075,
+          "Tmax": 0.26,
+          "order": 6,
+          "nb": 256,
+          "slice_targets": [
+            0,
+            0.05,
+            0.1,
+            0.15,
+            0.2,
+            0.24
+          ],
+          "diagnostic_radius": 1.1,
+          "trace_slices": true,
+          "epsilon": 0.08,
+          "N": 97,
+          "tag": "time_e08_cfl0.075"
+        },
+        "nsteps": 84,
+        "dt": 0.0030952380952380953,
+        "h": 0.04166666666666674,
+        "runtime_seconds": 43.62945829797536,
+        "diagnostics": [
+          {
+            "T": 0.0,
+            "hamiltonian_linf": 2.208705093820207e-11,
+            "momentum_linf": 2.474781490846567e-11,
+            "gauge_linf": 0.0,
+            "min_lapse": 1.0,
+            "min_spatial_metric_eigenvalue": 1.0195694824982453
+          },
+          {
+            "T": 0.030952380952380953,
+            "hamiltonian_linf": 2.224420647678471e-11,
+            "momentum_linf": 2.483262033503575e-11,
+            "gauge_linf": 1.2207782568015105e-13,
+            "min_lapse": 0.9999941378872893,
+            "min_spatial_metric_eigenvalue": 1.0195563644725738
+          },
+          {
+            "T": 0.06190476190476191,
+            "hamiltonian_linf": 2.3385408193243862e-11,
+            "momentum_linf": 2.4775102108742786e-11,
+            "gauge_linf": 4.420035742443943e-13,
+            "min_lapse": 0.9999766392004865,
+            "min_spatial_metric_eigenvalue": 1.0195280598705694
+          },
+          {
+            "T": 0.09285714285714286,
+            "hamiltonian_linf": 2.5236073647461055e-11,
+            "momentum_linf": 2.5216846839815066e-11,
+            "gauge_linf": 9.874040894523344e-13,
+            "min_lapse": 0.9999477659012277,
+            "min_spatial_metric_eigenvalue": 1.0194815912979467
+          },
+          {
+            "T": 0.12380952380952381,
+            "hamiltonian_linf": 2.8146094829817336e-11,
+            "momentum_linf": 2.5234180196787026e-11,
+            "gauge_linf": 1.768646080211592e-12,
+            "min_lapse": 0.9999079512852571,
+            "min_spatial_metric_eigenvalue": 1.0194095326733805
+          },
+          {
+            "T": 0.15476190476190477,
+            "hamiltonian_linf": 3.1485026391608884e-11,
+            "momentum_linf": 2.5185150839823756e-11,
+            "gauge_linf": 2.792318879942591e-12,
+            "min_lapse": 0.9998577950248925,
+            "min_spatial_metric_eigenvalue": 1.019310663075747
+          },
+          {
+            "T": 0.18571428571428572,
+            "hamiltonian_linf": 3.578354973443609e-11,
+            "momentum_linf": 2.5851643742358377e-11,
+            "gauge_linf": 4.0553636648002264e-12,
+            "min_lapse": 0.9997980562341564,
+            "min_spatial_metric_eigenvalue": 1.0191843824411129
+          },
+          {
+            "T": 0.21666666666666665,
+            "hamiltonian_linf": 4.1018639873602325e-11,
+            "momentum_linf": 3.2415281396580564e-11,
+            "gauge_linf": 5.578662832620991e-12,
+            "min_lapse": 0.9997296445617868,
+            "min_spatial_metric_eigenvalue": 1.0190276622388914
+          },
+          {
+            "T": 0.24761904761904763,
+            "hamiltonian_linf": 5.55718387973414e-11,
+            "momentum_linf": 3.163124623339897e-11,
+            "gauge_linf": 7.383196860403948e-12,
+            "min_lapse": 0.9996536093181756,
+            "min_spatial_metric_eigenvalue": 1.0188372405182944
+          },
+          {
+            "T": 0.26,
+            "hamiltonian_linf": 9.892166252800649e-11,
+            "momentum_linf": 5.978829670932884e-11,
+            "gauge_linf": 8.2971023473363e-12,
+            "min_lapse": 0.9996213201404963,
+            "min_spatial_metric_eigenvalue": 1.0187508572213702
+          }
+        ],
+        "max_midpoint_eikonal_residual": 1.9564028619356577e-08,
+        "slice_inverse_residual": 5.551115123125783e-17,
+        "boundary_slice_inverse_residual": 5.551115123125783e-17,
+        "boundary": {
+          "max_V_norm": -0.8740244844850614,
+          "min_spatial_gradient2": 0.0015749109633273718,
+          "max_eikonal_material_defect": 6.096945170952495e-11
+        },
+        "center_gaussian_eikonal_discrepancy": 5.551115123125783e-17,
+        "slices_complete_in_diagnostic_disk": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "boundary_slices_complete": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "max_material_label_error": 2.578869340297274e-10,
+        "connectivity_audit": {
+          "exits": 82,
+          "mismatched_pairs": 0,
+          "unresolved_eligible_cases": 0
+        }
+      },
+      "summary_read_error": null,
+      "evolution_present": true
+    },
+    {
+      "index": 13,
+      "task": "task_013",
+      "config": "configs/013_time_e12_cfl0.3.json",
+      "wrapper": {
+        "task": "task_013",
+        "started_utc": "2026-11-15T08:04:45.798069+00:00",
+        "status": "SUCCESS",
+        "slurm_job_id": "3673741",
+        "slurm_array_job_id": null,
+        "slurm_array_task_id": null,
+        "config": "configs/013_time_e12_cfl0.3.json",
+        "config_sha256": "1c9e4419e6ca40d9a0fe21a43c9716d774f893665b0f1e244ee12939e6d65ae7",
+        "command": [
+          "/mnt/home/soft/python/programs/x86_64/python_3.11.4/bin/python3",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/solver.py",
+          "--config",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/configs/013_time_e12_cfl0.3.json",
+          "--output",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/task_013"
+        ],
+        "exit_code": 0,
+        "finished_utc": "2026-11-15T08:05:03.588882+00:00",
+        "wall_seconds": 17.790103788953274
+      },
+      "wrapper_read_error": null,
+      "summary": {
+        "status": "SUCCESS",
+        "config": {
+          "L": 2.0,
+          "cfl": 0.3,
+          "Tmax": 0.26,
+          "order": 6,
+          "nb": 256,
+          "slice_targets": [
+            0,
+            0.05,
+            0.1,
+            0.15,
+            0.2,
+            0.24
+          ],
+          "diagnostic_radius": 1.1,
+          "trace_slices": true,
+          "epsilon": 0.12,
+          "N": 97,
+          "tag": "time_e12_cfl0.3"
+        },
+        "nsteps": 21,
+        "dt": 0.012380952380952381,
+        "h": 0.04166666666666674,
+        "runtime_seconds": 11.47984038409777,
+        "diagnostics": [
+          {
+            "T": 0.0,
+            "hamiltonian_linf": 1.0690567875393242e-10,
+            "momentum_linf": 1.2297118618526115e-10,
+            "gauge_linf": 0.0,
+            "min_lapse": 1.0,
+            "min_spatial_metric_eigenvalue": 1.044373952395076
+          },
+          {
+            "T": 0.024761904761904763,
+            "hamiltonian_linf": 1.1034485131178329e-10,
+            "momentum_linf": 1.2384518237318343e-10,
+            "gauge_linf": 1.1336229724962076e-11,
+            "min_lapse": 0.9999919984489206,
+            "min_spatial_metric_eigenvalue": 1.0443527314798258
+          },
+          {
+            "T": 0.049523809523809526,
+            "hamiltonian_linf": 1.1902043239864213e-10,
+            "momentum_linf": 1.2502507883149772e-10,
+            "gauge_linf": 2.3023436268035503e-11,
+            "min_lapse": 0.9999680681218253,
+            "min_spatial_metric_eigenvalue": 1.0443109959941848
+          },
+          {
+            "T": 0.07428571428571429,
+            "hamiltonian_linf": 1.2953240563495783e-10,
+            "momentum_linf": 1.2642437877824486e-10,
+            "gauge_linf": 3.50487223067721e-11,
+            "min_lapse": 0.9999284314698405,
+            "min_spatial_metric_eigenvalue": 1.0442444079719044
+          },
+          {
+            "T": 0.09904761904761905,
+            "hamiltonian_linf": 1.4249976892921623e-10,
+            "momentum_linf": 1.2857126301113464e-10,
+            "gauge_linf": 4.740541652986836e-11,
+            "min_lapse": 0.9998734574899563,
+            "min_spatial_metric_eigenvalue": 1.0441507237371894
+          },
+          {
+            "T": 0.12380952380952381,
+            "hamiltonian_linf": 1.58073033829087e-10,
+            "momentum_linf": 1.3115029288274238e-10,
+            "gauge_linf": 6.008837517952285e-11,
+            "min_lapse": 0.9998036590948164,
+            "min_spatial_metric_eigenvalue": 1.0440160921246333
+          },
+          {
+            "T": 0.14857142857142858,
+            "hamiltonian_linf": 1.767046647893622e-10,
+            "momentum_linf": 1.3390233453286493e-10,
+            "gauge_linf": 7.309638924153114e-11,
+            "min_lapse": 0.9997196894345797,
+            "min_spatial_metric_eigenvalue": 1.0438439387704503
+          },
+          {
+            "T": 0.17333333333333334,
+            "hamiltonian_linf": 1.980943048485173e-10,
+            "momentum_linf": 1.3689455298504516e-10,
+            "gauge_linf": 8.640774678049562e-11,
+            "min_lapse": 0.9996223371748006,
+            "min_spatial_metric_eigenvalue": 1.0436336200822192
+          },
+          {
+            "T": 0.1980952380952381,
+            "hamiltonian_linf": 2.2242899189173215e-10,
+            "momentum_linf": 1.442604907059275e-10,
+            "gauge_linf": 1.0000552606106073e-10,
+            "min_lapse": 0.9995125207351052,
+            "min_spatial_metric_eigenvalue": 1.0433818284830743
+          },
+          {
+            "T": 0.22285714285714284,
+            "hamiltonian_linf": 2.502570650708691e-10,
+            "momentum_linf": 1.671956358084703e-10,
+            "gauge_linf": 1.1391428202054882e-10,
+            "min_lapse": 0.9993912814940703,
+            "min_spatial_metric_eigenvalue": 1.0430850583532232
+          },
+          {
+            "T": 0.24761904761904763,
+            "hamiltonian_linf": 2.821071987124668e-10,
+            "momentum_linf": 1.6640184369309807e-10,
+            "gauge_linf": 1.2813691589095866e-10,
+            "min_lapse": 0.9992597759660771,
+            "min_spatial_metric_eigenvalue": 1.0427395935272117
+          },
+          {
+            "T": 0.26,
+            "hamiltonian_linf": 3.5812247611843873e-10,
+            "momentum_linf": 1.829523702673308e-10,
+            "gauge_linf": 1.3536113002962269e-10,
+            "min_lapse": 0.9991905640817563,
+            "min_spatial_metric_eigenvalue": 1.0425473786106236
+          }
+        ],
+        "max_midpoint_eikonal_residual": 6.669254577484907e-07,
+        "slice_inverse_residual": 5.551115123125783e-17,
+        "boundary_slice_inverse_residual": 5.551115123125783e-17,
+        "boundary": {
+          "max_V_norm": -0.8892982597102116,
+          "min_spatial_gradient2": 0.003617692099542178,
+          "max_eikonal_material_defect": 1.4440149076477837e-10
+        },
+        "center_gaussian_eikonal_discrepancy": 0.0,
+        "slices_complete_in_diagnostic_disk": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "boundary_slices_complete": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "max_material_label_error": 2.37392476509779e-09,
+        "connectivity_audit": {
+          "exits": 82,
+          "mismatched_pairs": 0,
+          "unresolved_eligible_cases": 0
+        }
+      },
+      "summary_read_error": null,
+      "evolution_present": true
+    },
+    {
+      "index": 14,
+      "task": "task_014",
+      "config": "configs/014_time_e12_cfl0.075.json",
+      "wrapper": {
+        "task": "task_014",
+        "started_utc": "2026-11-15T08:04:45.797779+00:00",
+        "status": "SUCCESS",
+        "slurm_job_id": "3673742",
+        "slurm_array_job_id": null,
+        "slurm_array_task_id": null,
+        "config": "configs/014_time_e12_cfl0.075.json",
+        "config_sha256": "0bfda636019257f26415d2f9c9dbe0201cfb00fe89775dba46e184716b817d18",
+        "command": [
+          "/mnt/home/soft/python/programs/x86_64/python_3.11.4/bin/python3",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/solver.py",
+          "--config",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/configs/014_time_e12_cfl0.075.json",
+          "--output",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/task_014"
+        ],
+        "exit_code": 0,
+        "finished_utc": "2026-11-15T08:05:34.219715+00:00",
+        "wall_seconds": 48.42123722983524
+      },
+      "wrapper_read_error": null,
+      "summary": {
+        "status": "SUCCESS",
+        "config": {
+          "L": 2.0,
+          "cfl": 0.075,
+          "Tmax": 0.26,
+          "order": 6,
+          "nb": 256,
+          "slice_targets": [
+            0,
+            0.05,
+            0.1,
+            0.15,
+            0.2,
+            0.24
+          ],
+          "diagnostic_radius": 1.1,
+          "trace_slices": true,
+          "epsilon": 0.12,
+          "N": 97,
+          "tag": "time_e12_cfl0.075"
+        },
+        "nsteps": 84,
+        "dt": 0.0030952380952380953,
+        "h": 0.04166666666666674,
+        "runtime_seconds": 42.48213200713508,
+        "diagnostics": [
+          {
+            "T": 0.0,
+            "hamiltonian_linf": 1.0690567875393242e-10,
+            "momentum_linf": 1.2297118618526115e-10,
+            "gauge_linf": 0.0,
+            "min_lapse": 1.0,
+            "min_spatial_metric_eigenvalue": 1.044373952395076
+          },
+          {
+            "T": 0.030952380952380953,
+            "hamiltonian_linf": 1.0923433685361417e-10,
+            "momentum_linf": 1.237225859956892e-10,
+            "gauge_linf": 5.382757594303311e-13,
+            "min_lapse": 0.9999875030231389,
+            "min_spatial_metric_eigenvalue": 1.044344472923866
+          },
+          {
+            "T": 0.06190476190476191,
+            "hamiltonian_linf": 1.1494442203607846e-10,
+            "momentum_linf": 1.2393807161115156e-10,
+            "gauge_linf": 2.157003260245733e-12,
+            "min_lapse": 0.9999501934317863,
+            "min_spatial_metric_eigenvalue": 1.0442809577609191
+          },
+          {
+            "T": 0.09285714285714286,
+            "hamiltonian_linf": 1.235411564715072e-10,
+            "momentum_linf": 1.247118970593153e-10,
+            "gauge_linf": 4.8819798860920785e-12,
+            "min_lapse": 0.9998886132349526,
+            "min_spatial_metric_eigenvalue": 1.0441768013566635
+          },
+          {
+            "T": 0.12380952380952381,
+            "hamiltonian_linf": 1.3726722536411273e-10,
+            "momentum_linf": 1.25381796091395e-10,
+            "gauge_linf": 8.784206865239405e-12,
+            "min_lapse": 0.9998036590890099,
+            "min_spatial_metric_eigenvalue": 1.0440160920895223
+          },
+          {
+            "T": 0.15476190476190477,
+            "hamiltonian_linf": 1.548453171240638e-10,
+            "momentum_linf": 1.2553720302871385e-10,
+            "gauge_linf": 1.3922402821656409e-11,
+            "min_lapse": 0.9996965722721927,
+            "min_spatial_metric_eigenvalue": 1.0437950629873451
+          },
+          {
+            "T": 0.18571428571428572,
+            "hamiltonian_linf": 1.7634368965069314e-10,
+            "momentum_linf": 1.2645766031549321e-10,
+            "gauge_linf": 2.0386111834230005e-11,
+            "min_lapse": 0.9995689246730041,
+            "min_spatial_metric_eigenvalue": 1.0435131226544594
+          },
+          {
+            "T": 0.21666666666666665,
+            "hamiltonian_linf": 2.0151402768675553e-10,
+            "momentum_linf": 1.405989855790546e-10,
+            "gauge_linf": 2.8291137496557546e-11,
+            "min_lapse": 0.9994226008147175,
+            "min_spatial_metric_eigenvalue": 1.043163667066546
+          },
+          {
+            "T": 0.24761904761904763,
+            "hamiltonian_linf": 2.469368459712129e-10,
+            "momentum_linf": 1.5616271557133965e-10,
+            "gauge_linf": 3.775213549196308e-11,
+            "min_lapse": 0.9992597759418262,
+            "min_spatial_metric_eigenvalue": 1.0427395934479018
+          },
+          {
+            "T": 0.26,
+            "hamiltonian_linf": 3.3880998701052434e-10,
+            "momentum_linf": 1.7988138843044732e-10,
+            "gauge_linf": 4.223385676757214e-11,
+            "min_lapse": 0.9991905640549696,
+            "min_spatial_metric_eigenvalue": 1.0425473785263746
+          }
+        ],
+        "max_midpoint_eikonal_residual": 4.170552392324112e-08,
+        "slice_inverse_residual": 5.551115123125783e-17,
+        "boundary_slice_inverse_residual": 5.551115123125783e-17,
+        "boundary": {
+          "max_V_norm": -0.8892982574348406,
+          "min_spatial_gradient2": 0.003617692102964261,
+          "max_eikonal_material_defect": 1.3410600407937068e-10
+        },
+        "center_gaussian_eikonal_discrepancy": 0.0,
+        "slices_complete_in_diagnostic_disk": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "boundary_slices_complete": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "max_material_label_error": 8.218306243867879e-10,
+        "connectivity_audit": {
+          "exits": 82,
+          "mismatched_pairs": 0,
+          "unresolved_eligible_cases": 0
+        }
+      },
+      "summary_read_error": null,
+      "evolution_present": true
+    },
+    {
+      "index": 15,
+      "task": "task_015",
+      "config": "configs/015_domain_e04.json",
+      "wrapper": {
+        "task": "task_015",
+        "started_utc": "2026-11-15T08:04:45.797091+00:00",
+        "status": "SUCCESS",
+        "slurm_job_id": "3673743",
+        "slurm_array_job_id": null,
+        "slurm_array_task_id": null,
+        "config": "configs/015_domain_e04.json",
+        "config_sha256": "0c1341b5e9a4f47a29b0f6197d001d9579f3e971d865a3c1364a75c49884b60c",
+        "command": [
+          "/mnt/home/soft/python/programs/x86_64/python_3.11.4/bin/python3",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/solver.py",
+          "--config",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/configs/015_domain_e04.json",
+          "--output",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/task_015"
+        ],
+        "exit_code": 0,
+        "finished_utc": "2026-11-15T08:05:21.610882+00:00",
+        "wall_seconds": 35.81262037088163
+      },
+      "wrapper_read_error": null,
+      "summary": {
+        "status": "SUCCESS",
+        "config": {
+          "L": 2.25,
+          "cfl": 0.15,
+          "Tmax": 0.26,
+          "order": 6,
+          "nb": 256,
+          "slice_targets": [
+            0,
+            0.05,
+            0.1,
+            0.15,
+            0.2,
+            0.24
+          ],
+          "diagnostic_radius": 1.1,
+          "trace_slices": true,
+          "epsilon": 0.04,
+          "N": 109,
+          "tag": "domain_e04"
+        },
+        "nsteps": 42,
+        "dt": 0.006190476190476191,
+        "h": 0.04166666666666652,
+        "runtime_seconds": 27.79236960806884,
+        "diagnostics": [
+          {
+            "T": 0.0,
+            "hamiltonian_linf": 3.790196455299988e-12,
+            "momentum_linf": 1.5641888825856931e-12,
+            "gauge_linf": 0.0,
+            "min_lapse": 1.0,
+            "min_spatial_metric_eigenvalue": 1.0048697928578127
+          },
+          {
+            "T": 0.030952380952380953,
+            "hamiltonian_linf": 3.0329042229049197e-12,
+            "momentum_linf": 2.060646033148761e-12,
+            "gauge_linf": 1.8953209485842576e-13,
+            "min_lapse": 0.9999984857584382,
+            "min_spatial_metric_eigenvalue": 1.0048665108834112
+          },
+          {
+            "T": 0.06190476190476191,
+            "hamiltonian_linf": 2.8156166634318858e-12,
+            "momentum_linf": 2.0035761244541206e-12,
+            "gauge_linf": 3.083412710093542e-13,
+            "min_lapse": 0.9999939660897686,
+            "min_spatial_metric_eigenvalue": 1.0048594230812191
+          },
+          {
+            "T": 0.09285714285714286,
+            "hamiltonian_linf": 4.097086385435045e-12,
+            "momentum_linf": 1.9203449594384914e-12,
+            "gauge_linf": 3.4399211219474535e-13,
+            "min_lapse": 0.9999865098975991,
+            "min_spatial_metric_eigenvalue": 1.0048477786524252
+          },
+          {
+            "T": 0.12380952380952381,
+            "hamiltonian_linf": 4.28480731798353e-12,
+            "momentum_linf": 2.049776581108942e-12,
+            "gauge_linf": 4.72541092129295e-13,
+            "min_lapse": 0.9999762311398811,
+            "min_spatial_metric_eigenvalue": 1.0048296680693414
+          },
+          {
+            "T": 0.15476190476190477,
+            "hamiltonian_linf": 3.1189525788455352e-12,
+            "momentum_linf": 2.08199202236109e-12,
+            "gauge_linf": 6.466661520929434e-13,
+            "min_lapse": 0.9999632875070225,
+            "min_spatial_metric_eigenvalue": 1.0048048527886437
+          },
+          {
+            "T": 0.18571428571428572,
+            "hamiltonian_linf": 4.44074377964343e-12,
+            "momentum_linf": 2.120514267650586e-12,
+            "gauge_linf": 6.360573333086044e-13,
+            "min_lapse": 0.999947878571637,
+            "min_spatial_metric_eigenvalue": 1.0047731322816351
+          },
+          {
+            "T": 0.21666666666666665,
+            "hamiltonian_linf": 3.7733895869029865e-12,
+            "momentum_linf": 2.2758256867580484e-12,
+            "gauge_linf": 7.6185975390748e-13,
+            "min_lapse": 0.9999302434103009,
+            "min_spatial_metric_eigenvalue": 1.0047337349037033
+          },
+          {
+            "T": 0.24761904761904763,
+            "hamiltonian_linf": 4.107336866454592e-12,
+            "momentum_linf": 2.2753502641054135e-12,
+            "gauge_linf": 8.514840588053096e-13,
+            "min_lapse": 0.9999106576977256,
+            "min_spatial_metric_eigenvalue": 1.0046858288004885
+          },
+          {
+            "T": 0.26,
+            "hamiltonian_linf": 4.122658811556157e-12,
+            "momentum_linf": 2.5069932024432418e-12,
+            "gauge_linf": 8.826131990432079e-13,
+            "min_lapse": 0.9999023454113958,
+            "min_spatial_metric_eigenvalue": 1.0046640853184912
+          }
+        ],
+        "max_midpoint_eikonal_residual": 2.021246481298533e-08,
+        "slice_inverse_residual": 5.551115123125783e-17,
+        "boundary_slice_inverse_residual": 5.551115123125783e-17,
+        "boundary": {
+          "max_V_norm": -0.8635825568091451,
+          "min_spatial_gradient2": 0.0003884524986710972,
+          "max_eikonal_material_defect": 1.5478007764357926e-11
+        },
+        "center_gaussian_eikonal_discrepancy": 5.551115123125783e-17,
+        "slices_complete_in_diagnostic_disk": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "boundary_slices_complete": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "max_material_label_error": 4.544261841821218e-11,
+        "connectivity_audit": {
+          "exits": 82,
+          "mismatched_pairs": 0,
+          "unresolved_eligible_cases": 0
+        }
+      },
+      "summary_read_error": null,
+      "evolution_present": true
+    },
+    {
+      "index": 16,
+      "task": "task_016",
+      "config": "configs/016_domain_e08.json",
+      "wrapper": {
+        "task": "task_016",
+        "started_utc": "2026-11-15T08:04:45.797488+00:00",
+        "status": "SUCCESS",
+        "slurm_job_id": "3673744",
+        "slurm_array_job_id": null,
+        "slurm_array_task_id": null,
+        "config": "configs/016_domain_e08.json",
+        "config_sha256": "649bbb06b01c8130aff03c216766efc1eb47418958b913208cd3bc8c883c87db",
+        "command": [
+          "/mnt/home/soft/python/programs/x86_64/python_3.11.4/bin/python3",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/solver.py",
+          "--config",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/configs/016_domain_e08.json",
+          "--output",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/task_016"
+        ],
+        "exit_code": 0,
+        "finished_utc": "2026-11-15T08:05:21.385875+00:00",
+        "wall_seconds": 35.58754974207841
+      },
+      "wrapper_read_error": null,
+      "summary": {
+        "status": "SUCCESS",
+        "config": {
+          "L": 2.25,
+          "cfl": 0.15,
+          "Tmax": 0.26,
+          "order": 6,
+          "nb": 256,
+          "slice_targets": [
+            0,
+            0.05,
+            0.1,
+            0.15,
+            0.2,
+            0.24
+          ],
+          "diagnostic_radius": 1.1,
+          "trace_slices": true,
+          "epsilon": 0.08,
+          "N": 109,
+          "tag": "domain_e08"
+        },
+        "nsteps": 42,
+        "dt": 0.006190476190476191,
+        "h": 0.04166666666666652,
+        "runtime_seconds": 27.569171713199466,
+        "diagnostics": [
+          {
+            "T": 0.0,
+            "hamiltonian_linf": 2.2087061346542924e-11,
+            "momentum_linf": 2.474781534214654e-11,
+            "gauge_linf": 0.0,
+            "min_lapse": 1.0,
+            "min_spatial_metric_eigenvalue": 1.0195694824982453
+          },
+          {
+            "T": 0.030952380952380953,
+            "hamiltonian_linf": 2.2301292756932156e-11,
+            "momentum_linf": 2.489427934626587e-11,
+            "gauge_linf": 4.848134902562367e-13,
+            "min_lapse": 0.9999941378872989,
+            "min_spatial_metric_eigenvalue": 1.0195563644727619
+          },
+          {
+            "T": 0.06190476190476191,
+            "hamiltonian_linf": 2.358953483938553e-11,
+            "momentum_linf": 2.501105052232777e-11,
+            "gauge_linf": 9.427707196280383e-13,
+            "min_lapse": 0.9999766392005289,
+            "min_spatial_metric_eigenvalue": 1.0195280598709122
+          },
+          {
+            "T": 0.09285714285714286,
+            "hamiltonian_linf": 2.497086565300677e-11,
+            "momentum_linf": 2.5396109260694688e-11,
+            "gauge_linf": 1.409042964372499e-12,
+            "min_lapse": 0.999947765901327,
+            "min_spatial_metric_eigenvalue": 1.019481591298461
+          },
+          {
+            "T": 0.12380952380952381,
+            "hamiltonian_linf": 2.823259681594692e-11,
+            "momentum_linf": 2.5296508377598004e-11,
+            "gauge_linf": 1.792589138445907e-12,
+            "min_lapse": 0.9999079512854364,
+            "min_spatial_metric_eigenvalue": 1.0194095326743349
+          },
+          {
+            "T": 0.15476190476190477,
+            "hamiltonian_linf": 3.1279361045744025e-11,
+            "momentum_linf": 2.561761957078912e-11,
+            "gauge_linf": 2.7480332721051585e-12,
+            "min_lapse": 0.9998577950251749,
+            "min_spatial_metric_eigenvalue": 1.0193106630769768
+          },
+          {
+            "T": 0.18571428571428572,
+            "hamiltonian_linf": 3.541689164165973e-11,
+            "momentum_linf": 2.5980980387918517e-11,
+            "gauge_linf": 4.0043958899837025e-12,
+            "min_lapse": 0.9997980562345656,
+            "min_spatial_metric_eigenvalue": 1.019184382442633
+          },
+          {
+            "T": 0.21666666666666665,
+            "hamiltonian_linf": 4.087817584430553e-11,
+            "momentum_linf": 2.565479946536886e-11,
+            "gauge_linf": 5.516310691418457e-12,
+            "min_lapse": 0.9997296445623465,
+            "min_spatial_metric_eigenvalue": 1.0190276622407175
+          },
+          {
+            "T": 0.24761904761904763,
+            "hamiltonian_linf": 4.67132738740661e-11,
+            "momentum_linf": 3.0037517178421735e-11,
+            "gauge_linf": 7.322356358829215e-12,
+            "min_lapse": 0.9996536093189079,
+            "min_spatial_metric_eigenvalue": 1.0188372405204413
+          },
+          {
+            "T": 0.26,
+            "hamiltonian_linf": 4.963787714196144e-11,
+            "momentum_linf": 3.146717261759413e-11,
+            "gauge_linf": 8.128355062404433e-12,
+            "min_lapse": 0.9996213201413043,
+            "min_spatial_metric_eigenvalue": 1.0187508572236488
+          }
+        ],
+        "max_midpoint_eikonal_residual": 7.824733749828283e-08,
+        "slice_inverse_residual": 8.326672684688674e-17,
+        "boundary_slice_inverse_residual": 5.551115123125783e-17,
+        "boundary": {
+          "max_V_norm": -0.8740244846753068,
+          "min_spatial_gradient2": 0.0015749109631491255,
+          "max_eikonal_material_defect": 6.130357332878589e-11
+        },
+        "center_gaussian_eikonal_discrepancy": 0.0,
+        "slices_complete_in_diagnostic_disk": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "boundary_slices_complete": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "max_material_label_error": 2.1043960324318434e-10,
+        "connectivity_audit": {
+          "exits": 82,
+          "mismatched_pairs": 0,
+          "unresolved_eligible_cases": 0
+        }
+      },
+      "summary_read_error": null,
+      "evolution_present": true
+    },
+    {
+      "index": 17,
+      "task": "task_017",
+      "config": "configs/017_domain_e12.json",
+      "wrapper": {
+        "task": "task_017",
+        "started_utc": "2026-11-15T08:04:46.767990+00:00",
+        "status": "SUCCESS",
+        "slurm_job_id": "3673745",
+        "slurm_array_job_id": null,
+        "slurm_array_task_id": null,
+        "config": "configs/017_domain_e12.json",
+        "config_sha256": "7b5f21c0b1c042fc2da1152ab0d984f2d8338a6c8b6cdcfaf15d0776793e2ed9",
+        "command": [
+          "/mnt/home/soft/python/programs/x86_64/python_3.11.4/bin/python3",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/solver.py",
+          "--config",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/configs/017_domain_e12.json",
+          "--output",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/task_017"
+        ],
+        "exit_code": 0,
+        "finished_utc": "2026-11-15T08:05:15.279509+00:00",
+        "wall_seconds": 28.510880521964282
+      },
+      "wrapper_read_error": null,
+      "summary": {
+        "status": "SUCCESS",
+        "config": {
+          "L": 2.25,
+          "cfl": 0.15,
+          "Tmax": 0.26,
+          "order": 6,
+          "nb": 256,
+          "slice_targets": [
+            0,
+            0.05,
+            0.1,
+            0.15,
+            0.2,
+            0.24
+          ],
+          "diagnostic_radius": 1.1,
+          "trace_slices": true,
+          "epsilon": 0.12,
+          "N": 109,
+          "tag": "domain_e12"
+        },
+        "nsteps": 42,
+        "dt": 0.006190476190476191,
+        "h": 0.04166666666666652,
+        "runtime_seconds": 23.41651900811121,
+        "diagnostics": [
+          {
+            "T": 0.0,
+            "hamiltonian_linf": 1.0690567875393242e-10,
+            "momentum_linf": 1.2297118618526115e-10,
+            "gauge_linf": 0.0,
+            "min_lapse": 1.0,
+            "min_spatial_metric_eigenvalue": 1.044373952395076
+          },
+          {
+            "T": 0.030952380952380953,
+            "hamiltonian_linf": 1.0911992837092654e-10,
+            "momentum_linf": 1.2360989228715757e-10,
+            "gauge_linf": 1.2995265185888739e-12,
+            "min_lapse": 0.999987503023158,
+            "min_spatial_metric_eigenvalue": 1.0443444729242863
+          },
+          {
+            "T": 0.06190476190476191,
+            "hamiltonian_linf": 1.1461939036783164e-10,
+            "momentum_linf": 1.2427991361724233e-10,
+            "gauge_linf": 2.5213219509586154e-12,
+            "min_lapse": 0.9999501934318713,
+            "min_spatial_metric_eigenvalue": 1.0442809577616794
+          },
+          {
+            "T": 0.09285714285714286,
+            "hamiltonian_linf": 1.2384403919041276e-10,
+            "momentum_linf": 1.249109192816289e-10,
+            "gauge_linf": 4.8182132852062e-12,
+            "min_lapse": 0.9998886132351502,
+            "min_spatial_metric_eigenvalue": 1.0441768013577992
+          },
+          {
+            "T": 0.12380952380952381,
+            "hamiltonian_linf": 1.368808955071188e-10,
+            "momentum_linf": 1.257625566186693e-10,
+            "gauge_linf": 8.671686073190012e-12,
+            "min_lapse": 0.9998036590893669,
+            "min_spatial_metric_eigenvalue": 1.0440160920915995
+          },
+          {
+            "T": 0.15476190476190477,
+            "hamiltonian_linf": 1.538612987017629e-10,
+            "momentum_linf": 1.2635213101491738e-10,
+            "gauge_linf": 1.3737723134329382e-11,
+            "min_lapse": 0.9996965722727554,
+            "min_spatial_metric_eigenvalue": 1.0437950629900234
+          },
+          {
+            "T": 0.18571428571428572,
+            "hamiltonian_linf": 1.7545910557803523e-10,
+            "momentum_linf": 1.2690302107765117e-10,
+            "gauge_linf": 2.012491228259113e-11,
+            "min_lapse": 0.9995689246738189,
+            "min_spatial_metric_eigenvalue": 1.0435131226577739
+          },
+          {
+            "T": 0.21666666666666665,
+            "hamiltonian_linf": 2.0269155798224858e-10,
+            "momentum_linf": 1.3033413237550917e-10,
+            "gauge_linf": 2.7950546046416086e-11,
+            "min_lapse": 0.9994226008158307,
+            "min_spatial_metric_eigenvalue": 1.0431636670705302
+          },
+          {
+            "T": 0.24761904761904763,
+            "hamiltonian_linf": 2.352002273497966e-10,
+            "momentum_linf": 1.5435146303449665e-10,
+            "gauge_linf": 3.7382023111371665e-11,
+            "min_lapse": 0.9992597759432834,
+            "min_spatial_metric_eigenvalue": 1.0427395934525912
+          },
+          {
+            "T": 0.26,
+            "hamiltonian_linf": 2.493680262283249e-10,
+            "momentum_linf": 1.6465894186329377e-10,
+            "gauge_linf": 4.1647839750989736e-11,
+            "min_lapse": 0.9991905640565776,
+            "min_spatial_metric_eigenvalue": 1.0425473785313557
+          }
+        ],
+        "max_midpoint_eikonal_residual": 1.6680394843149315e-07,
+        "slice_inverse_residual": 8.326672684688674e-17,
+        "boundary_slice_inverse_residual": 5.551115123125783e-17,
+        "boundary": {
+          "max_V_norm": -0.8892982575755842,
+          "min_spatial_gradient2": 0.003617692102747522,
+          "max_eikonal_material_defect": 1.3472545301596028e-10
+        },
+        "center_gaussian_eikonal_discrepancy": 0.0,
+        "slices_complete_in_diagnostic_disk": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "boundary_slices_complete": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "max_material_label_error": 7.598914483764041e-10,
+        "connectivity_audit": {
+          "exits": 82,
+          "mismatched_pairs": 0,
+          "unresolved_eligible_cases": 0
+        }
+      },
+      "summary_read_error": null,
+      "evolution_present": true
+    },
+    {
+      "index": 18,
+      "task": "task_018",
+      "config": "configs/018_order4_N65.json",
+      "wrapper": {
+        "task": "task_018",
+        "started_utc": "2026-11-15T08:04:46.767210+00:00",
+        "status": "SUCCESS",
+        "slurm_job_id": "3673746",
+        "slurm_array_job_id": null,
+        "slurm_array_task_id": null,
+        "config": "configs/018_order4_N65.json",
+        "config_sha256": "1ee9e58e5d7f5d96d733c3ef0f4e876bae4004b2a41ab6fd250b0eb258fcf742",
+        "command": [
+          "/mnt/home/soft/python/programs/x86_64/python_3.11.4/bin/python3",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/solver.py",
+          "--config",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/configs/018_order4_N65.json",
+          "--output",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/task_018"
+        ],
+        "exit_code": 0,
+        "finished_utc": "2026-11-15T08:04:56.910339+00:00",
+        "wall_seconds": 10.142409386113286
+      },
+      "wrapper_read_error": null,
+      "summary": {
+        "status": "SUCCESS",
+        "config": {
+          "L": 2.0,
+          "cfl": 0.15,
+          "Tmax": 0.26,
+          "order": 4,
+          "nb": 256,
+          "slice_targets": [
+            0,
+            0.05,
+            0.1,
+            0.15,
+            0.2,
+            0.24
+          ],
+          "diagnostic_radius": 1.1,
+          "trace_slices": true,
+          "epsilon": 0.08,
+          "N": 65,
+          "tag": "order4_N65"
+        },
+        "nsteps": 28,
+        "dt": 0.009285714285714286,
+        "h": 0.0625,
+        "runtime_seconds": 5.90265346178785,
+        "diagnostics": [
+          {
+            "T": 0.0,
+            "hamiltonian_linf": 5.104461569295504e-07,
+            "momentum_linf": 1.1213838622004674e-08,
+            "gauge_linf": 0.0,
+            "min_lapse": 1.0,
+            "min_spatial_metric_eigenvalue": 1.0195868036370292
+          },
+          {
+            "T": 0.027857142857142858,
+            "hamiltonian_linf": 5.105350112891843e-07,
+            "momentum_linf": 1.134534664869527e-08,
+            "gauge_linf": 2.334418437613306e-09,
+            "min_lapse": 0.999995250563259,
+            "min_spatial_metric_eigenvalue": 1.0195739903794057
+          },
+          {
+            "T": 0.055714285714285716,
+            "hamiltonian_linf": 5.108138345817637e-07,
+            "momentum_linf": 1.1464261639396872e-08,
+            "gauge_linf": 4.6844738733390305e-09,
+            "min_lapse": 0.9999810597817286,
+            "min_spatial_metric_eigenvalue": 1.019547646636178
+          },
+          {
+            "T": 0.08357142857142856,
+            "hamiltonian_linf": 5.113063396081086e-07,
+            "momentum_linf": 1.157208298239662e-08,
+            "gauge_linf": 7.084525510464178e-09,
+            "min_lapse": 0.999957599714,
+            "min_spatial_metric_eigenvalue": 1.0195060228403074
+          },
+          {
+            "T": 0.11142857142857143,
+            "hamiltonian_linf": 5.120419226262163e-07,
+            "momentum_linf": 1.167155347370219e-08,
+            "gauge_linf": 9.540043239616954e-09,
+            "min_lapse": 0.9999251553667666,
+            "min_spatial_metric_eigenvalue": 1.0194474193984513
+          },
+          {
+            "T": 0.1392857142857143,
+            "hamiltonian_linf": 5.130604133918998e-07,
+            "momentum_linf": 1.1757143380825702e-08,
+            "gauge_linf": 1.2064137927635427e-08,
+            "min_lapse": 0.9998841220596657,
+            "min_spatial_metric_eigenvalue": 1.0193700286711442
+          },
+          {
+            "T": 0.16714285714285712,
+            "hamiltonian_linf": 5.144760601826642e-07,
+            "momentum_linf": 1.2221680835769466e-08,
+            "gauge_linf": 1.4670487540025251e-08,
+            "min_lapse": 0.9998350017385323,
+            "min_spatial_metric_eigenvalue": 1.0192719074429974
+          },
+          {
+            "T": 0.195,
+            "hamiltonian_linf": 5.166059533021766e-07,
+            "momentum_linf": 1.4629043350398302e-08,
+            "gauge_linf": 1.7373518358841808e-08,
+            "min_lapse": 0.9997783982393911,
+            "min_spatial_metric_eigenvalue": 1.0191509661349856
+          },
+          {
+            "T": 0.22285714285714286,
+            "hamiltonian_linf": 5.192427863162652e-07,
+            "momentum_linf": 1.7290217657790763e-08,
+            "gauge_linf": 2.018856628441975e-08,
+            "min_lapse": 0.9997150115059305,
+            "min_spatial_metric_eigenvalue": 1.0190049604822655
+          },
+          {
+            "T": 0.2507142857142857,
+            "hamiltonian_linf": 5.190367226813597e-07,
+            "momentum_linf": 1.9315792834130596e-08,
+            "gauge_linf": 2.31323243735557e-08,
+            "min_lapse": 0.9996456307634799,
+            "min_spatial_metric_eigenvalue": 1.0188314830865548
+          },
+          {
+            "T": 0.26,
+            "hamiltonian_linf": 5.203808683719446e-07,
+            "momentum_linf": 2.9076822949392067e-08,
+            "gauge_linf": 2.414545044274563e-08,
+            "min_lapse": 0.999621320148588,
+            "min_spatial_metric_eigenvalue": 1.0187671117445873
+          }
+        ],
+        "max_midpoint_eikonal_residual": 1.7602359636548215e-07,
+        "slice_inverse_residual": 5.551115123125783e-17,
+        "boundary_slice_inverse_residual": 5.551115123125783e-17,
+        "boundary": {
+          "max_V_norm": -0.8740251102523701,
+          "min_spatial_gradient2": 0.0015749124125189716,
+          "max_eikonal_material_defect": 1.8940926604926744e-10
+        },
+        "center_gaussian_eikonal_discrepancy": 0.0,
+        "slices_complete_in_diagnostic_disk": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "boundary_slices_complete": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "max_material_label_error": 1.0298715907852696e-09,
+        "connectivity_audit": {
+          "exits": 82,
+          "mismatched_pairs": 0,
+          "unresolved_eligible_cases": 0
+        }
+      },
+      "summary_read_error": null,
+      "evolution_present": true
+    },
+    {
+      "index": 19,
+      "task": "task_019",
+      "config": "configs/019_order4_N97.json",
+      "wrapper": {
+        "task": "task_019",
+        "started_utc": "2026-11-15T08:04:46.768563+00:00",
+        "status": "SUCCESS",
+        "slurm_job_id": "3673747",
+        "slurm_array_job_id": null,
+        "slurm_array_task_id": null,
+        "config": "configs/019_order4_N97.json",
+        "config_sha256": "df2f0fbee0b16650a4b6f82e4b5258042732a7ad68745f2c9984afe2e685bb42",
+        "command": [
+          "/mnt/home/soft/python/programs/x86_64/python_3.11.4/bin/python3",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/solver.py",
+          "--config",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/configs/019_order4_N97.json",
+          "--output",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/task_019"
+        ],
+        "exit_code": 0,
+        "finished_utc": "2026-11-15T08:05:10.603877+00:00",
+        "wall_seconds": 23.834801441058517
+      },
+      "wrapper_read_error": null,
+      "summary": {
+        "status": "SUCCESS",
+        "config": {
+          "L": 2.0,
+          "cfl": 0.15,
+          "Tmax": 0.26,
+          "order": 4,
+          "nb": 256,
+          "slice_targets": [
+            0,
+            0.05,
+            0.1,
+            0.15,
+            0.2,
+            0.24
+          ],
+          "diagnostic_radius": 1.1,
+          "trace_slices": true,
+          "epsilon": 0.08,
+          "N": 97,
+          "tag": "order4_N97"
+        },
+        "nsteps": 42,
+        "dt": 0.006190476190476191,
+        "h": 0.04166666666666674,
+        "runtime_seconds": 18.312276302138343,
+        "diagnostics": [
+          {
+            "T": 0.0,
+            "hamiltonian_linf": 1.0102036348408339e-07,
+            "momentum_linf": 2.3588263725095315e-09,
+            "gauge_linf": 0.0,
+            "min_lapse": 1.0,
+            "min_spatial_metric_eigenvalue": 1.0195694824982453
+          },
+          {
+            "T": 0.030952380952380953,
+            "hamiltonian_linf": 1.0104423595405643e-07,
+            "momentum_linf": 2.3767274068969835e-09,
+            "gauge_linf": 5.123619021852584e-10,
+            "min_lapse": 0.9999941378872991,
+            "min_spatial_metric_eigenvalue": 1.019556364480804
+          },
+          {
+            "T": 0.06190476190476191,
+            "hamiltonian_linf": 1.0111912351028207e-07,
+            "momentum_linf": 2.3916756851892484e-09,
+            "gauge_linf": 1.0303937672609587e-09,
+            "min_lapse": 0.9999766392005316,
+            "min_spatial_metric_eigenvalue": 1.0195280599031078
+          },
+          {
+            "T": 0.09285714285714286,
+            "hamiltonian_linf": 1.0125086621730339e-07,
+            "momentum_linf": 2.4036941243844867e-09,
+            "gauge_linf": 1.5609798391037128e-09,
+            "min_lapse": 0.9999477659013396,
+            "min_spatial_metric_eigenvalue": 1.019481591370942
+          },
+          {
+            "T": 0.12380952380952381,
+            "hamiltonian_linf": 1.0144571898663968e-07,
+            "momentum_linf": 2.4139609521370287e-09,
+            "gauge_linf": 2.1062735499867414e-09,
+            "min_lapse": 0.9999079512854764,
+            "min_spatial_metric_eigenvalue": 1.0194095328026351
+          },
+          {
+            "T": 0.15476190476190477,
+            "hamiltonian_linf": 1.017140652658649e-07,
+            "momentum_linf": 2.4220327974125433e-09,
+            "gauge_linf": 2.6696919426712794e-09,
+            "min_lapse": 0.9998577950252721,
+            "min_spatial_metric_eigenvalue": 1.019310663277493
+          },
+          {
+            "T": 0.18571428571428572,
+            "hamiltonian_linf": 1.0206631664323729e-07,
+            "momentum_linf": 2.8205949177857736e-09,
+            "gauge_linf": 3.2549017809396247e-09,
+            "min_lapse": 0.9997980562347661,
+            "min_spatial_metric_eigenvalue": 1.019184382731457
+          },
+          {
+            "T": 0.21666666666666665,
+            "hamiltonian_linf": 1.025172502479299e-07,
+            "momentum_linf": 3.4126258676575594e-09,
+            "gauge_linf": 3.8658026527895645e-09,
+            "min_lapse": 0.999729644562715,
+            "min_spatial_metric_eigenvalue": 1.0190276626339743
+          },
+          {
+            "T": 0.24761904761904763,
+            "hamiltonian_linf": 1.030821546454952e-07,
+            "momentum_linf": 4.073639040241134e-09,
+            "gauge_linf": 4.506588591315702e-09,
+            "min_lapse": 0.9996536093195316,
+            "min_spatial_metric_eigenvalue": 1.0188372410342994
+          },
+          {
+            "T": 0.26,
+            "hamiltonian_linf": 1.0334343732501527e-07,
+            "momentum_linf": 4.360541524649902e-09,
+            "gauge_linf": 4.772299215272508e-09,
+            "min_lapse": 0.9996213201420596,
+            "min_spatial_metric_eigenvalue": 1.0187508577902877
+          }
+        ],
+        "max_midpoint_eikonal_residual": 7.824733749828283e-08,
+        "slice_inverse_residual": 5.551115123125783e-17,
+        "boundary_slice_inverse_residual": 5.551115123125783e-17,
+        "boundary": {
+          "max_V_norm": -0.874024518490923,
+          "min_spatial_gradient2": 0.0015749111567962722,
+          "max_eikonal_material_defect": 6.083195058792512e-11
+        },
+        "center_gaussian_eikonal_discrepancy": 0.0,
+        "slices_complete_in_diagnostic_disk": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "boundary_slices_complete": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "max_material_label_error": 1.9850213139882555e-10,
+        "connectivity_audit": {
+          "exits": 82,
+          "mismatched_pairs": 0,
+          "unresolved_eligible_cases": 0
+        }
+      },
+      "summary_read_error": null,
+      "evolution_present": true
+    },
+    {
+      "index": 20,
+      "task": "task_020",
+      "config": "configs/020_order4_N129.json",
+      "wrapper": {
+        "task": "task_020",
+        "started_utc": "2026-11-15T08:04:46.766952+00:00",
+        "status": "SUCCESS",
+        "slurm_job_id": "3673748",
+        "slurm_array_job_id": null,
+        "slurm_array_task_id": null,
+        "config": "configs/020_order4_N129.json",
+        "config_sha256": "cafd628b2e16abfc0c0c72cca2a46231249f990c82089c4ce5ba075518581e4c",
+        "command": [
+          "/mnt/home/soft/python/programs/x86_64/python_3.11.4/bin/python3",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/solver.py",
+          "--config",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/configs/020_order4_N129.json",
+          "--output",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/task_020"
+        ],
+        "exit_code": 0,
+        "finished_utc": "2026-11-15T08:05:33.652321+00:00",
+        "wall_seconds": 46.88465622020885
+      },
+      "wrapper_read_error": null,
+      "summary": {
+        "status": "SUCCESS",
+        "config": {
+          "L": 2.0,
+          "cfl": 0.15,
+          "Tmax": 0.26,
+          "order": 4,
+          "nb": 256,
+          "slice_targets": [
+            0,
+            0.05,
+            0.1,
+            0.15,
+            0.2,
+            0.24
+          ],
+          "diagnostic_radius": 1.1,
+          "trace_slices": true,
+          "epsilon": 0.08,
+          "N": 129,
+          "tag": "order4_N129"
+        },
+        "nsteps": 56,
+        "dt": 0.004642857142857143,
+        "h": 0.03125,
+        "runtime_seconds": 41.21215927111916,
+        "diagnostics": [
+          {
+            "T": 0.0,
+            "hamiltonian_linf": 3.199582390006617e-08,
+            "momentum_linf": 7.69523296213076e-10,
+            "gauge_linf": 0.0,
+            "min_lapse": 1.0,
+            "min_spatial_metric_eigenvalue": 1.0195505733252679
+          },
+          {
+            "T": 0.0325,
+            "hamiltonian_linf": 3.2003218436438274e-08,
+            "momentum_linf": 7.724396647486309e-10,
+            "gauge_linf": 1.702301091234876e-10,
+            "min_lapse": 0.9999935378470712,
+            "min_spatial_metric_eigenvalue": 1.019534944151361
+          },
+          {
+            "T": 0.065,
+            "hamiltonian_linf": 3.2030731848126104e-08,
+            "momentum_linf": 7.748677320444652e-10,
+            "gauge_linf": 3.4259431967279006e-10,
+            "min_lapse": 0.9999742579084174,
+            "min_spatial_metric_eigenvalue": 1.0195015795920253
+          },
+          {
+            "T": 0.0975,
+            "hamiltonian_linf": 3.207876016556033e-08,
+            "momentum_linf": 7.756429617512828e-10,
+            "gauge_linf": 5.193721373383248e-10,
+            "min_lapse": 0.9999424784146169,
+            "min_spatial_metric_eigenvalue": 1.019447264309687
+          },
+          {
+            "T": 0.13,
+            "hamiltonian_linf": 3.214679137122922e-08,
+            "momentum_linf": 7.762237718908493e-10,
+            "gauge_linf": 7.014211599845318e-10,
+            "min_lapse": 0.9998987253185058,
+            "min_spatial_metric_eigenvalue": 1.0193694874335604
+          },
+          {
+            "T": 0.1625,
+            "hamiltonian_linf": 3.224343902985538e-08,
+            "momentum_linf": 7.752072607968008e-10,
+            "gauge_linf": 8.90013921791808e-10,
+            "min_lapse": 0.9998437256523148,
+            "min_spatial_metric_eigenvalue": 1.0192654833897414
+          },
+          {
+            "T": 0.195,
+            "hamiltonian_linf": 3.236763619629546e-08,
+            "momentum_linf": 9.61742203020241e-10,
+            "gauge_linf": 1.0866048828984212e-09,
+            "min_lapse": 0.999778398235983,
+            "min_spatial_metric_eigenvalue": 1.019132131611311
+          },
+          {
+            "T": 0.2275,
+            "hamiltonian_linf": 3.252518697080542e-08,
+            "momentum_linf": 1.1738888524431834e-09,
+            "gauge_linf": 1.2926167162906528e-09,
+            "min_lapse": 0.9997038417442136,
+            "min_spatial_metric_eigenvalue": 1.0189658098423129
+          },
+          {
+            "T": 0.26,
+            "hamiltonian_linf": 3.272566745024519e-08,
+            "momentum_linf": 1.4127016223497435e-09,
+            "gauge_linf": 1.5095932061325327e-09,
+            "min_lapse": 0.9996213201409532,
+            "min_spatial_metric_eigenvalue": 1.0187535361250322
+          }
+        ],
+        "max_midpoint_eikonal_residual": 4.401700715028767e-08,
+        "slice_inverse_residual": 5.551115123125783e-17,
+        "boundary_slice_inverse_residual": 5.551115123125783e-17,
+        "boundary": {
+          "max_V_norm": -0.8740244351914076,
+          "min_spatial_gradient2": 0.001574910899070817,
+          "max_eikonal_material_defect": 1.699940188615301e-11
+        },
+        "center_gaussian_eikonal_discrepancy": 5.551115123125783e-17,
+        "slices_complete_in_diagnostic_disk": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "boundary_slices_complete": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "max_material_label_error": 1.3968406292752533e-10,
+        "connectivity_audit": {
+          "exits": 82,
+          "mismatched_pairs": 0,
+          "unresolved_eligible_cases": 0
+        }
+      },
+      "summary_read_error": null,
+      "evolution_present": true
+    },
+    {
+      "index": 21,
+      "task": "task_021",
+      "config": "configs/021_negative.json",
+      "wrapper": {
+        "task": "task_021",
+        "started_utc": "2026-11-15T08:04:46.768291+00:00",
+        "status": "SUCCESS",
+        "slurm_job_id": "3673749",
+        "slurm_array_job_id": null,
+        "slurm_array_task_id": null,
+        "config": "configs/021_negative.json",
+        "config_sha256": "fb27e0de3591961129950fe32d9dadf3d8024094d705c7e23ffb34672320e7e0",
+        "command": [
+          "/mnt/home/soft/python/programs/x86_64/python_3.11.4/bin/python3",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/solver.py",
+          "--config",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/configs/021_negative.json",
+          "--output",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/task_021"
+        ],
+        "exit_code": 0,
+        "finished_utc": "2026-11-15T08:05:10.814242+00:00",
+        "wall_seconds": 24.0453299859073
+      },
+      "wrapper_read_error": null,
+      "summary": {
+        "status": "SUCCESS",
+        "config": {
+          "L": 2.0,
+          "cfl": 0.15,
+          "Tmax": 0.26,
+          "order": 6,
+          "nb": 256,
+          "slice_targets": [
+            0,
+            0.05,
+            0.1,
+            0.15,
+            0.2,
+            0.24
+          ],
+          "diagnostic_radius": 1.1,
+          "trace_slices": true,
+          "epsilon": 0.08,
+          "N": 97,
+          "tag": "negative",
+          "direction": -1
+        },
+        "nsteps": 42,
+        "dt": -0.006190476190476191,
+        "h": 0.04166666666666674,
+        "runtime_seconds": 18.50487134582363,
+        "diagnostics": [
+          {
+            "T": 0.0,
+            "hamiltonian_linf": 2.208705093820207e-11,
+            "momentum_linf": 2.474781490846567e-11,
+            "gauge_linf": 0.0,
+            "min_lapse": 1.0,
+            "min_spatial_metric_eigenvalue": 1.0195694824982453
+          },
+          {
+            "T": -0.030952380952380953,
+            "hamiltonian_linf": 2.231706833222269e-11,
+            "momentum_linf": 2.489292843035895e-11,
+            "gauge_linf": 4.845666294640707e-13,
+            "min_lapse": 0.9999941378872989,
+            "min_spatial_metric_eigenvalue": 1.0195563644727619
+          },
+          {
+            "T": -0.06190476190476191,
+            "hamiltonian_linf": 2.350622127500479e-11,
+            "momentum_linf": 2.501140527327861e-11,
+            "gauge_linf": 9.429825645980479e-13,
+            "min_lapse": 0.9999766392005289,
+            "min_spatial_metric_eigenvalue": 1.0195280598709122
+          },
+          {
+            "T": -0.09285714285714286,
+            "hamiltonian_linf": 2.5046908991299688e-11,
+            "momentum_linf": 2.5402187298073642e-11,
+            "gauge_linf": 1.405122051521526e-12,
+            "min_lapse": 0.999947765901327,
+            "min_spatial_metric_eigenvalue": 1.019481591298461
+          },
+          {
+            "T": -0.12380952380952381,
+            "hamiltonian_linf": 2.8083139980150662e-11,
+            "momentum_linf": 2.5263836161970588e-11,
+            "gauge_linf": 1.7942388382816138e-12,
+            "min_lapse": 0.9999079512854364,
+            "min_spatial_metric_eigenvalue": 1.0194095326743349
+          },
+          {
+            "T": -0.15476190476190477,
+            "hamiltonian_linf": 3.1309500131415646e-11,
+            "momentum_linf": 2.5482886200495214e-11,
+            "gauge_linf": 2.7462436186484314e-12,
+            "min_lapse": 0.9998577950251749,
+            "min_spatial_metric_eigenvalue": 1.0193106630769768
+          },
+          {
+            "T": -0.18571428571428572,
+            "hamiltonian_linf": 3.5410832252558144e-11,
+            "momentum_linf": 2.6063643864676633e-11,
+            "gauge_linf": 4.003458026384792e-12,
+            "min_lapse": 0.9997980562345656,
+            "min_spatial_metric_eigenvalue": 1.0191843824426328
+          },
+          {
+            "T": -0.21666666666666665,
+            "hamiltonian_linf": 4.062994558851063e-11,
+            "momentum_linf": 3.2427406246315904e-11,
+            "gauge_linf": 5.501387622866781e-12,
+            "min_lapse": 0.9997296445623465,
+            "min_spatial_metric_eigenvalue": 1.019027662240718
+          },
+          {
+            "T": -0.24761904761904763,
+            "hamiltonian_linf": 5.495848914849333e-11,
+            "momentum_linf": 3.2439306449361105e-11,
+            "gauge_linf": 7.280097873854276e-12,
+            "min_lapse": 0.9996536093189081,
+            "min_spatial_metric_eigenvalue": 1.0188372405204413
+          },
+          {
+            "T": -0.26,
+            "hamiltonian_linf": 9.866501712862963e-11,
+            "momentum_linf": 5.94049852711831e-11,
+            "gauge_linf": 8.185476342720882e-12,
+            "min_lapse": 0.9996213201413043,
+            "min_spatial_metric_eigenvalue": 1.0187508572236488
+          }
+        ],
+        "max_midpoint_eikonal_residual": 7.824733749828283e-08,
+        "slice_inverse_residual": 8.326672684688674e-17,
+        "boundary_slice_inverse_residual": 5.551115123125783e-17,
+        "boundary": {
+          "max_V_norm": -0.8740244846753789,
+          "min_spatial_gradient2": 0.001574910963149122,
+          "max_eikonal_material_defect": 6.130357332878589e-11
+        },
+        "center_gaussian_eikonal_discrepancy": 0.0,
+        "slices_complete_in_diagnostic_disk": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "boundary_slices_complete": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "max_material_label_error": 2.1043831954781211e-10,
+        "connectivity_audit": {
+          "exits": 82,
+          "mismatched_pairs": 0,
+          "unresolved_eligible_cases": 0
+        }
+      },
+      "summary_read_error": null,
+      "evolution_present": true
+    },
+    {
+      "index": 22,
+      "task": "task_022",
+      "config": "configs/022_flat.json",
+      "wrapper": {
+        "task": "task_022",
+        "started_utc": "2026-11-15T08:04:46.767528+00:00",
+        "status": "SUCCESS",
+        "slurm_job_id": "3673750",
+        "slurm_array_job_id": null,
+        "slurm_array_task_id": null,
+        "config": "configs/022_flat.json",
+        "config_sha256": "3dde05c8f9dc48aed8d915c0ab8072efd30ab8c28eb55f9dad2266bfd687db52",
+        "command": [
+          "/mnt/home/soft/python/programs/x86_64/python_3.11.4/bin/python3",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/solver.py",
+          "--config",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/configs/022_flat.json",
+          "--output",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/task_022"
+        ],
+        "exit_code": 0,
+        "finished_utc": "2026-11-15T08:04:52.961773+00:00",
+        "wall_seconds": 6.193409403087571
+      },
+      "wrapper_read_error": null,
+      "summary": {
+        "status": "SUCCESS",
+        "config": {
+          "L": 2.0,
+          "cfl": 0.15,
+          "Tmax": 0.26,
+          "order": 6,
+          "nb": 256,
+          "slice_targets": [
+            0,
+            0.05,
+            0.1,
+            0.15,
+            0.2,
+            0.24
+          ],
+          "diagnostic_radius": 1.1,
+          "trace_slices": false,
+          "epsilon": 0.0,
+          "N": 65,
+          "tag": "flat"
+        },
+        "nsteps": 28,
+        "dt": 0.009285714285714286,
+        "h": 0.0625,
+        "runtime_seconds": 5.765012427000329,
+        "diagnostics": [
+          {
+            "T": 0.0,
+            "hamiltonian_linf": 0.0,
+            "momentum_linf": 0.0,
+            "gauge_linf": 0.0,
+            "min_lapse": 1.0,
+            "min_spatial_metric_eigenvalue": 1.0
+          },
+          {
+            "T": 0.027857142857142858,
+            "hamiltonian_linf": 0.0,
+            "momentum_linf": 0.0,
+            "gauge_linf": 0.0,
+            "min_lapse": 1.0,
+            "min_spatial_metric_eigenvalue": 1.0
+          },
+          {
+            "T": 0.055714285714285716,
+            "hamiltonian_linf": 0.0,
+            "momentum_linf": 0.0,
+            "gauge_linf": 0.0,
+            "min_lapse": 1.0,
+            "min_spatial_metric_eigenvalue": 1.0
+          },
+          {
+            "T": 0.08357142857142856,
+            "hamiltonian_linf": 0.0,
+            "momentum_linf": 0.0,
+            "gauge_linf": 0.0,
+            "min_lapse": 1.0,
+            "min_spatial_metric_eigenvalue": 1.0
+          },
+          {
+            "T": 0.11142857142857143,
+            "hamiltonian_linf": 0.0,
+            "momentum_linf": 0.0,
+            "gauge_linf": 0.0,
+            "min_lapse": 1.0,
+            "min_spatial_metric_eigenvalue": 1.0
+          },
+          {
+            "T": 0.1392857142857143,
+            "hamiltonian_linf": 0.0,
+            "momentum_linf": 0.0,
+            "gauge_linf": 0.0,
+            "min_lapse": 1.0,
+            "min_spatial_metric_eigenvalue": 1.0
+          },
+          {
+            "T": 0.16714285714285712,
+            "hamiltonian_linf": 0.0,
+            "momentum_linf": 0.0,
+            "gauge_linf": 0.0,
+            "min_lapse": 1.0,
+            "min_spatial_metric_eigenvalue": 1.0
+          },
+          {
+            "T": 0.195,
+            "hamiltonian_linf": 0.0,
+            "momentum_linf": 0.0,
+            "gauge_linf": 0.0,
+            "min_lapse": 1.0,
+            "min_spatial_metric_eigenvalue": 1.0
+          },
+          {
+            "T": 0.22285714285714286,
+            "hamiltonian_linf": 0.0,
+            "momentum_linf": 0.0,
+            "gauge_linf": 0.0,
+            "min_lapse": 1.0,
+            "min_spatial_metric_eigenvalue": 1.0
+          },
+          {
+            "T": 0.2507142857142857,
+            "hamiltonian_linf": 0.0,
+            "momentum_linf": 0.0,
+            "gauge_linf": 0.0,
+            "min_lapse": 1.0,
+            "min_spatial_metric_eigenvalue": 1.0
+          },
+          {
+            "T": 0.26,
+            "hamiltonian_linf": 0.0,
+            "momentum_linf": 0.0,
+            "gauge_linf": 0.0,
+            "min_lapse": 1.0,
+            "min_spatial_metric_eigenvalue": 1.0
+          }
+        ],
+        "max_midpoint_eikonal_residual": 0.0,
+        "slice_inverse_residual": 0.0,
+        "boundary_slice_inverse_residual": 0.0,
+        "boundary": {},
+        "center_gaussian_eikonal_discrepancy": 0.0,
+        "slices_complete_in_diagnostic_disk": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "boundary_slices_complete": [],
+        "max_material_label_error": 0.0
+      },
+      "summary_read_error": null,
+      "evolution_present": true
+    },
+    {
+      "index": 23,
+      "task": "task_023",
+      "config": "configs/023_boundary512.json",
+      "wrapper": {
+        "task": "task_023",
+        "started_utc": "2026-11-15T08:04:46.767856+00:00",
+        "status": "SUCCESS",
+        "slurm_job_id": "3673751",
+        "slurm_array_job_id": null,
+        "slurm_array_task_id": null,
+        "config": "configs/023_boundary512.json",
+        "config_sha256": "308117a74d44949bdcb851af7e0e4559a8e9e2a713f22744663af909a9337f99",
+        "command": [
+          "/mnt/home/soft/python/programs/x86_64/python_3.11.4/bin/python3",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/solver.py",
+          "--config",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/configs/023_boundary512.json",
+          "--output",
+          "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/task_023"
+        ],
+        "exit_code": 0,
+        "finished_utc": "2026-11-15T08:05:11.551038+00:00",
+        "wall_seconds": 24.782623905921355
+      },
+      "wrapper_read_error": null,
+      "summary": {
+        "status": "SUCCESS",
+        "config": {
+          "L": 2.0,
+          "cfl": 0.15,
+          "Tmax": 0.26,
+          "order": 6,
+          "nb": 512,
+          "slice_targets": [
+            0,
+            0.05,
+            0.1,
+            0.15,
+            0.2,
+            0.24
+          ],
+          "diagnostic_radius": 1.1,
+          "trace_slices": true,
+          "epsilon": 0.08,
+          "N": 97,
+          "tag": "boundary512"
+        },
+        "nsteps": 42,
+        "dt": 0.006190476190476191,
+        "h": 0.04166666666666674,
+        "runtime_seconds": 18.766390095930547,
+        "diagnostics": [
+          {
+            "T": 0.0,
+            "hamiltonian_linf": 2.208705093820207e-11,
+            "momentum_linf": 2.474781490846567e-11,
+            "gauge_linf": 0.0,
+            "min_lapse": 1.0,
+            "min_spatial_metric_eigenvalue": 1.0195694824982453
+          },
+          {
+            "T": 0.030952380952380953,
+            "hamiltonian_linf": 2.23012823485913e-11,
+            "momentum_linf": 2.489417135972949e-11,
+            "gauge_linf": 4.848097768673115e-13,
+            "min_lapse": 0.9999941378872989,
+            "min_spatial_metric_eigenvalue": 1.0195563644727619
+          },
+          {
+            "T": 0.06190476190476191,
+            "hamiltonian_linf": 2.3530500464774562e-11,
+            "momentum_linf": 2.50110249351565e-11,
+            "gauge_linf": 9.427664370222192e-13,
+            "min_lapse": 0.9999766392005289,
+            "min_spatial_metric_eigenvalue": 1.0195280598709122
+          },
+          {
+            "T": 0.09285714285714286,
+            "hamiltonian_linf": 2.4970837897431153e-11,
+            "momentum_linf": 2.539615956767549e-11,
+            "gauge_linf": 1.4022387209532276e-12,
+            "min_lapse": 0.999947765901327,
+            "min_spatial_metric_eigenvalue": 1.019481591298461
+          },
+          {
+            "T": 0.12380952380952381,
+            "hamiltonian_linf": 2.8230365961556814e-11,
+            "momentum_linf": 2.529901895614861e-11,
+            "gauge_linf": 1.7879998191361675e-12,
+            "min_lapse": 0.9999079512854364,
+            "min_spatial_metric_eigenvalue": 1.0194095326743349
+          },
+          {
+            "T": 0.15476190476190477,
+            "hamiltonian_linf": 3.131669923384095e-11,
+            "momentum_linf": 2.5554250989573424e-11,
+            "gauge_linf": 2.747960846235366e-12,
+            "min_lapse": 0.9998577950251749,
+            "min_spatial_metric_eigenvalue": 1.0193106630769768
+          },
+          {
+            "T": 0.18571428571428572,
+            "hamiltonian_linf": 3.545902634016773e-11,
+            "momentum_linf": 2.5933293706925653e-11,
+            "gauge_linf": 4.004775283240558e-12,
+            "min_lapse": 0.9997980562345656,
+            "min_spatial_metric_eigenvalue": 1.019184382442633
+          },
+          {
+            "T": 0.21666666666666665,
+            "hamiltonian_linf": 4.0548446544885763e-11,
+            "momentum_linf": 3.232564129568294e-11,
+            "gauge_linf": 5.5018022729700935e-12,
+            "min_lapse": 0.9997296445623465,
+            "min_spatial_metric_eigenvalue": 1.0190276622407175
+          },
+          {
+            "T": 0.24761904761904763,
+            "hamiltonian_linf": 5.515737866446102e-11,
+            "momentum_linf": 3.2306412753313474e-11,
+            "gauge_linf": 7.284472291759988e-12,
+            "min_lapse": 0.9996536093189079,
+            "min_spatial_metric_eigenvalue": 1.0188372405204413
+          },
+          {
+            "T": 0.26,
+            "hamiltonian_linf": 9.93136128890626e-11,
+            "momentum_linf": 5.940504858858997e-11,
+            "gauge_linf": 8.193791900387774e-12,
+            "min_lapse": 0.9996213201413043,
+            "min_spatial_metric_eigenvalue": 1.0187508572236488
+          }
+        ],
+        "max_midpoint_eikonal_residual": 7.824733749828283e-08,
+        "slice_inverse_residual": 8.326672684688674e-17,
+        "boundary_slice_inverse_residual": 5.551115123125783e-17,
+        "boundary": {
+          "max_V_norm": -0.874024484675364,
+          "min_spatial_gradient2": 0.0015749109631491174,
+          "max_eikonal_material_defect": 6.130351781763466e-11
+        },
+        "center_gaussian_eikonal_discrepancy": 0.0,
+        "slices_complete_in_diagnostic_disk": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "boundary_slices_complete": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "max_material_label_error": 2.1043867343140121e-10,
+        "connectivity_audit": {
+          "exits": 82,
+          "mismatched_pairs": 0,
+          "unresolved_eligible_cases": 0
+        }
+      },
+      "summary_read_error": null,
+      "evolution_present": true
+    }
+  ],
+  "successful_processes": 24,
+  "readable_summaries": 24,
+  "expected_tasks": 24,
+  "complete_process_campaign": true
+}

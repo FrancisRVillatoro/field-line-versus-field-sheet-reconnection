@@ -1,0 +1,21 @@
+{
+  "task": "task_008",
+  "started_utc": "2026-11-15T08:04:45.526261+00:00",
+  "status": "SUCCESS",
+  "slurm_job_id": "3673736",
+  "slurm_array_job_id": null,
+  "slurm_array_task_id": null,
+  "config": "configs/008_spatial_e12_N129.json",
+  "config_sha256": "4ccae28ede74db0a362066fb02acf9754cf2fccec971c025fe6399ceed07b2a6",
+  "command": [
+    "/mnt/home/soft/python/programs/x86_64/python_3.11.4/bin/python3",
+    "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/solver.py",
+    "--config",
+    "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/input/configs/008_spatial_e12_N129.json",
+    "--output",
+    "/mnt/fscratch/users/tic_118_uma/frv/Reconexiones_Fase5_20261114/results/fase5_20261115_01/task_008"
+  ],
+  "exit_code": 0,
+  "finished_utc": "2026-11-15T08:05:37.075986+00:00",
+  "wall_seconds": 51.54889345006086
+}

@@ -1,0 +1,77 @@
+{
+  "status": "PASS",
+  "count": 24,
+  "checks": {
+    "leading_scalar_wave": true,
+    "radial_initial_equation": true,
+    "radial_normalization": true,
+    "Ricci_00": true,
+    "Ricci_01": true,
+    "Ricci_02": true,
+    "Ricci_11": true,
+    "Ricci_12": true,
+    "Ricci_22": true,
+    "cubic_scalar_wave": true,
+    "cubic_initial_value": true,
+    "cubic_initial_velocity": true,
+    "metric_initial_00": true,
+    "metric_velocity_00": true,
+    "metric_initial_01": true,
+    "metric_velocity_01": true,
+    "metric_initial_11": true,
+    "metric_velocity_11": true,
+    "central_b": true,
+    "paired_proper_clock": true,
+    "time_reflection_scalar": true,
+    "center_gradient_x": true,
+    "center_gradient_y": true,
+    "central_b_ini_from_initial_velocity": true
+  },
+  "b_ini": "-64*t**9/2835 + 26*t**7/315 - t**5/3 + 73*t**3/27 - 32*t/9",
+  "b_src": "-256*t**9/2835 + 18*t**7/35 - 16*t**5/15 + 82*t**3/27",
+  "source_percentages": [
+    {
+      "c": "0.04",
+      "percent_approx": "-0.137237396321046",
+      "rounded_percent": "-0.14",
+      "rounding_certified": true,
+      "s0_rational_bracket": [
+        "716190110/17885613451",
+        "670030341/16732852789"
+      ],
+      "open_percent_bin": [
+        "-29/200",
+        "-27/200"
+      ]
+    },
+    {
+      "c": "0.12",
+      "percent_approx": "-1.27822024714001",
+      "rounded_percent": "-1.28",
+      "rounding_certified": true,
+      "s0_rational_bracket": [
+        "3390642595/27978712988",
+        "3700430842/30535006141"
+      ],
+      "open_percent_bin": [
+        "-257/200",
+        "-51/40"
+      ]
+    },
+    {
+      "c": "0.18",
+      "percent_approx": "-3.02751720302344",
+      "rounded_percent": "-3.03",
+      "rounding_certified": true,
+      "s0_rational_bracket": [
+        "3805714879/20664800275",
+        "3654973090/19846281531"
+      ],
+      "open_percent_bin": [
+        "-607/200",
+        "-121/40"
+      ]
+    }
+  ],
+  "scope": "The count includes only exact polynomial identities. Three separate checks certify the printed percentages by rational root isolation and exact sign tests."
+}

@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "checks": {
+    "event_table_0.01": true,
+    "event_table_0.02": true,
+    "event_table_0.04": true,
+    "event_table_0.08": true,
+    "event_table_0.12": true,
+    "aggregate_counts_sensitivities_causality_and_tracing": true,
+    "constraint_table": true
+  },
+  "scope": "Numerical table and aggregate consistency; no new evolution or statistical confidence claim."
+}

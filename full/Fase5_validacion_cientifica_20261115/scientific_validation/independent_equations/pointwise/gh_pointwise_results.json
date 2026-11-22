@@ -1,0 +1,255 @@
+{
+  "status": "PASS",
+  "number_of_checks": 48,
+  "checks": [
+    {
+      "name": "Minkowski_Ricci",
+      "absolute_residual": 0.0,
+      "relative_scale": 1.0
+    },
+    {
+      "name": "Minkowski_contracted_Gamma",
+      "absolute_residual": 0.0,
+      "relative_scale": 1.0
+    },
+    {
+      "name": "Minkowski_metric_RHS",
+      "absolute_residual": 0.0,
+      "relative_scale": 1.0
+    },
+    {
+      "name": "homogeneous_Gamma_-0.7",
+      "absolute_residual": 6.906712673125344e-16,
+      "relative_scale": 1.0
+    },
+    {
+      "name": "homogeneous_Ricci_-0.7",
+      "absolute_residual": 0.0,
+      "relative_scale": 1.0
+    },
+    {
+      "name": "homogeneous_metric_RHS_-0.7",
+      "absolute_residual": 2.220446049250313e-16,
+      "relative_scale": 1.0
+    },
+    {
+      "name": "homogeneous_scalar_RHS_-0.7",
+      "absolute_residual": 8.515871880048635e-17,
+      "relative_scale": 1.0
+    },
+    {
+      "name": "homogeneous_Gamma_0.0",
+      "absolute_residual": 0.0,
+      "relative_scale": 1.0
+    },
+    {
+      "name": "homogeneous_Ricci_0.0",
+      "absolute_residual": 0.0,
+      "relative_scale": 1.0
+    },
+    {
+      "name": "homogeneous_metric_RHS_0.0",
+      "absolute_residual": 0.0,
+      "relative_scale": 4.0
+    },
+    {
+      "name": "homogeneous_scalar_RHS_0.0",
+      "absolute_residual": 0.0,
+      "relative_scale": 1.0
+    },
+    {
+      "name": "homogeneous_Gamma_0.6",
+      "absolute_residual": 4.495141184712167e-17,
+      "relative_scale": 1.0
+    },
+    {
+      "name": "homogeneous_Ricci_0.6",
+      "absolute_residual": 0.0,
+      "relative_scale": 1.0
+    },
+    {
+      "name": "homogeneous_metric_RHS_0.6",
+      "absolute_residual": 4.440892098500626e-16,
+      "relative_scale": 13.280467690946189
+    },
+    {
+      "name": "homogeneous_scalar_RHS_0.6",
+      "absolute_residual": 7.462197158726437e-17,
+      "relative_scale": 1.0
+    },
+    {
+      "name": "curved_Kasner_Gamma_-0.05",
+      "absolute_residual": 4.233260591976437e-16,
+      "relative_scale": 1.0
+    },
+    {
+      "name": "curved_Kasner_Ricci_-0.05",
+      "absolute_residual": 7.105427357601002e-15,
+      "relative_scale": 8.0
+    },
+    {
+      "name": "curved_Kasner_metric_RHS_-0.05",
+      "absolute_residual": 1.4210854715202004e-14,
+      "relative_scale": 60.653065971263345
+    },
+    {
+      "name": "curved_Kasner_scalar_RHS_-0.05",
+      "absolute_residual": 5.135204679173922e-16,
+      "relative_scale": 1.0
+    },
+    {
+      "name": "curved_Kasner_Gamma_0.0",
+      "absolute_residual": 0.0,
+      "relative_scale": 1.0
+    },
+    {
+      "name": "curved_Kasner_Ricci_0.0",
+      "absolute_residual": 0.0,
+      "relative_scale": 8.0
+    },
+    {
+      "name": "curved_Kasner_metric_RHS_0.0",
+      "absolute_residual": 0.0,
+      "relative_scale": 100.0
+    },
+    {
+      "name": "curved_Kasner_scalar_RHS_0.0",
+      "absolute_residual": 0.0,
+      "relative_scale": 1.0
+    },
+    {
+      "name": "curved_Kasner_Gamma_0.08",
+      "absolute_residual": 1.4109013138028883e-16,
+      "relative_scale": 1.0
+    },
+    {
+      "name": "curved_Kasner_Ricci_0.08",
+      "absolute_residual": 7.105427357601002e-15,
+      "relative_scale": 8.0
+    },
+    {
+      "name": "curved_Kasner_metric_RHS_0.08",
+      "absolute_residual": 1.4210854715202004e-14,
+      "relative_scale": 222.55409284924679
+    },
+    {
+      "name": "curved_Kasner_scalar_RHS_0.08",
+      "absolute_residual": 6.280037239864245e-16,
+      "relative_scale": 1.0
+    },
+    {
+      "name": "harmonic_flat_det_0.2",
+      "absolute_residual": 0.0,
+      "relative_scale": 1.0
+    },
+    {
+      "name": "harmonic_flat_Gamma_0.2",
+      "absolute_residual": 7.790590158718619e-17,
+      "relative_scale": 1.0
+    },
+    {
+      "name": "harmonic_flat_Ricci_0.2",
+      "absolute_residual": 1.870935297064537e-50,
+      "relative_scale": 1.0
+    },
+    {
+      "name": "harmonic_flat_metric_RHS_0.2",
+      "absolute_residual": 1.1102230246251565e-16,
+      "relative_scale": 1.0
+    },
+    {
+      "name": "harmonic_flat_test_scalar_0.2",
+      "absolute_residual": 2.220446049250313e-16,
+      "relative_scale": 1.0
+    },
+    {
+      "name": "harmonic_flat_det_0.8",
+      "absolute_residual": 0.0,
+      "relative_scale": 1.0
+    },
+    {
+      "name": "harmonic_flat_Gamma_0.8",
+      "absolute_residual": 0.0,
+      "relative_scale": 1.0
+    },
+    {
+      "name": "harmonic_flat_Ricci_0.8",
+      "absolute_residual": 0.0,
+      "relative_scale": 1.0
+    },
+    {
+      "name": "harmonic_flat_metric_RHS_0.8",
+      "absolute_residual": 2.7755575615628914e-17,
+      "relative_scale": 1.0
+    },
+    {
+      "name": "harmonic_flat_test_scalar_0.8",
+      "absolute_residual": 0.0,
+      "relative_scale": 1.0
+    },
+    {
+      "name": "harmonic_flat_det_-0.6",
+      "absolute_residual": 0.0,
+      "relative_scale": 1.0
+    },
+    {
+      "name": "harmonic_flat_Gamma_-0.6",
+      "absolute_residual": 5.551115123125783e-17,
+      "relative_scale": 1.0
+    },
+    {
+      "name": "harmonic_flat_Ricci_-0.6",
+      "absolute_residual": 0.0,
+      "relative_scale": 1.0
+    },
+    {
+      "name": "harmonic_flat_metric_RHS_-0.6",
+      "absolute_residual": 5.551115123125783e-17,
+      "relative_scale": 1.0
+    },
+    {
+      "name": "harmonic_flat_test_scalar_-0.6",
+      "absolute_residual": 1.1102230246251565e-16,
+      "relative_scale": 1.0
+    },
+    {
+      "name": "random_jet_principal_symbol",
+      "absolute_residual": 5.551115123125783e-16,
+      "relative_scale": 1.323658213472402
+    },
+    {
+      "name": "random_jet_RHS_substitution",
+      "absolute_residual": 2.498001805406602e-16,
+      "relative_scale": 1.0
+    },
+    {
+      "name": "batch_agrees_point_0",
+      "absolute_residual": 1.1102230246251565e-16,
+      "relative_scale": 1.0
+    },
+    {
+      "name": "batch_agrees_point_8",
+      "absolute_residual": 1.1102230246251565e-16,
+      "relative_scale": 1.0
+    },
+    {
+      "name": "batch_agrees_point_16",
+      "absolute_residual": 1.6653345369377348e-16,
+      "relative_scale": 1.0
+    },
+    {
+      "name": "conformal_tracefree_initial_gauge",
+      "absolute_residual": 2.796021809815276e-18,
+      "relative_scale": 1.0
+    }
+  ],
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "batch_probe": {
+    "points": 4096,
+    "wall_seconds": 0.036512451000135115
+  },
+  "scope": "Independent pointwise GH RHS and exact-solution tests. No grid evolution, convergence test, or physical reconnection validation."
+}

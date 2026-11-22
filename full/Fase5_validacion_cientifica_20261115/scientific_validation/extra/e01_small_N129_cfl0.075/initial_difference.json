@@ -1,0 +1,4 @@
+{
+  "lambda0": 0.0001777637399677404,
+  "method": "Independent shooting, direct dense evaluation; epsilon=.04 was used only to allocate the template before every epsilon-dependent field was replaced. No BVP-versus-shooting discrepancy is inferred for these small-amplitude runs."
+}

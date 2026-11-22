@@ -1,0 +1,132 @@
+{
+  "status": "SUCCESS",
+  "config": {
+    "L": 2.0,
+    "cfl": 0.15,
+    "Tmax": 0.26,
+    "order": 6,
+    "nb": 256,
+    "slice_targets": [
+      0,
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.24
+    ],
+    "diagnostic_radius": 1.1,
+    "trace_slices": true,
+    "epsilon": 0.12,
+    "N": 129,
+    "tag": "spatial_e12_N129"
+  },
+  "nsteps": 56,
+  "dt": 0.004642857142857143,
+  "h": 0.03125,
+  "runtime_seconds": 44.305817879969254,
+  "diagnostics": [
+    {
+      "T": 0.0,
+      "hamiltonian_linf": 1.9103871262693417e-11,
+      "momentum_linf": 2.248766537565894e-11,
+      "gauge_linf": 0.0,
+      "min_lapse": 1.0,
+      "min_spatial_metric_eigenvalue": 1.0443307200946097
+    },
+    {
+      "T": 0.0325,
+      "hamiltonian_linf": 1.999170967659225e-11,
+      "momentum_linf": 2.2781825904927278e-11,
+      "gauge_linf": 3.7600898274544495e-13,
+      "min_lapse": 0.9999862237925495,
+      "min_spatial_metric_eigenvalue": 1.0442955952770192
+    },
+    {
+      "T": 0.065,
+      "hamiltonian_linf": 2.101267770893145e-11,
+      "momentum_linf": 2.277854380811073e-11,
+      "gauge_linf": 7.300892464864843e-13,
+      "min_lapse": 0.9999451155474517,
+      "min_spatial_metric_eigenvalue": 1.0442207273444524
+    },
+    {
+      "T": 0.0975,
+      "hamiltonian_linf": 2.3410690053182748e-11,
+      "momentum_linf": 2.2847846010976003e-11,
+      "gauge_linf": 1.0706154822208893e-12,
+      "min_lapse": 0.9998773337047588,
+      "min_spatial_metric_eigenvalue": 1.0440990059875608
+    },
+    {
+      "T": 0.13,
+      "hamiltonian_linf": 2.5737696696115364e-11,
+      "momentum_linf": 2.325923741802738e-11,
+      "gauge_linf": 1.732225629284309e-12,
+      "min_lapse": 0.999783966697574,
+      "min_spatial_metric_eigenvalue": 1.043924939140667
+    },
+    {
+      "T": 0.1625,
+      "hamiltonian_linf": 2.910412189027767e-11,
+      "momentum_linf": 2.3745372855488167e-11,
+      "gauge_linf": 2.7559719950708565e-12,
+      "min_lapse": 0.999666519519911,
+      "min_spatial_metric_eigenvalue": 1.0436924946638366
+    },
+    {
+      "T": 0.195,
+      "hamiltonian_linf": 3.350545535463212e-11,
+      "momentum_linf": 2.351293465485682e-11,
+      "gauge_linf": 4.0253291888622616e-12,
+      "min_lapse": 0.9995268949570514,
+      "min_spatial_metric_eigenvalue": 1.0433948703748135
+    },
+    {
+      "T": 0.2275,
+      "hamiltonian_linf": 3.899169875865027e-11,
+      "momentum_linf": 2.5204826073488285e-11,
+      "gauge_linf": 5.606014615772202e-12,
+      "min_lapse": 0.9993673695106057,
+      "min_spatial_metric_eigenvalue": 1.0430244712660588
+    },
+    {
+      "T": 0.26,
+      "hamiltonian_linf": 4.546824722284626e-11,
+      "momentum_linf": 3.049253904929827e-11,
+      "gauge_linf": 7.506247786906139e-12,
+      "min_lapse": 0.9991905640553966,
+      "min_spatial_metric_eigenvalue": 1.0425533371795932
+    }
+  ],
+  "max_midpoint_eikonal_residual": 9.383317545186287e-08,
+  "slice_inverse_residual": 5.551115123125783e-17,
+  "boundary_slice_inverse_residual": 5.551115123125783e-17,
+  "boundary": {
+    "max_V_norm": -0.8892981401247295,
+    "min_spatial_gradient2": 0.0036176914871458654,
+    "max_eikonal_material_defect": 4.136527231857201e-11
+  },
+  "center_gaussian_eikonal_discrepancy": 0.0,
+  "slices_complete_in_diagnostic_disk": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "boundary_slices_complete": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "max_material_label_error": 3.7161675819907813e-10,
+  "connectivity_audit": {
+    "exits": 82,
+    "mismatched_pairs": 0,
+    "unresolved_eligible_cases": 0
+  }
+}

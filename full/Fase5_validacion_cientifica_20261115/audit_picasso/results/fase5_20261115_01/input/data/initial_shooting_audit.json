@@ -1,0 +1,32 @@
+{
+  "scope": "Independent numerical agreement, not an interval-arithmetic error bound.",
+  "results": [
+    {
+      "epsilon": 0.04,
+      "shooting_lambda0": 0.002840861975901627,
+      "bvp_lambda0": 0.002840861975902048,
+      "lambda0_difference": 4.211041237933699e-16,
+      "lambda_difference_r_le_2": 2.7950732006676304e-15,
+      "lambda_difference_full_extension": 5.072331443756184e-15,
+      "lambda_r_difference_full_extension": 4.5119923405546837e-14
+    },
+    {
+      "epsilon": 0.08,
+      "shooting_lambda0": 0.011321023947567,
+      "bvp_lambda0": 0.011321023947567335,
+      "lambda0_difference": 3.3480163086352377e-16,
+      "lambda_difference_r_le_2": 2.617697725249002e-15,
+      "lambda_difference_full_extension": 2.606248550307555e-14,
+      "lambda_r_difference_full_extension": 6.916689443414725e-14
+    },
+    {
+      "epsilon": 0.12,
+      "shooting_lambda0": 0.025317318734993693,
+      "bvp_lambda0": 0.025317318734993977,
+      "lambda0_difference": 2.8449465006019636e-16,
+      "lambda_difference_r_le_2": 2.789435349370706e-15,
+      "lambda_difference_full_extension": 5.384581669432009e-14,
+      "lambda_r_difference_full_extension": 2.2426505097428162e-13
+    }
+  ]
+}
